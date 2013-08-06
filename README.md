@@ -1,6 +1,6 @@
 # JohnStamos
 
-TODO: Write a gem description
+The greasiest Pinterest client.  A work-in-progress until this no longer says "a work-in-progress".
 
 ## Installation
 
@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+1. Have mercy.
 
 ## Contributing
 
