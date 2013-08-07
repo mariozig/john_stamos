@@ -4,16 +4,24 @@ require 'json'
 require 'rest_client'
 
 class JohnStamos::SearchScraper
-  attr_accessor :pins, :next_bookmark, :search_text, :pin_ids
+  attr_accessor :next_bookmark, :search_text, :pin_ids, :count
+  attr_reader :pins, :count
 
-  def initialize(search_text=nil)
+  def initialize(search_text=nil, count=50)
     @pins, @pin_ids = [], []
     @next_bookmark = nil
     @search_text = search_text
+    @count = count
   end
 
   def execute!
     raise JohnStamos::MissingSearchText if @search_text.nil?
+
+    first_retrieval!
+
+    while(@pin_ids.length < @count) do
+      subsequent_retrieval!
+    end
   end
 
   def first_retrieval_url
@@ -33,8 +41,9 @@ class JohnStamos::SearchScraper
     end
     embedded_script_content = embedded_script.last.content.strip!
     embedded_script_json = JSON.parse(embedded_script_content[8..-3])
+    pin_ids_from_embedded_script_json = pin_ids_from_first_retrieval(embedded_script_json)
 
-    @pin_ids = pin_ids_from_first_retrieval(embedded_script_json)
+    @pin_ids += pin_ids_up_to_count(pin_ids_from_embedded_script_json)
     @next_bookmark = next_bookmark_from_first_retrieval(embedded_script_json)
   end
 
@@ -47,14 +56,19 @@ class JohnStamos::SearchScraper
                               :accept => :json,
                               "X-Requested-With" => "XMLHttpRequest")
     pins_json = JSON.parse(response)
+    pin_ids_from_json = pin_ids_from_subsequent_retrieval(pins_json)
 
-    @pin_ids += pin_ids_from_subsequent_retrieval(pins_json)
+    @pin_ids += pin_ids_up_to_count(pin_ids_from_json)
     @next_bookmark = next_bookmark_from_subsequent_retrieval(pins_json)
   end
 
   def more_results?
     raise JohnStamos::MissingNextBookmark if @next_bookmark.nil?
     @next_bookmark != "-end-"
+  end
+
+  def count_reached?
+    @count == @pin_ids.length
   end
 
   private
@@ -117,6 +131,15 @@ class JohnStamos::SearchScraper
                     data: data_json.to_json
                    }
       url_params
+    end
+
+    def pin_ids_up_to_count(ids)
+      remaining = @count - @pin_ids.length
+      if remaining >= @pin_ids.length
+        ids
+      else
+        ids[0..remaining-1]
+      end
     end
 
 end

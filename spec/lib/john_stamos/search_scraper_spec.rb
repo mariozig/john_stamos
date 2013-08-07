@@ -5,6 +5,7 @@ describe JohnStamos::SearchScraper do
   it { should respond_to :search_text }
   it { should respond_to :next_bookmark }
   it { should respond_to :pin_ids }
+  it { should respond_to :count }
   it { should respond_to :pins }
   it { should respond_to :execute! }
   it { should respond_to :first_retrieval_url }
@@ -12,6 +13,7 @@ describe JohnStamos::SearchScraper do
   it { should respond_to :first_retrieval! }
   it { should respond_to :subsequent_retrieval! }
   it { should respond_to :more_results? }
+  it { should respond_to :count_reached? }
 
   let(:scraper) { JohnStamos::SearchScraper.new }
   let(:search_text) { "coffee roasting" }
@@ -32,6 +34,10 @@ describe JohnStamos::SearchScraper do
 
     it 'has a nil next bookmark' do
       scraper.next_bookmark.should be_nil
+    end
+
+    it 'has a count of 50 by default' do
+      scraper.count.should == 50
     end
   end
 
@@ -75,7 +81,6 @@ describe JohnStamos::SearchScraper do
     context 'without any results found', :vcr do
       before(:each) do
         scraper.search_text = "ThisWillNeverBeFoundLOLAmIRiteYeahYoureRite"
-        scraper.first_retrieval!
       end
 
       it 'has a nil next_bookmark' do
@@ -129,7 +134,7 @@ describe JohnStamos::SearchScraper do
       end
 
       it 'should append the new pin_ids' do
-        expect{ scraper.subsequent_retrieval! }.to change{ scraper.pin_ids.length }.from(50).to(100)
+        expect{ scraper.subsequent_retrieval! }.to change{ scraper.pin_ids.length }.from(50).to(99)
       end
     end
   end
@@ -154,7 +159,20 @@ describe JohnStamos::SearchScraper do
     end
   end
 
-  describe '#execute!' do
+  describe '#count_reached?' do
+    context 'when the default count of 50 has not been reached' do
+      before(:each) { scraper.pin_ids = Array.new(49) }
+      it { scraper.count_reached?.should be_false }
+    end
+
+    context 'when default count of 50 has been reached' do
+      before(:each) { scraper.pin_ids = Array.new(50) }
+      it { scraper.count_reached?.should be_true }
+    end
+  end
+
+  describe '#execute!', :vcr do
+
     context 'search query not set' do
       it 'raises an error' do
         lambda {
@@ -163,5 +181,40 @@ describe JohnStamos::SearchScraper do
       end
     end
 
+    context 'when using a search term that yields thousands of pins' do
+      let(:big_search_term) { "funny" }
+
+      context 'no count specified' do
+        let(:big_scraper) { JohnStamos::SearchScraper.new(big_search_term) }
+
+        it 'has a count of 50, the default' do
+          big_scraper.execute!
+          big_scraper.count.should == 50
+        end
+
+        it 'the count of pin_ids collected is 50' do
+          big_scraper.execute!
+          big_scraper.pin_ids.length.should == 50
+        end
+
+        it 'never calls #subsequent_retrieval!' do
+          big_scraper.should_not receive(:subsequent_retrieval!).with()
+          big_scraper.execute!
+        end
+      end
+
+      context 'with a count higher than the default' do
+        let(:big_scraper_with_count) { JohnStamos::SearchScraper.new(big_search_term, 147) }
+
+        it 'has a count of 147' do
+          big_scraper_with_count.count.should == 147
+        end
+
+        it 'collects the correct number of pin_ids' do
+          expect{ big_scraper_with_count.execute! }.to change{big_scraper_with_count.pin_ids.length}.from(0).to(147)
+        end
+      end
+
+    end
   end
 end
