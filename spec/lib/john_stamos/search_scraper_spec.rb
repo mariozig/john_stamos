@@ -217,4 +217,12 @@ describe JohnStamos::SearchScraper do
 
     end
   end
+
+  describe '#pins' do
+    let(:bogus_pinterest_ids) { [1,2] }
+    before(:each) { scraper.pin_ids = bogus_pinterest_ids }
+
+    it { scraper.pins.should be_a(Array) }
+    it { scraper.pins.should have_exactly(bogus_pinterest_ids.length).pins }
+  end
 end

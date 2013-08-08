@@ -5,7 +5,7 @@ require 'rest_client'
 
 class JohnStamos::SearchScraper
   attr_accessor :next_bookmark, :search_text, :pin_ids, :count
-  attr_reader :pins, :count
+  attr_reader :count
 
   def initialize(search_text=nil, count=50)
     @pins, @pin_ids = [], []
@@ -69,6 +69,12 @@ class JohnStamos::SearchScraper
 
   def count_reached?
     @count == @pin_ids.length
+  end
+
+  def pins
+    @pin_ids.map do|id|
+      JohnStamos::Pin.new(id)
+    end
   end
 
   private
