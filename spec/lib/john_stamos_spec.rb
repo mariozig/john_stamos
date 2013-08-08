@@ -1,15 +1,12 @@
 require 'spec_helper'
 
-describe JohnStamos do
+describe JohnStamos, :vcr do
   it { respond_to :search_pins }
 
   describe '.search_pins' do
-    let(:search_results) { JohnStamos.search_pins('breakfast items') }
-
-    # xit 'should an array of pins for a search query' do
-    #   results = JohnStamos.search_pins('breakfast items')
-    #   results.should have_at_least(1).pins
-    # end
+    it 'returns the correct number of pins' do
+      JohnStamos.search_pins('uncle jesse').should have_exactly(50).pins
+    end
 
   end
 
