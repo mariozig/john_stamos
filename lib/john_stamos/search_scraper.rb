@@ -19,7 +19,7 @@ class JohnStamos::SearchScraper
 
     first_retrieval!
 
-    while(@pin_ids.length < @count) do
+    until count_reached? do
       subsequent_retrieval!
     end
   end
