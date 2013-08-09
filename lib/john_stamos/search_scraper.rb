@@ -4,14 +4,14 @@ require 'json'
 require 'rest_client'
 
 class JohnStamos::SearchScraper
-  attr_accessor :next_bookmark, :search_text, :pin_ids, :count
-  attr_reader :count
+  attr_accessor :next_bookmark, :search_text, :pin_ids
+  attr_reader :limit
 
-  def initialize(search_text=nil, count=50)
+  def initialize(search_text=nil, limit=50)
     @pins, @pin_ids = [], []
     @next_bookmark = nil
     @search_text = search_text
-    @count = count
+    @limit = limit
   end
 
   def execute!
@@ -19,7 +19,7 @@ class JohnStamos::SearchScraper
 
     first_retrieval!
 
-    until count_reached? do
+    until limit_reached? do
       subsequent_retrieval!
     end
   end
@@ -39,11 +39,17 @@ class JohnStamos::SearchScraper
     embedded_script = page.css('script').select do |script|
       script['src'].nil? && script.content.include?('P.start(')
     end
-    embedded_script_content = embedded_script.last.content.strip!
-    embedded_script_json = JSON.parse(embedded_script_content[8..-3])
+
+    embedded_script_content = embedded_script.first.content
+    # This regex used in the range below looks for Pinterest's call to `P.start`
+    # and snatches it's parameter... which happens to be a JSON representation of
+    # the page.
+    raw_json = embedded_script_content[/P.start\((.*)\);$/, 1]
+    embedded_script_json = JSON.parse(raw_json)
+
     pin_ids_from_embedded_script_json = pin_ids_from_first_retrieval(embedded_script_json)
 
-    @pin_ids += pin_ids_up_to_count(pin_ids_from_embedded_script_json)
+    @pin_ids += pin_ids_up_to_limit(pin_ids_from_embedded_script_json)
     @next_bookmark = next_bookmark_from_first_retrieval(embedded_script_json)
   end
 
@@ -58,7 +64,7 @@ class JohnStamos::SearchScraper
     pins_json = JSON.parse(response)
     pin_ids_from_json = pin_ids_from_subsequent_retrieval(pins_json)
 
-    @pin_ids += pin_ids_up_to_count(pin_ids_from_json)
+    @pin_ids += pin_ids_up_to_limit(pin_ids_from_json)
     @next_bookmark = next_bookmark_from_subsequent_retrieval(pins_json)
   end
 
@@ -67,8 +73,8 @@ class JohnStamos::SearchScraper
     @next_bookmark != "-end-"
   end
 
-  def count_reached?
-    @count == @pin_ids.length
+  def limit_reached?
+    @limit == @pin_ids.length
   end
 
   def pins
@@ -79,7 +85,7 @@ class JohnStamos::SearchScraper
 
   private
     def pin_ids_from_first_retrieval(json)
-      json["options"]["module"]["data"]["results"].map{ |pin| pin["id"] }
+      json["tree"]["options"]["module"]["data"]["results"].map{ |pin| pin["id"] }
     end
 
     def pin_ids_from_subsequent_retrieval(json)
@@ -87,7 +93,7 @@ class JohnStamos::SearchScraper
     end
 
     def next_bookmark_from_first_retrieval(json)
-      base_search_child = json["children"].select do |child|
+      base_search_child = json["tree"]["children"].select do |child|
         next if child["resource"].nil? || child["resource"]["name"].nil?
         child["resource"]["name"] == "BaseSearchResource"
       end
@@ -139,8 +145,8 @@ class JohnStamos::SearchScraper
       url_params
     end
 
-    def pin_ids_up_to_count(ids)
-      remaining = @count - @pin_ids.length
+    def pin_ids_up_to_limit(ids)
+      remaining = @limit - @pin_ids.length
       if remaining >= @pin_ids.length
         ids
       else
