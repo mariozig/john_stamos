@@ -1,0 +1,645 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://pinterest.com/johnstamosgem/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Fri, 09 Aug 2013 03:08:56 GMT
+      Pinterest-Breed:
+      - CORGI
+      Pinterest-Generated-By:
+      - ngapp210
+      Pinterest-Version:
+      - 562ff72
+      Server:
+      - nginx
+      Set-Cookie:
+      - _pinterest_sess="eJzLcy12znYMraxyrMryLigpK3Z19TTPDDbJKvS0tY8vycxNtfUN8TX2y3Ks8KtKrvJLt7VVK04tLs5MsfXMcq3yd/HL8a1yBMqnZPmHBFb6hYSaRmZl5EQahRr6hwOxe6CJX7inoSdQHwDmNCQl";
+        Domain=.pinterest.com; expires=Mon, 04-Aug-2014 03:08:56 GMT; Max-Age=31103999;
+        Path=/
+      - csrftoken=ZZg1EIEwTAZz1Nosj5aD4EcAKm1fCk33; Domain=.pinterest.com; expires=Fri,
+        08-Aug-2014 03:08:56 GMT; Max-Age=31449600; Path=/
+      Vary:
+      - Cookie, Accept-Encoding
+      Via:
+      - 1.1 varnish
+      X-Varnish:
+      - '502743130'
+      Content-Length:
+      - '8784'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<!--[if IE 7 ]><html lang=\"en\" class=\"ie7 ielt9
+        ielt10 en\"><![endif]-->\n<!--[if IE 8 ]><html lang=\"en\" class=\"ie8 ielt9
+        ielt10 en\"><![endif]-->\n<!--[if IE 9 ]><html lang=\"en\" class=\"ie9 ielt10
+        en\"><![endif]-->\n<!--[if (gt IE 9)|!(IE)]><!--><html lang=\"en\" class=\"
+        en\"><!--<![endif]-->\n\n<head>\n    <script>\n        \n        var P = {\n
+        \           e: {\"ps\": false, \"jfy\": false, \"ueh\": false, \"epfftensp\":
+        false, \"ew\": false, \"sw\": false, \"rpl\": false, \"ff_s\": false, \"wfe\":
+        false},\n            expns: {}\n        };\n        var P_TEST_MODE = null;\n
+        \       \n    </script>\n\n    \n    \n    \n    \n    \n\n    <link rel=\"stylesheet\"
+        href=\"http://passets-ak.pinterest.com/webapp/app/desktop/bundle.830dba33.css\">\n
+        \   <script src=\"http://passets-ec.pinterest.com/webapp/app/desktop/bundle.303bb644.js\"></script>\n
+        \   \n\n    \n\n    \n    <link rel=\"apple-touch-icon\" href=\"http://passets-ec.pinterest.com/webapp/app/desktop/images/logo_trans_144x144.4d67817d.png\">\n
+        \   <link rel=\"icon\" href=\"http://passets-ak.pinterest.com/webapp/app/desktop/images/favicon.c37ee67b.png\">\n\n
+        \   <link rel=\"canonical\" href=\"/johnstamosgem/\">\n    <!--[if IE]><link
+        rel=\"shortcut icon\" href=\"http://passets-ec.pinterest.com/webapp/app/desktop/images/favicon.85f9689a.ico\"><![endif]-->\n
+        \   <meta name=\"application-name\" content=\"Pinterest\">\n    <meta name=\"msapplication-TileColor\"
+        content=\"#ffffff\">\n    <meta name=\"msapplication-TileImage\" content=\"http://passets-ec.pinterest.com/webapp/app/desktop/images/logo_trans_144x144.4d67817d.png\">\n\n
+        \   <meta property=\"fb:app_id\" content=\"274266067164\">\n    <meta property=\"og:site_name\"
+        content=\"Pinterest\">\n    <meta name=\"viewport\" content=\"width=device-width,
+        initial-scale=1\">\n\n    \n    <meta name=\"google-site-verification\" content=\"084yfFbt4cT_4Gt1BBHFINQ71YTJCd9S47fL7IE7S1w\">\n\n
+        \       <title>John Stamosgem (johnstamosgem) on Pinterest</title>\n\n    \n
+        \       <meta property=\"og:url\" name=\"og:url\" content=\"http://pinterest.com/johnstamosgem/\"
+        data-app>\n    \n        <meta property=\"og:title\" name=\"og:title\" content=\"John
+        Stamosgem (johnstamosgem)\" data-app>\n    \n        <meta property=\"description\"
+        name=\"description\" content=\"John Stamosgem is using Pinterest, an online
+        pinboard to collect and share what inspires you.\" data-app>\n    \n        <meta
+        property=\"pinterestapp:boards\" name=\"pinterestapp:boards\" content=\"1\"
+        data-app>\n    \n        <meta property=\"pinterestapp:following\" name=\"pinterestapp:following\"
+        content=\"5\" data-app>\n    \n        <meta property=\"og:type\" name=\"og:type\"
+        content=\"profile\" data-app>\n    \n        <meta property=\"og:description\"
+        name=\"og:description\" content=\"John Stamosgem is using Pinterest, an online
+        pinboard to collect and share what inspires you.\" data-app>\n    \n        <meta
+        property=\"pinterestapp:about\" name=\"pinterestapp:about\" content=\"\" data-app>\n
+        \   \n        <meta property=\"pinterestapp:followers\" name=\"pinterestapp:followers\"
+        content=\"0\" data-app>\n    \n        <meta property=\"pinterestapp:pins\"
+        name=\"pinterestapp:pins\" content=\"1\" data-app>\n    </head><body>\n    <div
+        id=\"fb-root\"></div>\n<script>\n  window.fbAsyncInit = function() {\n    \n
+        \   \n    FB.init({\n      appId: '274266067164',\n      status: true\n    });\n
+        \   window.fbApiInit = true;\n    P.FB = FB;\n  };\n\n  \n  (function(d, s,
+        id){\n     var js, fjs = d.getElementsByTagName(s)[0];\n     if (d.getElementById(id))
+        {return;}\n     js = d.createElement(s); js.id = id;\n     js.src = \"//connect.facebook.net/en_US/all.js\";\n
+        \    fjs.parentNode.insertBefore(js, fjs);\n   }(document, 'script', 'facebook-jssdk'));\n\n
+        \ P.FBEnsureInit = function(callback) {\n      if (!window.fbApiInit) {\n
+        \         setTimeout(function() {\n              P.FBEnsureInit(callback);\n
+        \         }, 50);\n      } else {\n          if (callback) {\n              callback();\n
+        \         }\n      }\n  }\n</script><div class=\"App full Module\" id=\"App-30\">\n\n\n\n\n\n\n\n
+        \   <div class=\"Header Module\" id=\"Header-1\"><div class=\"headerBackground\"></div>\n\n<div
+        class=\"headerContainer centeredWithinWrapper\">\n    <div class=\"leftHeaderContent\">\n
+        \       \n                        \n        \n        <div class=\"categoriesButton
+        DropdownButton Module\" id=\"DropdownButton-6\">\n\n\n<button type=\"button\"
+        class=\"rounded default Button Module primaryOnHover btn categories\" id=\"Button-9\">\n\n\n<em></em>\n<span
+        class=\"accessibilityText\">Categories</span></button></div>\n\n        <div
+        class=\"ui-SearchForm Module\" id=\"ui-SearchForm-7\"><form action=\"/search/\"
+        method=\"GET\" name=\"search\">\n    <div class=\"search Module ui-TypeaheadField\"
+        id=\"ui-TypeaheadField-10\">\n\n\n\n\n\n\n\n    <input type=\"text\" name=\"q\"\n
+        \          value=\"\" placeholder=\"Search\"\n           autocomplete=\"off\"
+        \ class=\"field\" />\n\n<div class=\"search hidden ui-Typeahead Module\" id=\"ui-Typeahead-11\">\n\n
+        \   \n\n<ul class=\"results\"></ul></div></div>\n    <button class=\"submit\"
+        type=\"submit\">Search</button>\n</form></div>\n    </div>\n\n    <div>\n
+        \       <a href=\"/\" id=\"logo\" class=\"logo\" data-force-refresh=\"1\">Pinterest</a>\n\n
+        \       \n    </div>\n\n\n    \n\n    <div class=\"rightHeaderContent\">\n
+        \       \n            <div class=\"unauthActions\">\n                <div
+        class=\"LanguageMenu Module\" id=\"LanguageMenu-8\">\n    \n\n\n<div class=\"DropdownButton
+        Module\" id=\"DropdownButton-12\">\n\n\n<button type=\"button\" class=\"rounded
+        default Button Module langaugeButton hasText btn\" id=\"Button-13\">\n\n\n<span
+        class=\"buttonText\">English (US)</span>\n        </button></div></div>\n
+        \           </div>\n        \n    </div>\n</div></div>\n    <div class=\"ScrollToTop
+        Pillow Module\" id=\"ScrollToTop-2\">\n\n<button>\n    \n    <div class=\"textContainer\">Scroll
+        to&nbsp;Top</div>\n</button></div>\n\n<div class=\"appContent\">\n    <div
+        class=\"mainContainer\">\n        \n            <div class=\"Nags Module\"
+        id=\"Nags-3\">\n\n    \n    \n    \n    \n    \n    \n    <!--[if lt IE 8]><div
+        class=\"NagBase Module centeredWithinWrapper\" id=\"NagBase-14\">\n\n\n\n
+        \   \n    <div class=\"message\">Wups, your browser's a little out of date!
+        <a href=\"http://windows.microsoft.com/en-US/internet-explorer/download-ie\">Update
+        it now</a> or <a href=\"http://whatbrowser.org/\">try another browser</a>
+        for a faster, smoother Pinterest.</div>\n\n\n\n\n    <button type=\"button\"
+        class=\"default Button nagClose Module borderless\" id=\"Button-16\">\n\n\n\n
+        \   &nbsp;</button>\n</div><![endif]-->\n    \n        <div class=\"NagUnauth
+        NagBase Module centeredWithinWrapper\" id=\"NagUnauth-15\">\n\n\n\n\n\n\n\n\n\n\n\n<div
+        class=\"message\">\n    <p class=\"messageContent\">\n        \n            <strong>Pinterest
+        is an online pinboard.</strong> Organize and share the things you love.\n
+        \       \n    </p>\n\n    \n    <div class=\"facepileWrapper hidden\">\n        <iframe
+        class=\"fbIframe\" src=\"http://www.facebook.com/plugins/facepile.php?app_id=274266067164&size=small&max_rows=1\"
+        scrolling=\"no\" frameborder=\"0\" allowTransparency=\"true\"></iframe>\n
+        \   </div>\n    <div class=\"buttonsWrapper\">\n        \n        \n\n        <a
+        href=\"/join/\" type=\"button\" class=\"rounded JoinButton NavigateButton
+        Button primary Module joinButton unauthNagButton hasText btn\" id=\"JoinButton-17\">\n\n\n<span
+        class=\"buttonText\">Join Pinterest</span>\n        </a>\n        <a href=\"/login/\"
+        type=\"button\" class=\"rounded NavigateButton default Button loginButton
+        unauthNagButton Module hasText LoginButton btn\" id=\"LoginButton-18\">\n\n\n<span
+        class=\"buttonText\">Log in</span>\n        </a>\n    </div>\n</div></div>\n
+        \   \n</div>\n        \n        <div class=\"UserProfilePage Module\" id=\"UserProfilePage-4\">\n\n\n\n\n<div
+        class=\"UserProfileHeader Module\" id=\"UserProfileHeader-19\">\n\n\n\n\n\n\n\n<div
+        class=\"header\">\n    <div class=\"userProfileImage\"><img src=\"http://media-cache-ec0.pinimg.com/avatars/johnstamosgem_1375988759_140.jpg\"
+        class=\"profileImage\" style=\"\"\n\n    alt=\"John Stamosgem\"\n    >\n\n
+        \   </div>\n\n    <div class=\"userInformation\">\n        <h2 class=\"userProfileHeaderName\">John
+        Stamosgem</h2>\n\n        <p class=\"userProfileHeaderBio\"></p>\n\n        <ul
+        class=\"userProfileHeaderLocationAndLinks\">\n            \n            \n
+        \           \n            \n        </ul>\n        \n    </div>\n    \n</div>\n\n</div>\n\n\n\n\n\n<div
+        class=\"UserInfoBar InfoBarBase Module centeredWithinWrapper\" id=\"UserInfoBar-20\">\n\n\n\n\n\n\n\n\n\n\n
+        \   \n         \n         \n        <button type=\"button\" class=\"UserFollowButton
+        btn rounded Button primary Module hasText notNavigatable ui-FollowButton\"
+        id=\"UserFollowButton-22\">\n\n\n   \n   \n   \n\n\n\n\n\n<span class=\"buttonText\">Follow
+        All</span>\n        \n</button>\n    \n\n\n<ul class=\"userStats\">\n    \n\n
+        \   <li>\n        <a href=\"/johnstamosgem/boards/\" type=\"button\" class=\"NavigateButton
+        default Button Module hasText borderless active BoardCount\" id=\"BoardCount-23\">\n\n\n\n\n\n\n\n<span
+        class=\"buttonText\">\n    \n    \n\n    \n        \n            \n            \n
+        \       1 Board</span>\n        </a>\n    </li>\n    <li>\n        <a href=\"/johnstamosgem/pins/\">\n
+        \           \n    \n    \n\n    \n        \n            \n            \n        1
+        Pin\n        </a>\n    </li>\n    <li>\n        <a href=\"/johnstamosgem/likes/\">\n
+        \           \n    \n    \n\n    \n        \n            \n            \n        1
+        Like\n        </a>\n    </li>\n</ul>\n\n<ul class=\"followersFollowingLinks\">\n
+        \   <li>\n        <a href=\"/johnstamosgem/followers/\" type=\"button\" class=\"FollowerCount
+        NavigateButton default Button Module hasText borderless\" id=\"FollowerCount-24\">\n\n\n\n\n\n\n\n\n<span
+        class=\"buttonText\">\n    \n        \n    \n    \n\n    \n        \n            \n
+        \           \n        0 Followers</span>\n        </a>\n    </li>\n    <li>\n
+        \       <a href=\"/johnstamosgem/following/\" >\n            \n    \n    \n\n
+        \   \n        \n            \n            \n        5 Following\n        </a>\n
+        \   </li>\n</ul></div>\n\n<div class=\"UserProfileContent Module\" id=\"UserProfileContent-21\">\n\n\n\n\n\n
+        \   \n\n\n\n\n\n    \n    \n        <div class=\"UserBoards Module\" id=\"UserBoards-25\">\n\n\n\n\n\n\n\n\n<div
+        class=\"Grid Module\" id=\"Grid-26\"><div class=\"fixedHeightLayout padItems
+        GridItems Module centeredWithinWrapper\" id=\"GridItems-27\">\n\n\n\n\n\n\n
+        \   \n\n\n    \n\n\n\n\n\n    \n\n\n    \n\n\n\n    \n    \n\n    \n        \n
+        \       <div class=\"item \" >\n            \n            \n                <div
+        class=\"noContext Board Module boardCoverImage\" id=\"Board-28\">\n\n\n\n\n\n\n\n
+        \   \n    \n    \n\n    \n    \n    \n    \n    \n    \n    \n        <a href=\"/johnstamosgem/johnstamosgemboard/\"
+        class=\"boardLinkWrapper\">\n    \n        \n        <h3 class=\"boardName\">\n
+        \           <div class=\"icons\">\n                \n                \n            </div>\n\n
+        \           \n            \n                \n                JohnStamosgemBoard\n
+        \           \n        </h3>\n        <div class=\"boardCoverWrapper\">\n            \n\n
+        \           <span class=\"hoverMask\"></span>\n            \n\n            \n
+        \           <img src=\"http://media-cache-ak0.pinimg.com/216x146/ee/39/6e/ee396ebad5cffd3f8f6e83b5fd9f07cb.jpg\"
+        class=\"boardCover\">\n            <span class=\"boardPinCount\">\n                \n
+        \   \n    \n\n    \n        \n            \n            \n        1 pin\n
+        \           </span>\n        </div>\n\n        <ul class=\"boardThumbs\">\n
+        \           \n                <li>\n                    \n                    <span
+        class=\"hoverMask\"></span>\n                    \n                </li>\n
+        \           \n                <li>\n                    \n                    <span
+        class=\"hoverMask\"></span>\n                    \n                </li>\n
+        \           \n                <li>\n                    \n                    <span
+        class=\"hoverMask\"></span>\n                    \n                </li>\n
+        \           \n                <li>\n                    \n                    <span
+        class=\"hoverMask\"></span>\n                    \n                </li>\n
+        \           \n        </ul>\n\n    \n        </a>\n    \n\n    \n        \n
+        \       \n            <button type=\"button\" class=\"btn rounded default
+        Button boardFollowUnfollowButton hasText Module BoardFollowButton notNavigatable
+        ui-FollowButton\" id=\"BoardFollowButton-29\">\n\n\n\n\n\n\n\n\n\n\n\n\n\n
+        \   \n    \n\n\n\n\n\n<span class=\"buttonText\">Follow</span>\n        \n</button>\n
+        \       \n    \n    \n    \n    \n\n\n</div>\n            \n        </div>\n
+        \   \n\n</div>\n\n</div>\n\n\n</div>\n    \n</div></div>\n    </div>\n    <div
+        class=\"appendedContainer\">\n    </div>\n</div>\n\n\n\n<div class=\"NagNoScript
+        NagBase Module centeredWithinWrapper\" id=\"NagNoScript-5\">\n\n\n\n\n\n<noscript>\n
+        \   \n\n\n\n    \n    <div class=\"message\">Oh no! Pinterest doesn't work
+        unless you <a href=\"http://enable-javascript.com/\" rel=\"nofollow\">turn
+        on JavaScript.</a></div>\n\n\n\n\n    <style>\n        .NagBase {\n            display:
+        none;\n        }\n    </style>\n</noscript></div></div>    \n\n    \n    <script>\n
+        \       P.FB_KEY = 274266067164;\n        P.CONTEXT = {\"app_version\": \"562ff72\"};\n
+        \       P.STRINGS = {\"formURLNotValid\": \"Not a valid url.\", \"resendConfirmationEmailNoOp\":
+        \"Your account has already been confirmed.\", \"formFieldRequired\": \"Required\",
+        \"oneNewPin\": \"1 new pin\", \"errorMessage\": \"Sorry! Something went wrong
+        on our end!\", \"passwordBlackPasswordStr\": \"Please try using a stronger
+        password\", \"savePinTutorial\": \"<em>Hint:<\\/em> Want to save this Pin?
+        Hit Pin It to add it to your first board.\", \"popupErrorMessage\": \"You
+        must enable popups!\", \"successInviteSentToEmail\": \"Success! Invitation
+        sent to <%= email %>\", \"emailAddress\": \"Email address\", \"facebookContact\":
+        \"Facebook\", \"cancel\": \"Cancel\", \"passwordSamePasswordStr\": \"Password
+        and username can't match\", \"connectError\": \"Couldn't connect. You must
+        authorize Pinterest.\", \"facebookAccountDoesntMatch\": \"Oops! Your account
+        is linked to a different Facebook account than the one you're logged into
+        now.\", \"createFirstBoard\": \"You collect your pins onto boards - create
+        as many as you need!\", \"passwordGoodPasswordStr\": \"Great!\", \"emailUpdated\":
+        \"Your email has been updated.\", \"pickEmailAddress\": \"Enter an email address\",
+        \"blockPinner\": \"Block Pinner\", \"passwordTooShort\": \"Too short\", \"formEmailNotValid\":
+        \"Not a valid email.\", \"resendConfirmationEmailSuccess\": \"Thanks! You
+        should receive a confirmation email soon.\", \"offsiteInvalidToken\": \"Sorry!
+        This redirect link has expired.\", \"passwordMustBeSet\": \"A password must
+        be set before unlinking.\", \"newPins\": \"new pins\", \"removeBounceNag\":
+        \"Got it! Make sure your inbox isn't full so that our emails can find their
+        way to you.\", \"continue\": \"Continue\", \"ok\": \"Ok\", \"error\": \"Error\",
+        \"suggestedUsername\": \"Suggested username\", \"removePinner\": \"Remove
+        Pinner\", \"errorTitle\": \"Whoops!\", \"passwordBadStyle\": \"Not proper
+        style\", \"fellowPinner\": \"Fellow Pinner\"};\n        P.PAGE_INFO = null;\n
+        \       P.ROUTES = [{\"named\": {\"name\": 0, \"method\": 1}, \"resource_method\":
+        \"${method}\", \"resource\": {\"name\": \"${name}\", \"options\": \"?{options}\"},
+        \"url\": \"^\\/resource\\/([^\\/]+)\\/([^\\/]+)\\/$\", \"allow_full_page\":
+        false, \"module\": \"?{module_name}\", \"options\": \"?{module_options}\",
+        \"append\": \"?{append}\"}, {\"named\": {\"name\": 0}, \"resource\": {\"name\":
+        \"?{resource_name}\", \"options\": \"?{options}\"}, \"url\": \"^\\/module\\/([^\\/]+)\\/$\",
+        \"allow_full_page\": false, \"module\": \"${name}\", \"error_strategy\": \"?{error_strategy}\",
+        \"options\": \"?{module_options}\", \"append\": \"?{append}\"}, {\"url\":
+        \"^\\/search\\/$\", \"named\": {}, \"resource\": {\"name\": \"BaseSearchResource\",
+        \"options\": {\"scope\": \"pins\", \"query\": \"?{q}\"}}, \"options\": {\"scope\":
+        \"pins\", \"query\": \"?{q}\"}, \"module\": \"SearchPage\"}, {\"url\": \"^\\/search\\/([^\\/]+)\\/$\",
+        \"named\": {\"scope\": 0}, \"resource\": {\"name\": \"BaseSearchResource\",
+        \"options\": {\"scope\": \"${scope}\", \"show_scope_selector\": true, \"query\":
+        \"?{q}\"}}, \"options\": {\"scope\": \"${scope}\", \"query\": \"?{q}\"}, \"module\":
+        \"SearchPage\"}, {\"named\": {}, \"resource\": {}, \"url\": \"^\\/$\", \"https_if_unauth\":
+        true, \"module\": \"HomePage\", \"content_only_if_unauth\": true, \"deep_link\":
+        \"pinterest:\\/\\/\", \"options\": {\"from_fast_follow\": \"?{ff}\"}}, {\"url\":
+        \"^\\/categories\\/$\", \"named\": {}, \"resource\": {}, \"options\": {},
+        \"module\": \"CategoriesPage\"}, {\"url\": \"^\\/categories\\/([^\\/]+)\\/$\",
+        \"named\": {\"category\": 0}, \"resource\": {}, \"options\": {\"feed\": \"${category}\",
+        \"is_category\": true}, \"module\": \"FeedPage\"}, {\"url\": \"^\\/all\\/$\",
+        \"named\": {}, \"resource\": {}, \"options\": {\"feed\": \"everything\", \"scope\":
+        \"?{scope}\"}, \"module\": \"FeedPage\"}, {\"url\": \"^\\/all\\/([^\\/]+)\\/$\",
+        \"named\": {\"category\": 0}, \"resource\": {}, \"options\": {\"feed\": \"${category}\",
+        \"is_category\": true, \"scope\": \"?{scope}\"}, \"module\": \"FeedPage\"},
+        {\"url\": \"^\\/popular\\/$\", \"named\": {}, \"resource\": {}, \"options\":
+        {\"feed\": \"popular\", \"scope\": \"?{scope}\"}, \"module\": \"FeedPage\"},
+        {\"url\": \"^\\/gifts\\/$\", \"named\": {}, \"resource\": {}, \"options\":
+        {\"feed\": \"gifts\", \"scope\": \"?{scope}\"}, \"module\": \"FeedPage\"},
+        {\"url\": \"^\\/videos\\/$\", \"named\": {}, \"resource\": {}, \"options\":
+        {\"feed\": \"videos\", \"scope\": \"?{scope}\"}, \"module\": \"FeedPage\"},
+        {\"url\": \"^\\/picked_for_you\\/$\", \"named\": {}, \"resource\": {}, \"options\":
+        {\"feed\": \"recommendations\"}, \"module\": \"FeedPage\"}, {\"url\": \"^\\/annotations\\/([^\\/]+)\\/([^\\/]+)\\/$\",
+        \"named\": {\"annotation\": 0, \"board\": 1}, \"resource\": {\"name\": \"BoardAnnotationResource\",
+        \"options\": {\"board_id\": \"${board}\"}}, \"options\": {\"board_id\": \"${board}\",
+        \"annotation\": \"${annotation}\"}, \"module\": \"AnnotationFeedPage\"}, {\"url\":
+        \"^\\/interests\\/([^\\/]+)\\/$\", \"named\": {\"interest\": 0}, \"resource\":
+        {}, \"options\": {\"interest\": \"${interest}\"}, \"module\": \"InterestFeedPage\"},
+        {\"require_authentication\": true, \"named\": {\"domain\": 0}, \"resource\":
+        {}, \"url\": \"^\\/source\\/([^\\/]+)\\/$\", \"options\": {\"domain\": \"${domain}\",
+        \"feed_item_type\": \"most_recent\"}, \"module\": \"DomainFeedPage\"}, {\"require_authentication\":
+        true, \"named\": {\"domain\": 0}, \"resource\": {}, \"url\": \"^\\/source\\/([^\\/]+)\\/top\\/repins\\/$\",
+        \"options\": {\"domain\": \"${domain}\", \"feed_item_type\": \"most_repinned\",
+        \"aggregation\": \"?{aggregation}\", \"end_date\": \"?{end_date}\"}, \"module\":
+        \"DomainFeedPage\"}, {\"require_authentication\": true, \"named\": {\"domain\":
+        0}, \"resource\": {}, \"url\": \"^\\/source\\/([^\\/]+)\\/top\\/clicks\\/$\",
+        \"options\": {\"domain\": \"${domain}\", \"feed_item_type\": \"most_clicked\",
+        \"aggregation\": \"?{aggregation}\", \"end_date\": \"?{end_date}\"}, \"module\":
+        \"DomainFeedPage\"}, {\"require_authentication\": true, \"named\": {\"domain\":
+        0}, \"resource\": {}, \"url\": \"^\\/source\\/([^\\/]+)\\/trending\\/$\",
+        \"options\": {\"domain\": \"${domain}\", \"feed_item_type\": \"trending\"},
+        \"module\": \"DomainFeedPage\"}, {\"require_authentication\": true, \"named\":
+        {}, \"resource\": {}, \"url\": \"^\\/find_friends\\/$\", \"options\": {},
+        \"module\": \"FindFriendsPage\"}, {\"require_authentication\": true, \"named\":
+        {}, \"resource\": {}, \"url\": \"^\\/find_friends\\/facebook\\/$\", \"options\":
+        {\"tab\": \"facebook\"}, \"module\": \"FindFriendsPage\"}, {\"require_authentication\":
+        true, \"named\": {}, \"resource\": {}, \"url\": \"^\\/find_friends\\/twitter\\/$\",
+        \"options\": {\"tab\": \"twitter\"}, \"module\": \"FindFriendsPage\"}, {\"require_authentication\":
+        true, \"named\": {}, \"resource\": {}, \"url\": \"^\\/find_friends\\/invite\\/$\",
+        \"options\": {\"focus\": \"invite\"}, \"module\": \"FindFriendsPage\"}, {\"require_authentication\":
+        true, \"named\": {}, \"resource\": {\"name\": \"FeedEditorPageResource\"},
+        \"url\": \"^\\/edit_home\\/$\", \"options\": {\"tab\": \"follow_boards\"},
+        \"module\": \"FeedEditorPage\"}, {\"require_authentication\": true, \"named\":
+        {}, \"resource\": {\"name\": \"FeedEditorPageResource\"}, \"url\": \"^\\/edit_home\\/follow_boards\\/$\",
+        \"options\": {\"tab\": \"follow_boards\"}, \"module\": \"FeedEditorPage\"},
+        {\"require_authentication\": true, \"named\": {}, \"resource\": {\"name\":
+        \"FeedEditorPageResource\"}, \"url\": \"^\\/edit_home\\/unfollow_boards\\/$\",
+        \"options\": {\"tab\": \"unfollow_boards\"}, \"module\": \"FeedEditorPage\"},
+        {\"named\": {}, \"resource\": {}, \"url\": \"^\\/offsite\\/$\", \"content_only\":
+        true, \"options\": {\"url\": \"?{url}\", \"pin_id\": \"?{pin}\", \"token\":
+        \"?{token}\"}, \"module\": \"OffsitePage\"}, {\"named\": {}, \"resource\":
+        {}, \"url\": \"^\\/logout\\/\", \"content_only\": true, \"options\": {}, \"module\":
+        \"LogoutPage\"}, {\"named\": {}, \"resource\": {}, \"https\": true, \"url\":
+        \"^\\/login\\/$\", \"content_only\": true, \"options\": {\"next\": \"?{next}\"},
+        \"module\": \"LoginPage\"}, {\"named\": {}, \"resource\": {}, \"https\": true,
+        \"url\": \"^\\/login\\/reset\\/$\", \"content_only\": true, \"options\": {\"username_or_email\":
+        \"?{username_or_email}\"}, \"module\": \"PasswordResetOneClick\"}, {\"redirect\":
+        \"\\/\", \"named\": {}, \"resource\": {}, \"url\": \"^\\/join\\/signup\\/\",
+        \"options\": {}, \"module\": \"\"}, {\"redirect\": \"\\/\", \"named\": {},
+        \"resource\": {}, \"url\": \"^\\/signup\\/\", \"options\": {}, \"module\":
+        \"\"}, {\"named\": {\"network\": 0}, \"resource\": {}, \"https\": true, \"url\":
+        \"^\\/join\\/register\\/([^\\/]+)\\/\", \"content_only\": true, \"options\":
+        {\"network\": \"${network}\"}, \"module\": \"UserRegisterPage\"}, {\"named\":
+        {}, \"resource\": {}, \"https\": true, \"url\": \"^\\/join\\/register\\/\",
+        \"content_only\": true, \"options\": {\"register\": true}, \"module\": \"LoginPage\"},
+        {\"named\": {}, \"resource\": {}, \"https\": true, \"url\": \"^\\/join\\/.*$\",
+        \"content_only\": true, \"options\": {\"invite_follow_board\": \"?{boardname}\",
+        \"register\": true, \"invite_follow_user\": \"?{username}\", \"next\": \"?{next}\"},
+        \"module\": \"LoginPage\"}, {\"require_authentication\": true, \"named\":
+        {\"username\": 0}, \"resource\": {}, \"login_parameters\": {\"username\":
+        \"${username}\", \"auto_follow\": \"true\"}, \"url\": \"^\\/follow\\/([^\\/]+)\\/*$\",
+        \"options\": {\"username\": \"${username}\"}, \"module\": \"AutoFollow\"},
+        {\"require_authentication\": true, \"named\": {\"username\": 0, \"slug\":
+        1}, \"resource\": {}, \"login_parameters\": {\"username\": \"${username}\",
+        \"boardname\": \"${slug}\", \"auto_follow\": \"true\"}, \"url\": \"^\\/follow\\/([^\\/]+)\\/([^\\/]+)\\/*$\",
+        \"options\": {\"username\": \"${username}\", \"username_and_slug\": \"${username}\\/${slug}\"},
+        \"module\": \"AutoFollow\"}, {\"url\": \"^\\/website\\/verify\\/$\", \"named\":
+        {}, \"resource\": {\"name\": \"DomainVerifyResource\"}, \"options\": {}, \"module\":
+        \"DomainVerify\"}, {\"redirect\": \"\\/developer\\/\", \"named\": {}, \"resource\":
+        {}, \"url\": \"^\\/developer\\/api\\/\", \"options\": {}, \"module\": \"\"},
+        {\"named\": {}, \"resource\": {}, \"url\": \"^\\/developer\\/contact_us\\/\",
+        \"content_only\": true, \"options\": {\"module\": {\"name\": \"dev.ContactUs\",
+        \"options\": {}}}, \"module\": \"Developer\"}, {\"named\": {}, \"resource\":
+        {}, \"url\": \"^\\/developer\\/contact_us_thank_you\\/\", \"content_only\":
+        true, \"options\": {\"module\": {\"name\": \"dev.ContactUsThankYou\", \"options\":
+        {}}}, \"module\": \"Developer\"}, {\"named\": {}, \"resource\": {}, \"url\":
+        \"^\\/developer\\/ios\\/\", \"content_only\": true, \"options\": {\"module\":
+        {\"name\": \"dev.iOS\", \"options\": {}}}, \"module\": \"Developer\"}, {\"named\":
+        {}, \"resource\": {}, \"url\": \"^\\/developer\\/android\\/\", \"content_only\":
+        true, \"options\": {\"module\": {\"name\": \"dev.Android\", \"options\": {}}},
+        \"module\": \"Developer\"}, {\"named\": {}, \"resource\": {}, \"url\": \"^\\/developer\\/rich_pins\\/validator\\/\",
+        \"content_only\": true, \"options\": {\"module\": {\"resource\": {\"name\":
+        \"RichPinValidateResource\", \"options\": {\"link\": \"?{link}\"}}, \"name\":
+        \"dev.RichPinValidator\", \"options\": {\"apply\": \"?{apply}\", \"link\":
+        \"?{link}\", \"custom_sidebar\": true}}}, \"module\": \"Developer\"}, {\"named\":
+        {}, \"resource\": {}, \"url\": \"^\\/developer\\/pin_it\\/\", \"content_only\":
+        true, \"options\": {\"module\": {\"name\": \"dev.PinIt\", \"options\": {}}},
+        \"module\": \"Developer\"}, {\"named\": {}, \"resource\": {}, \"url\": \"^\\/developer\\/rich_pins\\/\",
+        \"content_only\": true, \"options\": {\"module\": {\"name\": \"dev.RichPins\",
+        \"options\": {}}}, \"module\": \"Developer\"}, {\"named\": {}, \"resource\":
+        {}, \"url\": \"^\\/developer\\/goodies\\/\", \"content_only\": true, \"options\":
+        {\"module\": {\"name\": \"dev.Goodies\", \"options\": {}}}, \"module\": \"Developer\"},
+        {\"named\": {}, \"resource\": {}, \"url\": \"^\\/developer\\/apps\\/\", \"content_only\":
+        true, \"options\": {\"module\": {\"name\": \"dev.Apps\", \"options\": {}}},
+        \"module\": \"Developer\"}, {\"named\": {}, \"resource\": {}, \"url\": \"^\\/developer\\/manage\\/$\",
+        \"content_only\": true, \"options\": {\"module\": {\"resource\": {\"name\":
+        \"ConsumerListResource\"}, \"name\": \"ConsumerManagePage\"}}, \"module\":
+        \"Developer\"}, {\"named\": {}, \"resource\": {}, \"url\": \"^\\/developer\\/terms\\/\",
+        \"content_only\": true, \"options\": {\"module\": {\"name\": \"dev.Terms\",
+        \"options\": {}}}, \"module\": \"Developer\"}, {\"named\": {}, \"resource\":
+        {}, \"url\": \"^\\/developer\\/richpins\\/apply\\/$\", \"content_only\": true,
+        \"options\": {\"module\": {\"name\": \"dev.RichPinApplyForm\", \"options\":
+        {}}}, \"module\": \"Developer\"}, {\"named\": {}, \"resource\": {}, \"url\":
+        \"^\\/developer\\/$\", \"content_only\": true, \"options\": {}, \"module\":
+        \"Developer\"}, {\"url\": \"^\\/business\\/getstarted\\/$\", \"named\": {},
+        \"resource\": {\"name\": \"UserResource\", \"options\": {\"username\": \"me\"}},
+        \"options\": {\"username\": \"me\"}, \"module\": \"BusinessGetStarted\"},
+        {\"require_authentication\": true, \"named\": {}, \"resource\": {\"name\":
+        \"PartnerResource\", \"options\": {\"user_id\": \"me\"}}, \"https\": true,
+        \"url\": \"^\\/business\\/convert\\/$\", \"options\": {}, \"module\": \"BusinessAccountConvert\"},
+        {\"url\": \"^\\/business\\/tools\\/site-debugger\\/$\", \"named\": {}, \"resource\":
+        {\"name\": \"RichPinDebugResource\", \"options\": {\"link\": \"?{link}\"}},
+        \"options\": {\"link\": \"?{link}\"}, \"module\": \"RichPinDebugger\"}, {\"url\":
+        \"^\\/business\\/tools\\/rich-pin-builder\\/$\", \"named\": {}, \"resource\":
+        {\"name\": \"RichPinSamplePinResource\", \"options\": {}}, \"options\": {},
+        \"module\": \"RichPinBuilder\"}, {\"url\": \"^\\/business\\/tools\\/rich-pin-validator\\/$\",
+        \"named\": {}, \"resource\": {\"name\": \"RichPinValidateResource\", \"options\":
+        {\"link\": \"?{link}\"}}, \"options\": {\"link\": \"?{link}\"}, \"module\":
+        \"RichPinValidator\"}, {\"url\": \"^\\/browse\\/([^\\/]+)\\/$\", \"named\":
+        {\"query\": 0}, \"resource\": {\"name\": \"BrowseResource\", \"options\":
+        {\"query\": \"${query}\"}}, \"options\": {\"query\": \"${query}\"}, \"module\":
+        \"SearchPage\"}, {\"require_authentication\": true, \"named\": {}, \"resource\":
+        {\"name\": \"UserSettingsResource\"}, \"https\": true, \"url\": \"^\\/settings\\/$\",
+        \"options\": {}, \"module\": \"UserSettingsPage\"}, {\"named\": {\"username\":
+        0}, \"resource\": {\"name\": \"UserResource\", \"options\": {\"username\":
+        \"${username}\"}}, \"url\": \"^\\/([^\\/]+)\\/$\", \"deep_link\": \"pinterest:\\/\\/user\\/${username}\",
+        \"options\": {\"username\": \"${username}\", \"report_user_spam\": \"?{report_user_spam}\",
+        \"show_follow_memo\": \"?{auto_follow}\", \"tab\": \"boards\"}, \"module\":
+        \"UserProfilePage\"}, {\"named\": {\"username\": 0}, \"resource\": {\"name\":
+        \"UserResource\", \"options\": {\"username\": \"${username}\"}}, \"url\":
+        \"^\\/([^\\/]+)\\/boards\\/$\", \"deep_link\": \"pinterest:\\/\\/user\\/${username}\",
+        \"options\": {\"username\": \"${username}\", \"tab\": \"boards\"}, \"module\":
+        \"UserProfilePage\"}, {\"named\": {\"username\": 0}, \"resource\": {\"name\":
+        \"UserResource\", \"options\": {\"username\": \"${username}\"}}, \"url\":
+        \"^\\/([^\\/]+)\\/pins\\/$\", \"deep_link\": \"pinterest:\\/\\/user\\/${username}\",
+        \"options\": {\"username\": \"${username}\", \"tab\": \"pins\"}, \"module\":
+        \"UserProfilePage\"}, {\"named\": {\"username\": 0}, \"resource\": {\"name\":
+        \"UserResource\", \"options\": {\"username\": \"${username}\"}}, \"url\":
+        \"^\\/([^\\/]+)\\/likes\\/$\", \"deep_link\": \"pinterest:\\/\\/user\\/${username}\",
+        \"options\": {\"username\": \"${username}\", \"tab\": \"likes\"}, \"module\":
+        \"UserProfilePage\"}, {\"named\": {\"username\": 0}, \"resource\": {\"name\":
+        \"UserResource\", \"options\": {\"username\": \"${username}\"}}, \"url\":
+        \"^\\/([^\\/]+)\\/followers\\/$\", \"deep_link\": \"pinterest:\\/\\/user\\/${username}\",
+        \"options\": {\"username\": \"${username}\", \"tab\": \"followers\"}, \"module\":
+        \"UserProfilePage\"}, {\"named\": {\"username\": 0}, \"resource\": {\"name\":
+        \"UserResource\", \"options\": {\"username\": \"${username}\"}}, \"url\":
+        \"^\\/([^\\/]+)\\/following\\/$\", \"deep_link\": \"pinterest:\\/\\/user\\/${username}\",
+        \"options\": {\"username\": \"${username}\", \"tab\": \"following\"}, \"module\":
+        \"UserProfilePage\"}, {\"require_authentication\": true, \"named\": {\"method\":
+        0}, \"resource\": {}, \"url\": \"^\\/pin\\/create\\/([^\\/]+)\\/$\", \"content_only\":
+        true, \"options\": {\"description\": \"?{description}\", \"title\": \"?{title}\",
+        \"url\": \"?{url}\", \"image_url\": \"?{media}\", \"is_video\": \"?{is_video}\",
+        \"method\": \"${method}\"}, \"module\": \"PinBookmarklet\"}, {\"url\": \"^\\/pin\\/find\\/$\",
+        \"named\": {}, \"resource\": {\"name\": \"FindPinImagesResource\", \"options\":
+        {\"url\": \"?{url}\"}}, \"options\": {}, \"module\": \"ImagesFeedPage\"},
+        {\"named\": {\"id\": 0}, \"resource\": {\"name\": \"PinResource\", \"options\":
+        {\"id\": \"${id}\", \"view_type\": \"detailed\"}}, \"url\": \"^\\/pin\\/([^\\/]+)\\/$\",
+        \"deep_link\": \"pinterest:\\/\\/pin\\/${id}\", \"options\": {}, \"module\":
+        \"Closeup\"}, {\"named\": {\"id\": 0}, \"resource\": {\"name\": \"PinResource\",
+        \"options\": {\"id\": \"${id}\", \"view_type\": \"detailed\"}}, \"url\": \"^\\/pin\\/([^\\/]+)\\/edit\\/$\",
+        \"deep_link\": \"pinterest:\\/\\/pin\\/${id}\", \"options\": {\"show_edit\":
+        true}, \"module\": \"Closeup\", \"canonical_url\": \"\\/pin\\/${id}\\/\"},
+        {\"named\": {\"id\": 0}, \"resource\": {\"name\": \"PinResource\", \"options\":
+        {\"id\": \"${id}\", \"view_type\": \"detailed\"}}, \"url\": \"^\\/pin\\/([^\\/]+)\\/repin\\/$\",
+        \"require_authentication\": true, \"module\": \"Closeup\", \"canonical_url\":
+        \"\\/pin\\/${id}\\/\", \"deep_link\": \"pinterest:\\/\\/pin\\/${id}\", \"options\":
+        {\"show_repin\": true}}, {\"named\": {\"id\": 0}, \"resource\": {\"name\":
+        \"PinResource\", \"options\": {\"id\": \"${id}\", \"view_type\": \"repin\"}},
+        \"url\": \"^\\/pin\\/([^\\/]+)\\/repin\\/x\\/$\", \"content_only\": true,
+        \"options\": {\"action\": \"repin\", \"method\": \"bookmarklet\"}, \"module\":
+        \"PinBookmarklet\"}, {\"url\": \"^\\/pin\\/([^\\/]+)\\/repins\\/$\", \"named\":
+        {\"id\": 0}, \"resource\": {\"name\": \"RepinFeedResource\", \"options\":
+        {\"pin_id\": \"${id}\", \"page_size\": 50}}, \"options\": {\"pin_id\": \"${id}\",
+        \"title\": \"Repins\"}, \"module\": \"RepinsLikesFeedPage\"}, {\"url\": \"^\\/pin\\/([^\\/]+)\\/likes\\/$\",
+        \"named\": {\"id\": 0}, \"resource\": {\"name\": \"PinLikesResource\", \"options\":
+        {\"pin_id\": \"${id}\", \"page_size\": 50}}, \"options\": {\"pin_id\": \"${id}\",
+        \"title\": \"Likes\"}, \"module\": \"RepinsLikesFeedPage\"}, {\"url\": \"^\\/board\\/create\\/$\",
+        \"named\": {}, \"resource\": {}, \"options\": {}, \"module\": \"BoardCreate\"},
+        {\"url\": \"^\\/board\\/([^\\/]+)\\/$\", \"named\": {\"id\": 0}, \"resource\":
+        {\"name\": \"BoardResource\", \"options\": {\"board_id\": \"${id}\", \"field_set_key\":
+        \"detailed\"}}, \"options\": {\"tab\": \"pins\"}, \"module\": \"BoardPage\"},
+        {\"named\": {\"username\": 0, \"slug\": 1}, \"resource\": {\"name\": \"BoardResource\",
+        \"options\": {\"username\": \"${username}\", \"field_set_key\": \"detailed\",
+        \"slug\": \"${slug}\"}}, \"url\": \"^\\/([^\\/]+)\\/([^\\/]+)\\/$\", \"deep_link\":
+        \"pinterest:\\/\\/board\\/${username}\\/${slug}\", \"options\": {\"show_follow_memo\":
+        \"?{auto_follow}\", \"tab\": \"pins\"}, \"module\": \"BoardPage\"}, {\"url\":
+        \"^\\/([^\\/]+)\\/([^\\/]+)\\/search\\/$\", \"named\": {\"username\": 0, \"slug\":
+        1}, \"resource\": {\"name\": \"BaseSearchResource\", \"options\": {\"board_slug\":
+        \"${slug}\", \"scope\": \"my_pins\", \"user\": \"${username}\", \"query\":
+        \"?{q}\"}}, \"options\": {\"board_slug\": \"${slug}\", \"scope\": \"my_pins\",
+        \"user\": \"${username}\", \"query\": \"?{q}\"}, \"module\": \"SearchPage\"},
+        {\"named\": {\"username\": 0, \"slug\": 1}, \"resource\": {\"name\": \"BoardResource\",
+        \"options\": {\"username\": \"${username}\", \"field_set_key\": \"detailed\",
+        \"slug\": \"${slug}\"}}, \"url\": \"^\\/([^\\/]+)\\/([^\\/]+)\\/edit\\/$\",
+        \"deep_link\": \"pinterest:\\/\\/board\\/${username}\\/${slug}\", \"options\":
+        {\"show_edit\": true, \"tab\": \"pins\"}, \"module\": \"BoardPage\", \"canonical_url\":
+        \"\\/${username}\\/${slug}\\/\"}, {\"named\": {\"username\": 0, \"slug\":
+        1}, \"resource\": {\"name\": \"BoardResource\", \"options\": {\"username\":
+        \"${username}\", \"field_set_key\": \"detailed\", \"slug\": \"${slug}\"}},
+        \"url\": \"^\\/([^\\/]+)\\/([^\\/]+)\\/pins\\/$\", \"deep_link\": \"pinterest:\\/\\/board\\/${username}\\/${slug}\",
+        \"options\": {\"tab\": \"pins\"}, \"module\": \"BoardPage\"}, {\"named\":
+        {\"username\": 0, \"slug\": 1}, \"resource\": {\"name\": \"BoardResource\",
+        \"options\": {\"username\": \"${username}\", \"field_set_key\": \"detailed\",
+        \"slug\": \"${slug}\"}}, \"url\": \"^\\/([^\\/]+)\\/([^\\/]+)\\/followers\\/$\",
+        \"deep_link\": \"pinterest:\\/\\/board\\/${username}\\/${slug}\", \"options\":
+        {\"tab\": \"followers\"}, \"module\": \"BoardPage\"}, {\"named\": {\"username\":
+        0, \"slug\": 1}, \"resource\": {\"name\": \"BoardFeedResource\", \"options\":
+        {\"username\": \"${username}\", \"slug\": \"${slug}\"}}, \"url\": \"^\\/([^\\/]+)\\/([^\\/]+)\\/cover\\/$\",
+        \"deep_link\": \"pinterest:\\/\\/board\\/${username}\\/${slug}\", \"options\":
+        {\"username\": \"${username}\", \"slug\": \"${slug}\"}, \"module\": \"BoardCoverEditPage\"},
+        {\"named\": {}, \"resource\": {}, \"https\": true, \"url\": \"^\\/password\\/change\\/$\",
+        \"options\": {}, \"module\": \"UserChangePassword\"}, {\"require_authentication\":
+        true, \"named\": {\"domain\": 0}, \"resource\": {\"name\": \"DomainAnalyticsCountsResource\",
+        \"options\": {\"domain\": \"${domain}\", \"start_date\": \"?{start_date}\",
+        \"end_date\": \"?{end_date}\"}}, \"url\": \"^\\/source\\/([^\\/]+)\\/analytics\\/$\",
+        \"options\": {\"domain\": \"${domain}\", \"start_date\": \"?{start_date}\",
+        \"end_date\": \"?{end_date}\"}, \"module\": \"DomainAnalyticsPage\"}, {\"sandbox\":
+        true, \"named\": {}, \"resource\": {}, \"url\": \"^\\/close_window\\/$\",
+        \"options\": {}, \"module\": \"Close\"}, {\"named\": {}, \"resource\": {},
+        \"url\": \"^\\/oauth\\/dialog\\/$\", \"require_authentication\": true, \"module\":
+        \"OAuthDialog\", \"content_only\": true, \"https\": true, \"options\": {\"scope\":
+        \"?{scope}\", \"state\": \"?{state}\", \"redirect_uri\": \"?{redirect_uri}\",
+        \"response_type\": \"?{response_type}\", \"consumer_id\": \"?{consumer_id}\"}}];\n
+        \       P.PAGE_ROUTE_PATTERN = \"^\\/:username\\/$\";\n        P.PAGE_LOAD_REQUEST_IDENTIFIER
+        = \"963927355772\";\n\n        P.start({\"gaAccountNumber\": \"UA-12967896-7\",
+        \"scrubbedUser\": {}, \"tree\": {\"resource\": null, \"name\": \"App\", \"children\":
+        [{\"resource\": null, \"name\": \"Header\", \"id\": \"header\", \"children\":
+        [{\"resource\": null, \"name\": \"DropdownButton\", \"id\": \"categoriesDropdownButton\",
+        \"children\": [{\"resource\": null, \"name\": \"Button\", \"children\": [],
+        \"errorStrategy\": 2, \"options\": {\"has_icon\": true, \"text\": \"Categories\",
+        \"primary_on_hover\": true, \"tagName\": \"button\", \"show_text\": false,
+        \"class_name\": \"categories\"}, \"uid\": \"Button-9\"}], \"errorStrategy\":
+        2, \"options\": {\"class_name\": \"categoriesButton\", \"button_options\":
+        {\"has_icon\": true, \"tagName\": \"button\", \"primary_on_hover\": true,
+        \"class_name\": \"categories\", \"text\": \"Categories\", \"show_text\": false},
+        \"module\": {\"resource\": {\"name\": \"CategoriesResource\", \"options\":
+        {\"browsable\": true}}, \"name\": \"CategoriesMenu\"}, \"dropdown_options\":
+        {\"largeCaret\": true, \"fixed\": true, \"prefetch\": true, \"view_type\":
+        \"categoriesMenu\"}, \"time\": 500, \"tutorial\": {\"topic\": \"categories\",
+        \"text\": \"Browse Popular, DIY and other categories to find pins you like.\",
+        \"title\": \"Here are your categories.\"}}, \"uid\": \"DropdownButton-6\"},
+        {\"resource\": null, \"name\": \"ui.SearchForm\", \"children\": [{\"resource\":
+        null, \"name\": \"ui.TypeaheadField\", \"id\": \"searchField\", \"children\":
+        [{\"resource\": null, \"name\": \"ui.Typeahead\", \"id\": \"typeahead\", \"children\":
+        [], \"errorStrategy\": 2, \"options\": {\"enable_recent_queries\": true, \"tags\":
+        \"autocomplete\", \"view_type\": \"search\", \"template\": null, \"exclude_non_followers\":
+        null}, \"uid\": \"ui-Typeahead-11\"}], \"errorStrategy\": 2, \"options\":
+        {\"enable_recent_queries\": true, \"name\": \"q\", \"view_type\": \"search\",
+        \"prefetch_on_focus\": true, \"value\": \"\", \"populate_on_result_highlight\":
+        true, \"search_delay\": 0, \"search_on_focus\": true, \"placeholder\": \"Search\",
+        \"tags\": \"autocomplete\"}, \"uid\": \"ui-TypeaheadField-10\"}], \"errorStrategy\":
+        2, \"options\": {\"navigate_on_search\": true, \"enable_recent_queries\":
+        true, \"placeholder\": \"Search\"}, \"uid\": \"ui-SearchForm-7\"}, {\"resource\":
+        {\"name\": \"LocalesResource\", \"options\": {\"locale\": \"en-US\", \"bookmarks\":
+        [\"-end-\"]}}, \"name\": \"LanguageMenu\", \"children\": [{\"resource\": null,
+        \"name\": \"DropdownButton\", \"children\": [{\"resource\": null, \"name\":
+        \"Button\", \"children\": [], \"errorStrategy\": 2, \"options\": {\"class_name\":
+        \"langaugeButton\", \"text\": \"English (US)\", \"tagName\": \"button\"},
+        \"uid\": \"Button-13\"}], \"errorStrategy\": 2, \"options\": {\"dropdown_options\":
+        {\"position_point\": \"BOTTOM_RIGHT\", \"hide_caret\": true, \"fixed\": true},
+        \"button_options\": {\"class_name\": \"langaugeButton\", \"text\": \"English
+        (US)\", \"tagName\": \"button\"}, \"module\": {\"resource\": {\"name\": \"LocalesResource\"},
+        \"name\": \"LanguageDropdown\", \"options\": {\"selected\": \"English (US)\"}}},
+        \"uid\": \"DropdownButton-12\"}], \"errorStrategy\": 2, \"data\": {}, \"options\":
+        {}, \"uid\": \"LanguageMenu-8\"}], \"errorStrategy\": 2, \"options\": {},
+        \"uid\": \"Header-1\"}, {\"resource\": null, \"name\": \"ScrollToTop\", \"id\":
+        \"scrollToTop\", \"children\": [], \"errorStrategy\": 2, \"options\": {},
+        \"uid\": \"ScrollToTop-2\"}, {\"resource\": null, \"name\": \"Nags\", \"children\":
+        [{\"resource\": null, \"name\": \"NagBase\", \"extraData\": {\"type\": \"upgrade_ie\"},
+        \"children\": [{\"resource\": null, \"name\": \"Button\", \"children\": [],
+        \"errorStrategy\": 2, \"options\": {\"class_name\": \"nagClose\", \"tagName\":
+        \"button\", \"borderless\": true}, \"uid\": \"Button-16\"}], \"errorStrategy\":
+        2, \"data\": {}, \"options\": {\"can_close\": true}, \"uid\": \"NagBase-14\"},
+        {\"resource\": null, \"name\": \"NagUnauth\", \"children\": [{\"resource\":
+        null, \"name\": \"JoinButton\", \"id\": \"join\", \"children\": [], \"errorStrategy\":
+        2, \"options\": {\"color\": \"primary\", \"text\": \"Join Pinterest\", \"class_name\":
+        \"joinButton unauthNagButton\", \"element_type\": \"a\", \"tagName\": \"a\",
+        \"ga_category\": \"unauth_nag_join\"}, \"uid\": \"JoinButton-17\"}, {\"resource\":
+        null, \"name\": \"LoginButton\", \"id\": \"login\", \"children\": [], \"errorStrategy\":
+        2, \"options\": {\"class_name\": \"loginButton unauthNagButton\", \"text\":
+        \"Log in\", \"element_type\": \"a\", \"ga_category\": \"unauth_nag_login\",
+        \"tagName\": \"a\"}, \"uid\": \"LoginButton-18\"}], \"errorStrategy\": 2,
+        \"options\": {}, \"uid\": \"NagUnauth-15\"}], \"errorStrategy\": 2, \"options\":
+        {}, \"uid\": \"Nags-3\"}, {\"resource\": {\"name\": \"UserResource\", \"options\":
+        {\"username\": \"johnstamosgem\", \"bookmarks\": [\"-end-\"]}}, \"name\":
+        \"UserProfilePage\", \"id\": \"mainModule\", \"children\": [{\"resource\":
+        {\"name\": \"UserResource\", \"options\": {\"username\": \"johnstamosgem\",
+        \"bookmarks\": [\"-end-\"]}}, \"name\": \"UserProfileHeader\", \"children\":
+        [], \"errorStrategy\": 2, \"data\": {\"username\": \"johnstamosgem\", \"first_name\":
+        \"John\", \"blocked_by_me\": false, \"id\": \"412149940807022226\", \"full_name\":
+        \"John Stamosgem\"}, \"options\": {\"user_id\": \"412149940807022226\", \"report_user_spam\":
+        null}, \"uid\": \"UserProfileHeader-19\"}, {\"resource\": {\"name\": \"UserResource\",
+        \"options\": {\"username\": \"johnstamosgem\", \"bookmarks\": [\"-end-\"]}},
+        \"name\": \"UserInfoBar\", \"children\": [{\"resource\": null, \"name\": \"UserFollowButton\",
+        \"children\": [], \"errorStrategy\": 2, \"options\": {\"followed\": false,
+        \"is_me\": {}, \"unfollow_text\": \"Unfollow All\", \"memo\": {\"topic\":
+        \"auto_follow\", \"show\": false, \"title\": \"You are now following John.\"},
+        \"follow_ga_category\": \"user_follow\", \"unfollow_ga_category\": \"user_unfollow\",
+        \"disabled\": false, \"color\": \"primary\", \"tagName\": \"button\", \"text\":
+        \"Follow All\", \"user_id\": \"412149940807022226\", \"follow_text\": \"Follow
+        All\", \"follow_class\": \"primary\"}, \"uid\": \"UserFollowButton-22\"},
+        {\"resource\": {\"name\": \"UserResource\", \"options\": {\"username\": \"johnstamosgem\"}},
+        \"name\": \"BoardCount\", \"children\": [], \"errorStrategy\": 2, \"data\":
+        {}, \"options\": {\"url\": \"\\/johnstamosgem\\/boards\\/\", \"text\": \"\\n
+        \   \\n    \\n\\n    \\n        \\n            \\n            \\n        1
+        Board\", \"class_name\": \"active\", \"element_type\": \"a\", \"tagName\":
+        \"a\", \"borderless\": true}, \"uid\": \"BoardCount-23\"}, {\"resource\":
+        {\"name\": \"UserResource\", \"options\": {\"username\": \"johnstamosgem\"}},
+        \"name\": \"FollowerCount\", \"children\": [], \"errorStrategy\": 2, \"data\":
+        {\"id\": \"412149940807022226\"}, \"options\": {\"url\": \"\\/johnstamosgem\\/followers\\/\",
+        \"text\": \"\\n    \\n        \\n    \\n    \\n\\n    \\n        \\n            \\n
+        \           \\n        0 Followers\", \"class_name\": \"\", \"element_type\":
+        \"a\", \"tagName\": \"a\", \"borderless\": true}, \"uid\": \"FollowerCount-24\"}],
+        \"errorStrategy\": 2, \"data\": {}, \"options\": {\"user_id\": \"412149940807022226\",
+        \"tab\": \"boards\", \"show_follow_memo\": null}, \"uid\": \"UserInfoBar-20\"},
+        {\"resource\": {\"name\": \"UserResource\", \"options\": {\"username\": \"johnstamosgem\",
+        \"bookmarks\": [\"-end-\"]}}, \"name\": \"UserProfileContent\", \"extraData\":
+        {\"is_own_profile\": false}, \"children\": [{\"resource\": null, \"name\":
+        \"UserBoards\", \"extraData\": {\"isOwnProfile\": false}, \"children\": [{\"resource\":
+        {\"name\": \"ProfileBoardsResource\", \"options\": {\"field_set_key\": \"grid_item\",
+        \"username\": \"johnstamosgem\", \"bookmarks\": [\"-end-\"]}}, \"name\": \"Grid\",
+        \"id\": \"publicBoardsGrid\", \"children\": [{\"resource\": {\"name\": \"ProfileBoardsResource\",
+        \"options\": {\"field_set_key\": \"grid_item\", \"username\": \"johnstamosgem\",
+        \"bookmarks\": [\"-end-\"]}}, \"name\": \"GridItems\", \"id\": \"items\",
+        \"children\": [{\"resource\": {\"name\": \"BoardResource\", \"options\": {\"board_id\":
+        \"412149872087590750\", \"field_set_key\": \"grid_item\"}}, \"name\": \"Board\",
+        \"children\": [{\"resource\": null, \"name\": \"BoardFollowButton\", \"children\":
+        [], \"errorStrategy\": 2, \"options\": {\"board_id\": \"412149872087590750\",
+        \"followed\": false, \"class_name\": \"boardFollowUnfollowButton\", \"unfollow_text\":
+        \"Unfollow\", \"follow_ga_category\": \"board_follow\", \"unfollow_ga_category\":
+        \"board_unfollow\", \"disabled\": false, \"color\": \"default\", \"tagName\":
+        \"button\", \"text\": \"Follow\", \"user_id\": \"412149940807022226\", \"follow_text\":
+        \"Follow\", \"follow_class\": \"default\", \"is_my_board\": null}, \"uid\":
+        \"BoardFollowButton-29\"}], \"errorStrategy\": 2, \"data\": {\"followed_by_me\":
+        false, \"id\": \"412149872087590750\"}, \"options\": {\"show_board_context\":
+        false}, \"uid\": \"Board-28\"}], \"errorStrategy\": 1, \"data\": {}, \"options\":
+        {\"scrollable\": true, \"show_grid_footer\": false, \"centered\": true, \"reflow_all\":
+        true, \"virtualize\": true, \"item_options\": {\"show_board_context\": false},
+        \"layout\": \"fixed_height\"}, \"uid\": \"GridItems-27\"}], \"errorStrategy\":
+        1, \"data\": {}, \"options\": {\"scrollable\": true, \"show_grid_footer\":
+        false, \"centered\": true, \"reflow_all\": true, \"virtualize\": true, \"item_options\":
+        {\"show_board_context\": false}, \"layout\": \"fixed_height\"}, \"uid\": \"Grid-26\"}],
+        \"errorStrategy\": 0, \"options\": {\"username\": \"johnstamosgem\", \"secret_board_count\":
+        0}, \"uid\": \"UserBoards-25\"}], \"errorStrategy\": 2, \"data\": {\"secret_board_count\":
+        0, \"board_count\": 1}, \"options\": {\"tab\": \"boards\"}, \"uid\": \"UserProfileContent-21\"}],
+        \"errorStrategy\": 0, \"data\": {\"id\": \"412149940807022226\"}, \"options\":
+        {\"username\": \"johnstamosgem\", \"report_user_spam\": null, \"show_follow_memo\":
+        null, \"tab\": \"boards\"}, \"uid\": \"UserProfilePage-4\"}, {\"resource\":
+        null, \"name\": \"NagNoScript\", \"extraData\": {\"type\": \"no_script\"},
+        \"children\": [], \"errorStrategy\": 2, \"options\": {}, \"uid\": \"NagNoScript-5\"}],
+        \"deps\": [\"App\", \"Header\", \"ScrollToTop\", \"Nags\", \"UserProfilePage\",
+        \"NagNoScript\", \"DropdownButton\", \"ui.SearchForm\", \"LanguageMenu\",
+        \"Button\", \"ui.TypeaheadField\", \"ui.Typeahead\", \"Pillow\", \"NagBase\",
+        \"NagUnauth\", \"JoinButton\", \"LoginButton\", \"NavigateButton\", \"UserProfileHeader\",
+        \"UserInfoBar\", \"UserProfileContent\", \"InfoBarBase\", \"UserFollowButton\",
+        \"BoardCount\", \"FollowerCount\", \"ui.FollowButton\", \"UserBoards\", \"Grid\",
+        \"GridItems\", \"Board\", \"BoardFollowButton\"], \"errorStrategy\": 2, \"attributes\":
+        {\"class\": \"App full Module\", \"id\": \"App-30\"}, \"options\": {\"module\":
+        {\"data\": {\"last_name\": \"Stamosgem\", \"domain_verified\": false, \"following_count\":
+        5, \"image_medium_url\": \"http:\\/\\/media-cache-ec0.pinimg.com\\/avatars\\/johnstamosgem_1375988759_75.jpg\",
+        \"like_count\": 1, \"full_name\": \"John Stamosgem\", \"image_small_url\":
+        \"http:\\/\\/media-cache-ec0.pinimg.com\\/avatars\\/johnstamosgem_1375988759_30.jpg\",
+        \"id\": \"412149940807022226\", \"first_name\": \"John\", \"secret_board_count\":
+        0, \"explicitly_followed_by_me\": false, \"location\": \"\", \"indexed\":
+        true, \"is_partner\": false, \"type\": \"user\", \"image_large_url\": \"http:\\/\\/media-cache-ec0.pinimg.com\\/avatars\\/johnstamosgem_1375988759_140.jpg\",
+        \"board_count\": 1, \"username\": \"johnstamosgem\", \"repins_from\": [],
+        \"twitter_url\": null, \"facebook_url\": null, \"follower_count\": 0, \"pin_count\":
+        1, \"about\": \"\", \"has_board\": true, \"website_url\": null, \"blocked_by_me\":
+        false}, \"error_strategy\": 0, \"resource\": {\"name\": \"UserResource\",
+        \"options\": {\"username\": \"johnstamosgem\", \"bookmarks\": [\"-end-\"]}},
+        \"name\": \"UserProfilePage\", \"options\": {\"username\": \"johnstamosgem\",
+        \"report_user_spam\": null, \"tab\": \"boards\", \"show_follow_memo\": null}}},
+        \"uid\": \"App-30\"}, \"canDebug\": false, \"requireJsPaths\": {}, \"isLoggedIn\":
+        false});\n    </script>\n    \n</body>\n</html>"
+    http_version: 
+  recorded_at: Fri, 09 Aug 2013 03:08:56 GMT
+recorded_with: VCR 2.5.0

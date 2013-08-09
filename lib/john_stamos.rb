@@ -1,6 +1,7 @@
 require "john_stamos/version"
 require "john_stamos/search_scraper"
 require "john_stamos/pin"
+require "john_stamos/pinner"
 
 module JohnStamos
   class MissingSearchText < Exception; end

@@ -1,6 +1,7 @@
 require 'john_stamos'
 require 'john_stamos/search_scraper'
 require 'john_stamos/pin'
+require 'john_stamos/pinner'
 require 'vcr'
 
 VCR.configure do |c|
