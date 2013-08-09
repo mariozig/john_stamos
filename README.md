@@ -2,6 +2,8 @@
 
 The greasiest Pinterest client.  A work-in-progress until this no longer says "a work-in-progress".
 
+[![Build Status](https://travis-ci.org/mariozig/john_stamos.png?branch=master)](https://travis-ci.org/mariozig/john_stamos)
+
 ## Installation
 
 Add this line to your application's Gemfile:
