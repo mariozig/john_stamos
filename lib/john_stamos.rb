@@ -12,4 +12,13 @@ module JohnStamos
     search_scraper.execute!
     search_scraper.pins
   end
+
+  def self.pin(pinterest_pin_id)
+    Pin.new(pinterest_pin_id)
+  end
+
+  def self.pinner(username)
+    Pinner.new(username)
+  end
+
 end
