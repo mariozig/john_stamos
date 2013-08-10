@@ -1,5 +1,3 @@
-require 'nokogiri'
-require 'open-uri'
 require 'json'
 require 'rest_client'
 
@@ -34,7 +32,7 @@ class JohnStamos::SearchScraper
   end
 
   def first_retrieval!
-    page = Nokogiri::HTML(open(first_retrieval_url))
+    page = JohnStamos.page_content(first_retrieval_url)
 
     embedded_script = page.css('script').select do |script|
       script['src'].nil? && script.content.include?('P.start(')

@@ -1,5 +1,3 @@
-require 'nokogiri'
-require 'open-uri'
 require 'json'
 
 class JohnStamos::Pinner
@@ -53,7 +51,7 @@ class JohnStamos::Pinner
 
   private
     def page
-      @page ||= Nokogiri::HTML(open(url))
+      @page ||= page = JohnStamos.page_content(url)
     end
 
     def embedded_pinner_json

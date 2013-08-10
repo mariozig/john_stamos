@@ -1,6 +1,3 @@
-require 'nokogiri'
-require 'open-uri'
-
 class JohnStamos::Pin
   attr_reader :id
 
@@ -49,7 +46,7 @@ class JohnStamos::Pin
 
   private
     def page
-      @page ||= Nokogiri::HTML(open(url))
+      @page ||= page = JohnStamos.page_content(url)
     end
 
     def embedded_pin_json

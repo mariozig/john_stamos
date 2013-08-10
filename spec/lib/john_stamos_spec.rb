@@ -27,4 +27,8 @@ describe JohnStamos, :vcr do
     end
   end
 
+  describe '.proxy' do
+    it { should respond_to(:proxy) }
+  end
+
 end
