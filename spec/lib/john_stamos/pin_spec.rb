@@ -1,9 +1,10 @@
 require 'spec_helper'
 
 describe JohnStamos::Pin do
+  let(:client) { JohnStamos::Client.new }
   let(:pin) do
     # Test pin from here: http://pinterest.com/pin/412149803369441273/
-    JohnStamos::Pin.new(412149803369441273)
+    JohnStamos::Pin.new(client, 412149803369441273)
   end
 
   it { pin.should respond_to(:id) }

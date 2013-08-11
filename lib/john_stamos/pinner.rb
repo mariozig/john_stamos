@@ -3,7 +3,8 @@ require 'json'
 class JohnStamos::Pinner
   attr_reader :username
 
-  def initialize(username)
+  def initialize(client, username)
+    @client = client
     @username = username
   end
 
@@ -51,7 +52,7 @@ class JohnStamos::Pinner
 
   private
     def page
-      @page ||= page = JohnStamos.page_content(url)
+      @page ||= @client.page_content(url)
     end
 
     def embedded_pinner_json

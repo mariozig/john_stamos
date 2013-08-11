@@ -2,11 +2,16 @@ class JohnStamos::SearchScraper
   attr_accessor :next_bookmark, :search_text, :pin_ids
   attr_reader :limit
 
-  def initialize(search_text=nil, limit=50)
+  def initialize(client, search_text=nil, options={})
+    default_options = { limit: 50 }
+    options = default_options.merge(options)
+    @limit = options[:limit]
+
+    @client = client
+    @search_text = search_text
+
     @pins, @pin_ids = [], []
     @next_bookmark = nil
-    @search_text = search_text
-    @limit = limit
   end
 
   def execute!
@@ -29,7 +34,7 @@ class JohnStamos::SearchScraper
   end
 
   def first_retrieval!
-    page = JohnStamos.page_content(first_retrieval_url)
+    page = @client.page_content(first_retrieval_url)
 
     embedded_script = page.css('script').select do |script|
       script['src'].nil? && script.content.include?('P.start(')
@@ -52,7 +57,7 @@ class JohnStamos::SearchScraper
     raise JohnStamos::MissingNextBookmark if @next_bookmark.nil?
     raise JohnStamos::MissingSearchText if @search_text.nil?
 
-    pins_json = JohnStamos.json_content(subsequent_retrieval_url, build_url_params)
+    pins_json = @client.json_content(subsequent_retrieval_url, build_url_params)
     pin_ids_from_json = pin_ids_from_subsequent_retrieval(pins_json)
 
     @pin_ids += pin_ids_up_to_limit(pin_ids_from_json)
@@ -69,8 +74,8 @@ class JohnStamos::SearchScraper
   end
 
   def pins
-    @pin_ids.map do|id|
-      JohnStamos::Pin.new(id)
+    @pin_ids.map do |pinterest_pin_id|
+      JohnStamos::Pin.new(@client, pinterest_pin_id)
     end
   end
 

@@ -27,27 +27,27 @@ http_interactions:
       Content-Type:
       - text/html; charset=utf-8
       Date:
-      - Sun, 11 Aug 2013 17:46:59 GMT
+      - Sun, 11 Aug 2013 21:38:32 GMT
       Pinterest-Breed:
       - CORGI
       Pinterest-Generated-By:
-      - ngapp-4113d77a
+      - ngapp-3adb4a2d
       Pinterest-Version:
       - f0903ce
       Server:
       - nginx
       Set-Cookie:
-      - _pinterest_sess="eJwFwc0KwjAMAOC38bxpJ3gIosyfMhNZETVePNTgGi0eKkzy9H7fwmgv6dPFQ9yMYqFbX6dNNX9LQFjevykL4AlnpL5C879jDzApUkp6gNdVje3L0Y4d5vOA1jtssSENA9s2s7KRxvF24do/Af507CNv";
-        Domain=.pinterest.com; expires=Wed, 06-Aug-2014 17:46:59 GMT; Max-Age=31103999;
+      - _pinterest_sess="eJwrrXTxyzD2yimI9M7WLgrOy3EK0K/MtHA08Sm2tY8vycxNtfUN8TX2y/I09KtyrfBNt7VVK04tLs5MsfXMDcr2DfEsj8xKyY7Mysnxdwms9MvKNvU1ijTxy4rK8guPyvAL9y33dfc19QTqAwCxSCQz";
+        Domain=.pinterest.com; expires=Wed, 06-Aug-2014 21:38:32 GMT; Max-Age=31103999;
         Path=/
-      - csrftoken=ErJZJUeIBhjJJwlEbAhiunhJL9subAWW; Domain=.pinterest.com; expires=Sun,
-        10-Aug-2014 17:46:59 GMT; Max-Age=31449600; Path=/
+      - csrftoken=ktp0WTukJQRKZMhqEZlOJzZG2PoTaFsF; Domain=.pinterest.com; expires=Sun,
+        10-Aug-2014 21:38:32 GMT; Max-Age=31449600; Path=/
       Vary:
       - Cookie, Accept-Encoding
       Via:
       - 1.1 varnish
       X-Varnish:
-      - '206874881'
+      - '1055516701'
       Content-Length:
       - '5953'
       Connection:
@@ -409,7 +409,7 @@ http_interactions:
         \"?{scope}\", \"state\": \"?{state}\", \"redirect_uri\": \"?{redirect_uri}\",
         \"response_type\": \"?{response_type}\", \"consumer_id\": \"?{consumer_id}\"}}];\n
         \       P.PAGE_ROUTE_PATTERN = \"^\\/$\";\n        P.PAGE_LOAD_REQUEST_IDENTIFIER
-        = \"440481254153\";\n\n        P.start({\"gaAccountNumber\": \"UA-12967896-7\",
+        = \"690114302750\";\n\n        P.start({\"gaAccountNumber\": \"UA-12967896-7\",
         \"scrubbedUser\": {}, \"tree\": {\"resource\": null, \"name\": \"App\", \"children\":
         [{\"resource\": null, \"name\": \"HomePage\", \"id\": \"mainModule\", \"children\":
         [{\"resource\": null, \"name\": \"UnauthHomePage\", \"children\": [{\"resource\":
@@ -451,5 +451,5 @@ http_interactions:
         null}}, \"view_type\": \"content_only\"}, \"uid\": \"App-10\"}, \"canDebug\":
         false, \"requireJsPaths\": {}, \"isLoggedIn\": false});\n    </script>\n    \n</body>\n</html>"
     http_version: 
-  recorded_at: Sun, 11 Aug 2013 17:46:59 GMT
+  recorded_at: Sun, 11 Aug 2013 21:38:32 GMT
 recorded_with: VCR 2.5.0

@@ -1,8 +1,9 @@
 class JohnStamos::Pin
   attr_reader :id
 
-  def initialize(pinterest_pin_id)
+  def initialize(client, pinterest_pin_id)
     @id = pinterest_pin_id
+    @client = client
   end
 
   def image
@@ -35,7 +36,7 @@ class JohnStamos::Pin
   end
 
   def pinner
-    JohnStamos::Pinner.new(embedded_pin_data["pinner"]["username"])
+    JohnStamos::Pinner.new(@client, embedded_pin_data["pinner"]["username"])
   end
 
   def url
@@ -46,7 +47,7 @@ class JohnStamos::Pin
 
   private
     def page
-      @page ||= page = JohnStamos.page_content(url)
+      @page ||= page = @client.page_content(url)
     end
 
     def embedded_pin_json

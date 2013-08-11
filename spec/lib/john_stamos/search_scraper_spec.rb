@@ -2,21 +2,22 @@ require 'spec_helper'
 require 'base64'
 
 describe JohnStamos::SearchScraper do
-  it { should respond_to :search_text }
-  it { should respond_to :next_bookmark }
-  it { should respond_to :pin_ids }
-  it { should respond_to :limit }
-  it { should respond_to :pins }
-  it { should respond_to :execute! }
-  it { should respond_to :first_retrieval_url }
-  it { should respond_to :subsequent_retrieval_url }
-  it { should respond_to :first_retrieval! }
-  it { should respond_to :subsequent_retrieval! }
-  it { should respond_to :more_results? }
-  it { should respond_to :limit_reached? }
-
-  let(:scraper) { JohnStamos::SearchScraper.new }
+  let(:client) { JohnStamos::Client.new }
   let(:search_text) { "coffee roasting" }
+  let(:scraper) { JohnStamos::SearchScraper.new(client) }
+
+  it { scraper.should respond_to :search_text }
+  it { scraper.should respond_to :next_bookmark }
+  it { scraper.should respond_to :pin_ids }
+  it { scraper.should respond_to :limit }
+  it { scraper.should respond_to :pins }
+  it { scraper.should respond_to :execute! }
+  it { scraper.should respond_to :first_retrieval_url }
+  it { scraper.should respond_to :subsequent_retrieval_url }
+  it { scraper.should respond_to :first_retrieval! }
+  it { scraper.should respond_to :subsequent_retrieval! }
+  it { scraper.should respond_to :more_results? }
+  it { scraper.should respond_to :limit_reached? }
 
   describe 'when initialized' do
 
@@ -187,7 +188,7 @@ describe JohnStamos::SearchScraper do
       let(:big_search_term) { "funny" }
 
       context 'no limit specified' do
-        let(:big_scraper) { JohnStamos::SearchScraper.new(big_search_term) }
+        let(:big_scraper) { JohnStamos::SearchScraper.new(client, big_search_term) }
 
         it 'has a limit of 50, the default' do
           big_scraper.execute!
@@ -206,7 +207,7 @@ describe JohnStamos::SearchScraper do
       end
 
       context 'with a limit higher than the default' do
-        let(:big_scraper_with_limit) { JohnStamos::SearchScraper.new(big_search_term, 147) }
+        let(:big_scraper_with_limit) { JohnStamos::SearchScraper.new(client, big_search_term, { limit: 147 }) }
 
         it 'has a limit of 147' do
           big_scraper_with_limit.limit.should == 147

@@ -1,9 +1,11 @@
 require 'spec_helper'
 
 describe JohnStamos::Pinner, :vcr do
+  let(:client) { JohnStamos::Client.new }
+
   let(:pinner) do
     # Test pin from here: http://pinterest.com/johnstamosgem/
-    JohnStamos::Pinner.new('johnstamosgem')
+    JohnStamos::Pinner.new(client, 'johnstamosgem')
   end
 
   it { pinner.should respond_to(:username) }
@@ -65,7 +67,7 @@ describe JohnStamos::Pinner, :vcr do
     it { pinner.should respond_to(:website_url) }
 
     it 'returns the correct website url' do
-      pinner_with_url = JohnStamos::Pinner.new('danielhunley')
+      pinner_with_url = JohnStamos::Pinner.new(client, 'danielhunley')
       pinner_with_url.website_url.should == 'http://www.livingbear.com'
     end
   end
@@ -74,7 +76,7 @@ describe JohnStamos::Pinner, :vcr do
     it { pinner.should respond_to(:location) }
 
     it 'returns the correct location' do
-      pinner_with_location = JohnStamos::Pinner.new('danielhunley')
+      pinner_with_location = JohnStamos::Pinner.new(client, 'danielhunley')
       pinner_with_location.location.should == "Nashville, TN"
     end
   end
