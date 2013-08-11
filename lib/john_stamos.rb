@@ -1,10 +1,12 @@
 require 'open-uri'
 require 'nokogiri'
+require 'json'
+require 'rest_client'
 
-require "john_stamos/version"
-require "john_stamos/search_scraper"
-require "john_stamos/pin"
-require "john_stamos/pinner"
+require 'john_stamos/version'
+require 'john_stamos/search_scraper'
+require 'john_stamos/pin'
+require 'john_stamos/pinner'
 
 module JohnStamos
   class MissingSearchText < Exception; end
@@ -24,10 +26,6 @@ module JohnStamos
     Pinner.new(username)
   end
 
-  class << self
-    attr_accessor :proxy
-  end
-
   def self.page_content(url)
     if JohnStamos.proxy
       proxy_uri = URI.parse(JohnStamos.proxy)
@@ -35,6 +33,22 @@ module JohnStamos
     else
       Nokogiri::HTML(open(url))
     end
+  end
+
+  def self.json_content(url, params)
+    if JohnStamos.proxy
+      RestClient.proxy = JohnStamos.proxy
+    end
+
+    response = RestClient.get(url,
+                              params: params,
+                              :accept => :json,
+                              "X-Requested-With" => "XMLHttpRequest")
+    JSON.parse(response)
+  end
+
+  class << self
+    attr_accessor :proxy
   end
 
 end

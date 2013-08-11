@@ -1,6 +1,3 @@
-require 'json'
-require 'rest_client'
-
 class JohnStamos::SearchScraper
   attr_accessor :next_bookmark, :search_text, :pin_ids
   attr_reader :limit
@@ -55,11 +52,7 @@ class JohnStamos::SearchScraper
     raise JohnStamos::MissingNextBookmark if @next_bookmark.nil?
     raise JohnStamos::MissingSearchText if @search_text.nil?
 
-    response = RestClient.get(subsequent_retrieval_url,
-                              params: build_url_params,
-                              :accept => :json,
-                              "X-Requested-With" => "XMLHttpRequest")
-    pins_json = JSON.parse(response)
+    pins_json = JohnStamos.json_content(subsequent_retrieval_url, build_url_params)
     pin_ids_from_json = pin_ids_from_subsequent_retrieval(pins_json)
 
     @pin_ids += pin_ids_up_to_limit(pin_ids_from_json)
