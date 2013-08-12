@@ -8,7 +8,6 @@ class JohnStamos::Client
   def initialize(options={})
     default_options = { proxy: nil }
     options = default_options.merge(options)
-
     @proxy = options[:proxy]
   end
 
@@ -30,14 +29,14 @@ class JohnStamos::Client
   def page_content(url)
     if @proxy
       proxy_uri = URI.parse(@proxy)
-      Nokogiri::HTML(open(url, :proxy => proxy_uri))
+      Nokogiri::HTML(open(url, proxy: proxy_uri))
     else
       Nokogiri::HTML(open(url))
     end
   end
 
   def json_content(url, params)
-    RestClient.proxy = @proxy if @proxy
+    RestClient.proxy = @proxy
     response = RestClient.get(url, params: params, accept: :json, "X-Requested-With" => "XMLHttpRequest")
 
     JSON.parse(response)

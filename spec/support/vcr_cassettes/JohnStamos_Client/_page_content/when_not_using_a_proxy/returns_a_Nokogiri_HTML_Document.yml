@@ -27,29 +27,29 @@ http_interactions:
       Content-Type:
       - text/html; charset=utf-8
       Date:
-      - Sun, 11 Aug 2013 21:38:32 GMT
+      - Mon, 12 Aug 2013 20:57:12 GMT
       Pinterest-Breed:
       - CORGI
       Pinterest-Generated-By:
-      - ngapp-3adb4a2d
+      - ngapp-8aaa53b1
       Pinterest-Version:
-      - f0903ce
+      - a66bf1c
       Server:
       - nginx
       Set-Cookie:
-      - _pinterest_sess="eJwrrXTxyzD2yimI9M7WLgrOy3EK0K/MtHA08Sm2tY8vycxNtfUN8TX2y/I09KtyrfBNt7VVK04tLs5MsfXMDcr2DfEsj8xKyY7Mysnxdwms9MvKNvU1ijTxy4rK8guPyvAL9y33dfc19QTqAwCxSCQz";
-        Domain=.pinterest.com; expires=Wed, 06-Aug-2014 21:38:32 GMT; Max-Age=31103999;
+      - _pinterest_sess="eJxzC40MMg0uiTQL8snU988M1c7NMoryTXPxcXG1tY8vycxNtfUN8TX2y/I18A1xrPJNt7VVK04tLs5MsfXMDTT0c8mu8jVyy/B3ycj1cwnKjqxKN4ly9zX0C3etiMoNy/QND8qKCo/K9gTqAwBHjiMM";
+        Domain=.pinterest.com; expires=Thu, 07-Aug-2014 20:57:12 GMT; Max-Age=31103999;
         Path=/
-      - csrftoken=ktp0WTukJQRKZMhqEZlOJzZG2PoTaFsF; Domain=.pinterest.com; expires=Sun,
-        10-Aug-2014 21:38:32 GMT; Max-Age=31449600; Path=/
+      - csrftoken=qmphEYddO4DKVP98ChLbHmjxLvNJql20; Domain=.pinterest.com; expires=Mon,
+        11-Aug-2014 20:57:12 GMT; Max-Age=31449600; Path=/
       Vary:
       - Cookie, Accept-Encoding
       Via:
       - 1.1 varnish
       X-Varnish:
-      - '1055516701'
+      - '2115220919'
       Content-Length:
-      - '5953'
+      - '5972'
       Connection:
       - keep-alive
     body:
@@ -63,8 +63,8 @@ http_interactions:
         false, \"ew\": false, \"sw\": false, \"rpl\": false, \"ff_s\": false, \"wfe\":
         false},\n            expns: {}\n        };\n        var P_TEST_MODE = null;\n
         \       \n    </script>\n\n    \n    \n    \n    \n    \n\n    <link rel=\"stylesheet\"
-        href=\"https://s-passets-ec.pinimg.com/webapp/app/desktop/bundle.3d391308.css\">\n
-        \   <script src=\"https://s-passets-ec.pinimg.com/webapp/app/desktop/bundle.303bb644.js\"></script>\n
+        href=\"https://s-passets-ec.pinimg.com/webapp/app/desktop/bundle.5f3fe3aa.css\">\n
+        \   <script src=\"https://s-passets-ec.pinimg.com/webapp/app/desktop/bundle.af9d5fa0.js\"></script>\n
         \   \n\n    \n\n    \n    <link rel=\"apple-touch-icon\" href=\"https://s-passets-ec.pinimg.com/webapp/app/desktop/images/logo_trans_144x144.4d67817d.png\">\n
         \   <link rel=\"icon\" href=\"https://s-passets-ec.pinimg.com/webapp/app/desktop/images/favicon.c37ee67b.png\">\n\n
         \   <link rel=\"canonical\" href=\"/\">\n    <!--[if IE]><link rel=\"shortcut
@@ -129,29 +129,30 @@ http_interactions:
         unless you <a href=\"http://enable-javascript.com/\" rel=\"nofollow\">turn
         on JavaScript.</a></div>\n\n\n\n\n    <style>\n        .NagBase {\n            display:
         none;\n        }\n    </style>\n</noscript></div></div>    \n\n    \n    <script>\n
-        \       P.FB_KEY = 274266067164;\n        P.CONTEXT = {\"app_version\": \"f0903ce\"};\n
+        \       P.FB_KEY = 274266067164;\n        P.CONTEXT = {\"app_version\": \"a66bf1c\"};\n
         \       P.STRINGS = {\"formURLNotValid\": \"Not a valid url.\", \"resendConfirmationEmailNoOp\":
         \"Your account has already been confirmed.\", \"formFieldRequired\": \"Required\",
         \"oneNewPin\": \"1 new pin\", \"errorMessage\": \"Sorry! Something went wrong
         on our end!\", \"passwordBlackPasswordStr\": \"Please try using a stronger
-        password\", \"savePinTutorial\": \"<em>Hint:<\\/em> Want to save this Pin?
-        Hit Pin It to add it to your first board.\", \"popupErrorMessage\": \"You
-        must enable popups!\", \"successInviteSentToEmail\": \"Success! Invitation
-        sent to <%= email %>\", \"emailAddress\": \"Email address\", \"facebookContact\":
-        \"Facebook\", \"cancel\": \"Cancel\", \"passwordSamePasswordStr\": \"Password
-        and username can't match\", \"connectError\": \"Couldn't connect. You must
-        authorize Pinterest.\", \"facebookAccountDoesntMatch\": \"Oops! Your account
-        is linked to a different Facebook account than the one you're logged into
-        now.\", \"createFirstBoard\": \"You collect your pins onto boards - create
-        as many as you need!\", \"passwordGoodPasswordStr\": \"Great!\", \"emailUpdated\":
-        \"Your email has been updated.\", \"pickEmailAddress\": \"Enter an email address\",
-        \"blockPinner\": \"Block Pinner\", \"passwordTooShort\": \"Too short\", \"formEmailNotValid\":
-        \"Not a valid email.\", \"resendConfirmationEmailSuccess\": \"Thanks! You
-        should receive a confirmation email soon.\", \"offsiteInvalidToken\": \"Sorry!
-        This redirect link has expired.\", \"passwordMustBeSet\": \"A password must
-        be set before unlinking.\", \"newPins\": \"new pins\", \"removeBounceNag\":
-        \"Got it! Make sure your inbox isn't full so that our emails can find their
-        way to you.\", \"continue\": \"Continue\", \"ok\": \"Ok\", \"error\": \"Error\",
+        password\", \"gplusContact\": \"Google\", \"offsiteInvalidToken\": \"Sorry!
+        This redirect link has expired.\", \"popupErrorMessage\": \"You must enable
+        popups!\", \"successInviteSentToEmail\": \"Success! Invitation sent to <%=
+        email %>\", \"emailAddress\": \"Email address\", \"facebookContact\": \"Facebook\",
+        \"cancel\": \"Cancel\", \"passwordSamePasswordStr\": \"Password and username
+        can't match\", \"savePinTutorial\": \"<em>Hint:<\\/em> Want to save this Pin?
+        Hit Pin It to add it to your first board.\", \"connectError\": \"Couldn't
+        connect. You must authorize Pinterest.\", \"facebookAccountDoesntMatch\":
+        \"Oops! Your account is linked to a different Facebook account than the one
+        you're logged into now.\", \"createFirstBoard\": \"You collect your pins onto
+        boards - create as many as you need!\", \"passwordGoodPasswordStr\": \"Great!\",
+        \"emailUpdated\": \"Your email has been updated.\", \"pickEmailAddress\":
+        \"Enter an email address\", \"blockPinner\": \"Block Pinner\", \"passwordTooShort\":
+        \"Too short\", \"formEmailNotValid\": \"Not a valid email.\", \"resendConfirmationEmailSuccess\":
+        \"Thanks! You should receive a confirmation email soon.\", \"inviteMessage\":
+        \"Join me on Pinterest!\", \"passwordMustBeSet\": \"A password must be set
+        before unlinking.\", \"newPins\": \"new pins\", \"removeBounceNag\": \"Got
+        it! Make sure your inbox isn't full so that our emails can find their way
+        to you.\", \"continue\": \"Continue\", \"ok\": \"Ok\", \"error\": \"Error\",
         \"suggestedUsername\": \"Suggested username\", \"removePinner\": \"Remove
         Pinner\", \"errorTitle\": \"Whoops!\", \"passwordBadStyle\": \"Not proper
         style\", \"fellowPinner\": \"Fellow Pinner\"};\n        P.PAGE_INFO = null;\n
@@ -409,7 +410,7 @@ http_interactions:
         \"?{scope}\", \"state\": \"?{state}\", \"redirect_uri\": \"?{redirect_uri}\",
         \"response_type\": \"?{response_type}\", \"consumer_id\": \"?{consumer_id}\"}}];\n
         \       P.PAGE_ROUTE_PATTERN = \"^\\/$\";\n        P.PAGE_LOAD_REQUEST_IDENTIFIER
-        = \"690114302750\";\n\n        P.start({\"gaAccountNumber\": \"UA-12967896-7\",
+        = \"610575664586\";\n\n        P.start({\"gaAccountNumber\": \"UA-12967896-7\",
         \"scrubbedUser\": {}, \"tree\": {\"resource\": null, \"name\": \"App\", \"children\":
         [{\"resource\": null, \"name\": \"HomePage\", \"id\": \"mainModule\", \"children\":
         [{\"resource\": null, \"name\": \"UnauthHomePage\", \"children\": [{\"resource\":
@@ -449,7 +450,7 @@ http_interactions:
         \"App content_only Module\", \"id\": \"App-10\"}, \"options\": {\"module\":
         {\"error_strategy\": 0, \"name\": \"HomePage\", \"options\": {\"from_fast_follow\":
         null}}, \"view_type\": \"content_only\"}, \"uid\": \"App-10\"}, \"canDebug\":
-        false, \"requireJsPaths\": {}, \"isLoggedIn\": false});\n    </script>\n    \n</body>\n</html>"
+        false, \"requireJsPaths\": {}, \"isLoggedIn\": false});\n    </script>\n</body>\n</html>"
     http_version: 
-  recorded_at: Sun, 11 Aug 2013 21:38:32 GMT
+  recorded_at: Mon, 12 Aug 2013 20:57:12 GMT
 recorded_with: VCR 2.5.0
