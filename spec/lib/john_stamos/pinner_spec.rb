@@ -2,82 +2,114 @@ require 'spec_helper'
 
 describe JohnStamos::Pinner, :vcr do
   let(:client) { JohnStamos::Client.new }
+  let(:pinterest_user) { 'johnstamosgem' } # Test user account from here: http://pinterest.com/johnstamosgem/
 
-  let(:pinner) do
-    # Test pin from here: http://pinterest.com/johnstamosgem/
-    JohnStamos::Pinner.new(client, 'johnstamosgem')
+  subject(:pinner) { JohnStamos::Pinner.new(client, pinterest_user) }
+
+  describe '#username' do
+    it 'responds to #username' do
+      expect(pinner).to respond_to(:username)
+    end
+
+    it 'returns the correct pinterest username' do
+      expect(pinner.username).to eq(pinterest_user)
+    end
   end
 
-  it { pinner.should respond_to(:username) }
-  it { pinner.username.should eq('johnstamosgem') }
-  it { pinner.should respond_to(:url) }
-  it { pinner.url.should eq('http://pinterest.com/johnstamosgem/') }
+  describe '#url' do
+    it 'responds to #url' do
+      expect(pinner).to respond_to(:url)
+    end
 
-  describe "#pin_count" do
-    it { pinner.should respond_to(:pin_count) }
+    it 'returns the correct url for the pinner' do
+      expect(pinner.url).to eq("http://pinterest.com/#{pinterest_user}/")
+    end
+  end
+
+  describe '#pin_count' do
+    it 'responds to #url' do
+      expect(pinner).to respond_to(:pin_count)
+    end
 
     it 'returns the correct number of pins' do
-      pinner.pin_count.should == 1
+      expect(pinner.pin_count).to eq(1)
     end
   end
 
-  describe "#follower_count" do
-    it { pinner.should respond_to(:follower_count) }
+  describe '#follower_count' do
+    it 'responds to #follower_count' do
+      expect(pinner).to respond_to(:follower_count)
+    end
 
-    it 'returns the correct number of followers' do
-      pinner.follower_count.should == 0 # :( I have no friends.
+    it 'returns a follower count of 0 because nobody really likes his shitty pins of ghetto animal pictures' do
+      expect(pinner.follower_count).to eq(0) # :( I have no friends.
     end
   end
 
-  describe "#avatar" do
-    it { pinner.should respond_to(:avatar) }
-
+  describe '#avatar' do
+    it 'responds to #avatar' do
+      expect(pinner).to respond_to(:avatar)
+    end
     it 'returns the correct avatar URL' do
-      pinner.avatar.should eq('http://media-cache-ec0.pinimg.com/avatars/johnstamosgem_1375988759_140.jpg')
+      expect(pinner.avatar).to eq('http://media-cache-ec0.pinimg.com/avatars/johnstamosgem_1375988759_140.jpg')
     end
   end
 
   describe 'name related attributes' do
-    it { pinner.should respond_to(:first_name) }
-    it { pinner.should respond_to(:last_name) }
-    it { pinner.should respond_to(:full_name) }
-
-    it 'returns the first name' do
-      pinner.first_name.should eq('John')
+    it 'responds to #first_name' do
+      expect(pinner).to respond_to(:first_name)
     end
 
-    it 'returns the last name' do
-      pinner.last_name.should eq('Stamosgem')
+    it 'responds to #last_name' do
+      expect(pinner).to respond_to(:last_name)
     end
 
-    it 'returns the full name' do
-      pinner.full_name.should eq('John Stamosgem')
+    it 'responds to #full_name' do
+      expect(pinner).to respond_to(:full_name)
+    end
+
+    it 'returns the correct first name' do
+      expect(pinner.first_name).to  eq('John')
+    end
+
+    it 'returns the correct last name' do
+      expect(pinner.last_name).to eq('Stamosgem')
+    end
+
+    it 'returns the correct full name' do
+      expect(pinner.full_name).to eq('John Stamosgem')
     end
   end
 
-  describe "#board_count" do
-    it { pinner.should respond_to(:board_count) }
+  describe '#board_count' do
+    it 'responds to #board_count' do
+      expect(pinner).to respond_to(:board_count)
+    end
 
     it 'returns the correct number of boards' do
-      pinner.board_count.should == 1
+      expect(pinner.board_count).to eq(1)
     end
   end
 
-  describe "#website_url" do
-    it { pinner.should respond_to(:website_url) }
+  describe '#website_url' do
+    it 'responds to #website_url' do
+      expect(pinner).to respond_to(:website_url)
+    end
 
     it 'returns the correct website url' do
       pinner_with_url = JohnStamos::Pinner.new(client, 'danielhunley')
-      pinner_with_url.website_url.should == 'http://www.livingbear.com'
+      expect(pinner_with_url.website_url).to eq('http://www.livingbear.com')
     end
   end
 
-  describe "#location" do
-    it { pinner.should respond_to(:location) }
+  describe '#location' do
+    it 'responds to #location' do
+      expect(pinner).to respond_to(:location)
+    end
 
     it 'returns the correct location' do
       pinner_with_location = JohnStamos::Pinner.new(client, 'danielhunley')
-      pinner_with_location.location.should == "Nashville, TN"
+      expect(pinner_with_location.location).to eq('Nashville, TN')
     end
   end
 end

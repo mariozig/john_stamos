@@ -27,29 +27,29 @@ http_interactions:
       Content-Type:
       - text/html; charset=utf-8
       Date:
-      - Fri, 09 Aug 2013 03:08:54 GMT
+      - Mon, 12 Aug 2013 22:25:02 GMT
       Pinterest-Breed:
       - CORGI
       Pinterest-Generated-By:
-      - ngapp-aabbb056
+      - ngapp-494b1237
       Pinterest-Version:
-      - 562ff72
+      - 9a3f43c
       Server:
       - nginx
       Set-Cookie:
-      - _pinterest_sess="eJxzDciOCMrLLzBPDzeIyDKJyNEuNs/VzzetzPS0tY8vycxNtfUN8TX2y3Ks8KtKrvJztLVVK04tLs5MsfXMDcv1zY3K9nXxNYnK8sr2ywqs8nX3NPXNcjT1C0nJ9M31rIwMDzWNDMk29Ey3tQUApZ4j6Q==";
-        Domain=.pinterest.com; expires=Mon, 04-Aug-2014 03:08:54 GMT; Max-Age=31103999;
+      - _pinterest_sess="eJwzz6oKDXE1SzXwdIwKikrWL06zDAw11vYKKQq0tY8vycxNtfUN8TX2y/I1AOJy33RbW7Xi1OLizBRbz1y/XF+joFzf8EDjyBDfyqisQBO/rHSTSCNfE9+QlGy/kFBDf/dQk8iQZFNPoD4ARKkiOw==";
+        Domain=.pinterest.com; expires=Thu, 07-Aug-2014 22:25:02 GMT; Max-Age=31103999;
         Path=/
-      - csrftoken=ieinpDRO2l7yLxOSYYUA5JknZVX2wpoq; Domain=.pinterest.com; expires=Fri,
-        08-Aug-2014 03:08:54 GMT; Max-Age=31449600; Path=/
+      - csrftoken=ROSA4CeOTfW13ulDKlbMMFcnoHLJrIOl; Domain=.pinterest.com; expires=Mon,
+        11-Aug-2014 22:25:02 GMT; Max-Age=31449600; Path=/
       Vary:
       - Cookie, Accept-Encoding
       Via:
       - 1.1 varnish
       X-Varnish:
-      - '2028635695'
+      - '580336476'
       Content-Length:
-      - '8784'
+      - '8817'
       Connection:
       - keep-alive
     body:
@@ -63,8 +63,8 @@ http_interactions:
         false, \"ew\": false, \"sw\": false, \"rpl\": false, \"ff_s\": false, \"wfe\":
         false},\n            expns: {}\n        };\n        var P_TEST_MODE = null;\n
         \       \n    </script>\n\n    \n    \n    \n    \n    \n\n    <link rel=\"stylesheet\"
-        href=\"http://passets-ak.pinterest.com/webapp/app/desktop/bundle.830dba33.css\">\n
-        \   <script src=\"http://passets-ec.pinterest.com/webapp/app/desktop/bundle.303bb644.js\"></script>\n
+        href=\"http://passets-ec.pinterest.com/webapp/app/desktop/bundle.b37a463f.css\">\n
+        \   <script src=\"http://passets-ak.pinterest.com/webapp/app/desktop/bundle.af9d5fa0.js\"></script>\n
         \   \n\n    \n\n    \n    <link rel=\"apple-touch-icon\" href=\"http://passets-ec.pinterest.com/webapp/app/desktop/images/logo_trans_144x144.4d67817d.png\">\n
         \   <link rel=\"icon\" href=\"http://passets-ak.pinterest.com/webapp/app/desktop/images/favicon.c37ee67b.png\">\n\n
         \   <link rel=\"canonical\" href=\"/johnstamosgem/\">\n    <!--[if IE]><link
@@ -111,7 +111,7 @@ http_interactions:
         id=\"ui-TypeaheadField-10\">\n\n\n\n\n\n\n\n    <input type=\"text\" name=\"q\"\n
         \          value=\"\" placeholder=\"Search\"\n           autocomplete=\"off\"
         \ class=\"field\" />\n\n<div class=\"search hidden ui-Typeahead Module\" id=\"ui-Typeahead-11\">\n\n
-        \   \n\n<ul class=\"results\"></ul></div></div>\n    <button class=\"submit\"
+        \   \n\n\n\n<ul class=\"results\"></ul></div></div>\n    <button class=\"submit\"
         type=\"submit\">Search</button>\n</form></div>\n    </div>\n\n    <div>\n
         \       <a href=\"/\" id=\"logo\" class=\"logo\" data-force-refresh=\"1\">Pinterest</a>\n\n
         \       \n    </div>\n\n\n    \n\n    <div class=\"rightHeaderContent\">\n
@@ -124,8 +124,8 @@ http_interactions:
         Pillow Module\" id=\"ScrollToTop-2\">\n\n<button>\n    \n    <div class=\"textContainer\">Scroll
         to&nbsp;Top</div>\n</button></div>\n\n<div class=\"appContent\">\n    <div
         class=\"mainContainer\">\n        \n            <div class=\"Nags Module\"
-        id=\"Nags-3\">\n\n    \n    \n    \n    \n    \n    \n    <!--[if lt IE 8]><div
-        class=\"NagBase Module centeredWithinWrapper\" id=\"NagBase-14\">\n\n\n\n
+        id=\"Nags-3\">\n\n\n\n\n\n    \n    \n    \n    \n    \n    \n    <!--[if
+        lt IE 8]><div class=\"NagBase Module centeredWithinWrapper\" id=\"NagBase-14\">\n\n\n\n
         \   \n    <div class=\"message\">Wups, your browser's a little out of date!
         <a href=\"http://windows.microsoft.com/en-US/internet-explorer/download-ie\">Update
         it now</a> or <a href=\"http://whatbrowser.org/\">try another browser</a>
@@ -153,7 +153,7 @@ http_interactions:
         Stamosgem</h2>\n\n        <p class=\"userProfileHeaderBio\"></p>\n\n        <ul
         class=\"userProfileHeaderLocationAndLinks\">\n            \n            \n
         \           \n            \n        </ul>\n        \n    </div>\n    \n</div>\n\n</div>\n\n\n\n\n\n<div
-        class=\"UserInfoBar InfoBarBase Module centeredWithinWrapper\" id=\"UserInfoBar-20\">\n\n\n\n\n\n\n\n\n\n\n
+        class=\"gridWidth UserInfoBar InfoBarBase Module centeredWithinWrapper\" id=\"UserInfoBar-20\">\n\n\n\n\n\n\n\n\n\n\n\n
         \   \n         \n         \n        <button type=\"button\" class=\"UserFollowButton
         btn rounded Button primary Module hasText notNavigatable ui-FollowButton\"
         id=\"UserFollowButton-22\">\n\n\n   \n   \n   \n\n\n\n\n\n<span class=\"buttonText\">Follow
@@ -210,29 +210,30 @@ http_interactions:
         unless you <a href=\"http://enable-javascript.com/\" rel=\"nofollow\">turn
         on JavaScript.</a></div>\n\n\n\n\n    <style>\n        .NagBase {\n            display:
         none;\n        }\n    </style>\n</noscript></div></div>    \n\n    \n    <script>\n
-        \       P.FB_KEY = 274266067164;\n        P.CONTEXT = {\"app_version\": \"562ff72\"};\n
+        \       P.FB_KEY = 274266067164;\n        P.CONTEXT = {\"app_version\": \"9a3f43c\"};\n
         \       P.STRINGS = {\"formURLNotValid\": \"Not a valid url.\", \"resendConfirmationEmailNoOp\":
         \"Your account has already been confirmed.\", \"formFieldRequired\": \"Required\",
         \"oneNewPin\": \"1 new pin\", \"errorMessage\": \"Sorry! Something went wrong
         on our end!\", \"passwordBlackPasswordStr\": \"Please try using a stronger
-        password\", \"savePinTutorial\": \"<em>Hint:<\\/em> Want to save this Pin?
-        Hit Pin It to add it to your first board.\", \"popupErrorMessage\": \"You
-        must enable popups!\", \"successInviteSentToEmail\": \"Success! Invitation
-        sent to <%= email %>\", \"emailAddress\": \"Email address\", \"facebookContact\":
-        \"Facebook\", \"cancel\": \"Cancel\", \"passwordSamePasswordStr\": \"Password
-        and username can't match\", \"connectError\": \"Couldn't connect. You must
-        authorize Pinterest.\", \"facebookAccountDoesntMatch\": \"Oops! Your account
-        is linked to a different Facebook account than the one you're logged into
-        now.\", \"createFirstBoard\": \"You collect your pins onto boards - create
-        as many as you need!\", \"passwordGoodPasswordStr\": \"Great!\", \"emailUpdated\":
-        \"Your email has been updated.\", \"pickEmailAddress\": \"Enter an email address\",
-        \"blockPinner\": \"Block Pinner\", \"passwordTooShort\": \"Too short\", \"formEmailNotValid\":
-        \"Not a valid email.\", \"resendConfirmationEmailSuccess\": \"Thanks! You
-        should receive a confirmation email soon.\", \"offsiteInvalidToken\": \"Sorry!
-        This redirect link has expired.\", \"passwordMustBeSet\": \"A password must
-        be set before unlinking.\", \"newPins\": \"new pins\", \"removeBounceNag\":
-        \"Got it! Make sure your inbox isn't full so that our emails can find their
-        way to you.\", \"continue\": \"Continue\", \"ok\": \"Ok\", \"error\": \"Error\",
+        password\", \"gplusContact\": \"Google\", \"offsiteInvalidToken\": \"Sorry!
+        This redirect link has expired.\", \"popupErrorMessage\": \"You must enable
+        popups!\", \"successInviteSentToEmail\": \"Success! Invitation sent to <%=
+        email %>\", \"emailAddress\": \"Email address\", \"facebookContact\": \"Facebook\",
+        \"cancel\": \"Cancel\", \"passwordSamePasswordStr\": \"Password and username
+        can't match\", \"savePinTutorial\": \"<em>Hint:<\\/em> Want to save this Pin?
+        Hit Pin It to add it to your first board.\", \"connectError\": \"Couldn't
+        connect. You must authorize Pinterest.\", \"facebookAccountDoesntMatch\":
+        \"Oops! Your account is linked to a different Facebook account than the one
+        you're logged into now.\", \"createFirstBoard\": \"You collect your pins onto
+        boards - create as many as you need!\", \"passwordGoodPasswordStr\": \"Great!\",
+        \"emailUpdated\": \"Your email has been updated.\", \"pickEmailAddress\":
+        \"Enter an email address\", \"blockPinner\": \"Block Pinner\", \"passwordTooShort\":
+        \"Too short\", \"formEmailNotValid\": \"Not a valid email.\", \"resendConfirmationEmailSuccess\":
+        \"Thanks! You should receive a confirmation email soon.\", \"inviteMessage\":
+        \"Join me on Pinterest!\", \"passwordMustBeSet\": \"A password must be set
+        before unlinking.\", \"newPins\": \"new pins\", \"removeBounceNag\": \"Got
+        it! Make sure your inbox isn't full so that our emails can find their way
+        to you.\", \"continue\": \"Continue\", \"ok\": \"Ok\", \"error\": \"Error\",
         \"suggestedUsername\": \"Suggested username\", \"removePinner\": \"Remove
         Pinner\", \"errorTitle\": \"Whoops!\", \"passwordBadStyle\": \"Not proper
         style\", \"fellowPinner\": \"Fellow Pinner\"};\n        P.PAGE_INFO = null;\n
@@ -490,7 +491,7 @@ http_interactions:
         \"?{scope}\", \"state\": \"?{state}\", \"redirect_uri\": \"?{redirect_uri}\",
         \"response_type\": \"?{response_type}\", \"consumer_id\": \"?{consumer_id}\"}}];\n
         \       P.PAGE_ROUTE_PATTERN = \"^\\/:username\\/$\";\n        P.PAGE_LOAD_REQUEST_IDENTIFIER
-        = \"260176520385\";\n\n        P.start({\"gaAccountNumber\": \"UA-12967896-7\",
+        = \"381023930839\";\n\n        P.start({\"gaAccountNumber\": \"UA-12967896-7\",
         \"scrubbedUser\": {}, \"tree\": {\"resource\": null, \"name\": \"App\", \"children\":
         [{\"resource\": null, \"name\": \"Header\", \"id\": \"header\", \"children\":
         [{\"resource\": null, \"name\": \"DropdownButton\", \"id\": \"categoriesDropdownButton\",
@@ -509,49 +510,49 @@ http_interactions:
         \"title\": \"Here are your categories.\"}}, \"uid\": \"DropdownButton-6\"},
         {\"resource\": null, \"name\": \"ui.SearchForm\", \"children\": [{\"resource\":
         null, \"name\": \"ui.TypeaheadField\", \"id\": \"searchField\", \"children\":
-        [{\"resource\": null, \"name\": \"ui.Typeahead\", \"id\": \"typeahead\", \"children\":
-        [], \"errorStrategy\": 2, \"options\": {\"enable_recent_queries\": true, \"tags\":
-        \"autocomplete\", \"view_type\": \"search\", \"template\": null, \"exclude_non_followers\":
-        null}, \"uid\": \"ui-Typeahead-11\"}], \"errorStrategy\": 2, \"options\":
-        {\"enable_recent_queries\": true, \"name\": \"q\", \"view_type\": \"search\",
-        \"prefetch_on_focus\": true, \"value\": \"\", \"populate_on_result_highlight\":
-        true, \"search_delay\": 0, \"search_on_focus\": true, \"placeholder\": \"Search\",
-        \"tags\": \"autocomplete\"}, \"uid\": \"ui-TypeaheadField-10\"}], \"errorStrategy\":
-        2, \"options\": {\"navigate_on_search\": true, \"enable_recent_queries\":
-        true, \"placeholder\": \"Search\"}, \"uid\": \"ui-SearchForm-7\"}, {\"resource\":
-        {\"name\": \"LocalesResource\", \"options\": {\"locale\": \"en-US\", \"bookmarks\":
-        [\"-end-\"]}}, \"name\": \"LanguageMenu\", \"children\": [{\"resource\": null,
-        \"name\": \"DropdownButton\", \"children\": [{\"resource\": null, \"name\":
-        \"Button\", \"children\": [], \"errorStrategy\": 2, \"options\": {\"class_name\":
+        [{\"resource\": null, \"name\": \"ui.Typeahead\", \"id\": \"typeahead\", \"extraData\":
+        {\"inGplusExp\": false}, \"children\": [], \"errorStrategy\": 2, \"options\":
+        {\"enable_recent_queries\": true, \"tags\": \"autocomplete\", \"view_type\":
+        \"search\", \"template\": null, \"exclude_non_followers\": null}, \"uid\":
+        \"ui-Typeahead-11\"}], \"errorStrategy\": 2, \"options\": {\"enable_recent_queries\":
+        true, \"name\": \"q\", \"view_type\": \"search\", \"prefetch_on_focus\": true,
+        \"value\": \"\", \"populate_on_result_highlight\": true, \"search_delay\":
+        0, \"search_on_focus\": true, \"placeholder\": \"Search\", \"tags\": \"autocomplete\"},
+        \"uid\": \"ui-TypeaheadField-10\"}], \"errorStrategy\": 2, \"options\": {\"navigate_on_search\":
+        true, \"enable_recent_queries\": true, \"placeholder\": \"Search\"}, \"uid\":
+        \"ui-SearchForm-7\"}, {\"resource\": {\"name\": \"LocalesResource\", \"options\":
+        {\"locale\": \"en-US\", \"bookmarks\": [\"-end-\"]}}, \"name\": \"LanguageMenu\",
+        \"children\": [{\"resource\": null, \"name\": \"DropdownButton\", \"children\":
+        [{\"resource\": null, \"name\": \"Button\", \"children\": [], \"errorStrategy\":
+        2, \"options\": {\"class_name\": \"langaugeButton\", \"text\": \"English (US)\",
+        \"tagName\": \"button\"}, \"uid\": \"Button-13\"}], \"errorStrategy\": 2,
+        \"options\": {\"dropdown_options\": {\"position_point\": \"BOTTOM_RIGHT\",
+        \"hide_caret\": true, \"fixed\": true}, \"button_options\": {\"class_name\":
         \"langaugeButton\", \"text\": \"English (US)\", \"tagName\": \"button\"},
-        \"uid\": \"Button-13\"}], \"errorStrategy\": 2, \"options\": {\"dropdown_options\":
-        {\"position_point\": \"BOTTOM_RIGHT\", \"hide_caret\": true, \"fixed\": true},
-        \"button_options\": {\"class_name\": \"langaugeButton\", \"text\": \"English
-        (US)\", \"tagName\": \"button\"}, \"module\": {\"resource\": {\"name\": \"LocalesResource\"},
-        \"name\": \"LanguageDropdown\", \"options\": {\"selected\": \"English (US)\"}}},
-        \"uid\": \"DropdownButton-12\"}], \"errorStrategy\": 2, \"data\": {}, \"options\":
-        {}, \"uid\": \"LanguageMenu-8\"}], \"errorStrategy\": 2, \"options\": {},
-        \"uid\": \"Header-1\"}, {\"resource\": null, \"name\": \"ScrollToTop\", \"id\":
-        \"scrollToTop\", \"children\": [], \"errorStrategy\": 2, \"options\": {},
-        \"uid\": \"ScrollToTop-2\"}, {\"resource\": null, \"name\": \"Nags\", \"children\":
-        [{\"resource\": null, \"name\": \"NagBase\", \"extraData\": {\"type\": \"upgrade_ie\"},
-        \"children\": [{\"resource\": null, \"name\": \"Button\", \"children\": [],
-        \"errorStrategy\": 2, \"options\": {\"class_name\": \"nagClose\", \"tagName\":
-        \"button\", \"borderless\": true}, \"uid\": \"Button-16\"}], \"errorStrategy\":
-        2, \"data\": {}, \"options\": {\"can_close\": true}, \"uid\": \"NagBase-14\"},
-        {\"resource\": null, \"name\": \"NagUnauth\", \"children\": [{\"resource\":
-        null, \"name\": \"JoinButton\", \"id\": \"join\", \"children\": [], \"errorStrategy\":
-        2, \"options\": {\"color\": \"primary\", \"text\": \"Join Pinterest\", \"class_name\":
-        \"joinButton unauthNagButton\", \"element_type\": \"a\", \"tagName\": \"a\",
-        \"ga_category\": \"unauth_nag_join\"}, \"uid\": \"JoinButton-17\"}, {\"resource\":
-        null, \"name\": \"LoginButton\", \"id\": \"login\", \"children\": [], \"errorStrategy\":
-        2, \"options\": {\"class_name\": \"loginButton unauthNagButton\", \"text\":
-        \"Log in\", \"element_type\": \"a\", \"ga_category\": \"unauth_nag_login\",
-        \"tagName\": \"a\"}, \"uid\": \"LoginButton-18\"}], \"errorStrategy\": 2,
-        \"options\": {}, \"uid\": \"NagUnauth-15\"}], \"errorStrategy\": 2, \"options\":
-        {}, \"uid\": \"Nags-3\"}, {\"resource\": {\"name\": \"UserResource\", \"options\":
-        {\"username\": \"johnstamosgem\", \"bookmarks\": [\"-end-\"]}}, \"name\":
-        \"UserProfilePage\", \"id\": \"mainModule\", \"children\": [{\"resource\":
+        \"module\": {\"resource\": {\"name\": \"LocalesResource\"}, \"name\": \"LanguageDropdown\",
+        \"options\": {\"selected\": \"English (US)\"}}}, \"uid\": \"DropdownButton-12\"}],
+        \"errorStrategy\": 2, \"data\": {}, \"options\": {}, \"uid\": \"LanguageMenu-8\"}],
+        \"errorStrategy\": 2, \"options\": {}, \"uid\": \"Header-1\"}, {\"resource\":
+        null, \"name\": \"ScrollToTop\", \"id\": \"scrollToTop\", \"children\": [],
+        \"errorStrategy\": 2, \"options\": {}, \"uid\": \"ScrollToTop-2\"}, {\"resource\":
+        null, \"name\": \"Nags\", \"children\": [{\"resource\": null, \"name\": \"NagBase\",
+        \"extraData\": {\"type\": \"upgrade_ie\"}, \"children\": [{\"resource\": null,
+        \"name\": \"Button\", \"children\": [], \"errorStrategy\": 2, \"options\":
+        {\"class_name\": \"nagClose\", \"tagName\": \"button\", \"borderless\": true},
+        \"uid\": \"Button-16\"}], \"errorStrategy\": 2, \"data\": {}, \"options\":
+        {\"can_close\": true}, \"uid\": \"NagBase-14\"}, {\"resource\": null, \"name\":
+        \"NagUnauth\", \"children\": [{\"resource\": null, \"name\": \"JoinButton\",
+        \"id\": \"join\", \"children\": [], \"errorStrategy\": 2, \"options\": {\"color\":
+        \"primary\", \"text\": \"Join Pinterest\", \"class_name\": \"joinButton unauthNagButton\",
+        \"element_type\": \"a\", \"tagName\": \"a\", \"ga_category\": \"unauth_nag_join\"},
+        \"uid\": \"JoinButton-17\"}, {\"resource\": null, \"name\": \"LoginButton\",
+        \"id\": \"login\", \"children\": [], \"errorStrategy\": 2, \"options\": {\"class_name\":
+        \"loginButton unauthNagButton\", \"text\": \"Log in\", \"element_type\": \"a\",
+        \"ga_category\": \"unauth_nag_login\", \"tagName\": \"a\"}, \"uid\": \"LoginButton-18\"}],
+        \"errorStrategy\": 2, \"options\": {}, \"uid\": \"NagUnauth-15\"}], \"errorStrategy\":
+        2, \"options\": {}, \"uid\": \"Nags-3\"}, {\"resource\": {\"name\": \"UserResource\",
+        \"options\": {\"username\": \"johnstamosgem\", \"bookmarks\": [\"-end-\"]}},
+        \"name\": \"UserProfilePage\", \"id\": \"mainModule\", \"children\": [{\"resource\":
         {\"name\": \"UserResource\", \"options\": {\"username\": \"johnstamosgem\",
         \"bookmarks\": [\"-end-\"]}}, \"name\": \"UserProfileHeader\", \"children\":
         [], \"errorStrategy\": 2, \"data\": {\"username\": \"johnstamosgem\", \"first_name\":
@@ -639,7 +640,7 @@ http_interactions:
         \"name\": \"UserProfilePage\", \"options\": {\"username\": \"johnstamosgem\",
         \"report_user_spam\": null, \"tab\": \"boards\", \"show_follow_memo\": null}}},
         \"uid\": \"App-30\"}, \"canDebug\": false, \"requireJsPaths\": {}, \"isLoggedIn\":
-        false});\n    </script>\n    \n</body>\n</html>"
+        false});\n    </script>\n</body>\n</html>"
     http_version: 
-  recorded_at: Fri, 09 Aug 2013 03:08:54 GMT
+  recorded_at: Mon, 12 Aug 2013 22:25:03 GMT
 recorded_with: VCR 2.5.0
