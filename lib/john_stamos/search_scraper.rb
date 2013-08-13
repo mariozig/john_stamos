@@ -1,6 +1,5 @@
 class JohnStamos::SearchScraper
-  attr_accessor :next_bookmark, :search_text, :pin_ids
-  attr_reader :limit
+  attr_accessor :next_bookmark, :search_text, :pin_ids, :limit
 
   def initialize(client, search_text=nil, options={})
     default_options = { limit: 50 }
@@ -49,7 +48,7 @@ class JohnStamos::SearchScraper
 
     pin_ids_from_embedded_script_json = pin_ids_from_first_retrieval(embedded_script_json)
 
-    @pin_ids += pin_ids_up_to_limit(pin_ids_from_embedded_script_json)
+    pin_ids_up_to_limit(pin_ids_from_embedded_script_json)
     @next_bookmark = next_bookmark_from_first_retrieval(embedded_script_json)
   end
 
@@ -59,8 +58,8 @@ class JohnStamos::SearchScraper
 
     pins_json = @client.json_content(subsequent_retrieval_url, build_url_params)
     pin_ids_from_json = pin_ids_from_subsequent_retrieval(pins_json)
+    pin_ids_up_to_limit(pin_ids_from_json)
 
-    @pin_ids += pin_ids_up_to_limit(pin_ids_from_json)
     @next_bookmark = next_bookmark_from_subsequent_retrieval(pins_json)
   end
 
@@ -70,7 +69,7 @@ class JohnStamos::SearchScraper
   end
 
   def limit_reached?
-    @limit == @pin_ids.length
+    @pin_ids.length == @limit
   end
 
   def pins
@@ -142,11 +141,9 @@ class JohnStamos::SearchScraper
     end
 
     def pin_ids_up_to_limit(ids)
-      remaining = @limit - @pin_ids.length
-      if remaining >= @pin_ids.length
-        ids
-      else
-        ids[0..remaining-1]
+      ids.each do |id|
+        break if limit_reached?
+        @pin_ids << id
       end
     end
 
