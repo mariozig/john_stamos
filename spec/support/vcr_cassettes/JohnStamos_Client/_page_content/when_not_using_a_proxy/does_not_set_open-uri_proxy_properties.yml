@@ -27,27 +27,27 @@ http_interactions:
       Content-Type:
       - text/html; charset=utf-8
       Date:
-      - Mon, 12 Aug 2013 20:57:12 GMT
+      - Tue, 13 Aug 2013 02:49:53 GMT
       Pinterest-Breed:
       - CORGI
       Pinterest-Generated-By:
-      - ngapp-ba887ea4
+      - ngapp-ee90bbc2
       Pinterest-Version:
-      - a66bf1c
+      - 9a3f43c
       Server:
       - nginx
       Set-Cookie:
-      - _pinterest_sess="eJwLCvevtEz2MkrT9s40yQ13dvPICgh18TAocXe0tY8vycxNtfUN8TX2y/I18A1xrPJNt7VVK04tLs5MsfXMysn1yw3KiMwNLferCsqKzArK9MvyyowK963wdw/KiAqPyvB1ScmNyg2s8gTqAwBvWSRL";
-        Domain=.pinterest.com; expires=Thu, 07-Aug-2014 20:57:12 GMT; Max-Age=31103999;
+      - _pinterest_sess="eJwFwcEKgzAMANC/2QdoPewQxlgnE03FEhjJZZdK19CeKgj9et87I6cFKcRxOJY+4Of+ktnW4scnPH5HKjsgYe8UO9T3gCfAre61pgCTomHajCM2rmET8ip2M2hzWcn/5ctNNGfunE4R4AJqyyNf";
+        Domain=.pinterest.com; expires=Fri, 08-Aug-2014 02:49:53 GMT; Max-Age=31103999;
         Path=/
-      - csrftoken=EBqE2eoKrAWTsG3vTiYBpIrBe87PL9eq; Domain=.pinterest.com; expires=Mon,
-        11-Aug-2014 20:57:12 GMT; Max-Age=31449600; Path=/
+      - csrftoken=oCOHU4PIyGXVEvyKRboLLRrZtXKHPyhV; Domain=.pinterest.com; expires=Tue,
+        12-Aug-2014 02:49:53 GMT; Max-Age=31449600; Path=/
       Vary:
       - Cookie, Accept-Encoding
       Via:
       - 1.1 varnish
       X-Varnish:
-      - '1768242448'
+      - '1906520959'
       Content-Length:
       - '5972'
       Connection:
@@ -63,7 +63,7 @@ http_interactions:
         false, \"ew\": false, \"sw\": false, \"rpl\": false, \"ff_s\": false, \"wfe\":
         false},\n            expns: {}\n        };\n        var P_TEST_MODE = null;\n
         \       \n    </script>\n\n    \n    \n    \n    \n    \n\n    <link rel=\"stylesheet\"
-        href=\"https://s-passets-ec.pinimg.com/webapp/app/desktop/bundle.5f3fe3aa.css\">\n
+        href=\"https://s-passets-ec.pinimg.com/webapp/app/desktop/bundle.b37a463f.css\">\n
         \   <script src=\"https://s-passets-ec.pinimg.com/webapp/app/desktop/bundle.af9d5fa0.js\"></script>\n
         \   \n\n    \n\n    \n    <link rel=\"apple-touch-icon\" href=\"https://s-passets-ec.pinimg.com/webapp/app/desktop/images/logo_trans_144x144.4d67817d.png\">\n
         \   <link rel=\"icon\" href=\"https://s-passets-ec.pinimg.com/webapp/app/desktop/images/favicon.c37ee67b.png\">\n\n
@@ -129,7 +129,7 @@ http_interactions:
         unless you <a href=\"http://enable-javascript.com/\" rel=\"nofollow\">turn
         on JavaScript.</a></div>\n\n\n\n\n    <style>\n        .NagBase {\n            display:
         none;\n        }\n    </style>\n</noscript></div></div>    \n\n    \n    <script>\n
-        \       P.FB_KEY = 274266067164;\n        P.CONTEXT = {\"app_version\": \"a66bf1c\"};\n
+        \       P.FB_KEY = 274266067164;\n        P.CONTEXT = {\"app_version\": \"9a3f43c\"};\n
         \       P.STRINGS = {\"formURLNotValid\": \"Not a valid url.\", \"resendConfirmationEmailNoOp\":
         \"Your account has already been confirmed.\", \"formFieldRequired\": \"Required\",
         \"oneNewPin\": \"1 new pin\", \"errorMessage\": \"Sorry! Something went wrong
@@ -410,7 +410,7 @@ http_interactions:
         \"?{scope}\", \"state\": \"?{state}\", \"redirect_uri\": \"?{redirect_uri}\",
         \"response_type\": \"?{response_type}\", \"consumer_id\": \"?{consumer_id}\"}}];\n
         \       P.PAGE_ROUTE_PATTERN = \"^\\/$\";\n        P.PAGE_LOAD_REQUEST_IDENTIFIER
-        = \"279513312240\";\n\n        P.start({\"gaAccountNumber\": \"UA-12967896-7\",
+        = \"685211484685\";\n\n        P.start({\"gaAccountNumber\": \"UA-12967896-7\",
         \"scrubbedUser\": {}, \"tree\": {\"resource\": null, \"name\": \"App\", \"children\":
         [{\"resource\": null, \"name\": \"HomePage\", \"id\": \"mainModule\", \"children\":
         [{\"resource\": null, \"name\": \"UnauthHomePage\", \"children\": [{\"resource\":
@@ -452,5 +452,5 @@ http_interactions:
         null}}, \"view_type\": \"content_only\"}, \"uid\": \"App-10\"}, \"canDebug\":
         false, \"requireJsPaths\": {}, \"isLoggedIn\": false});\n    </script>\n</body>\n</html>"
     http_version: 
-  recorded_at: Mon, 12 Aug 2013 20:57:12 GMT
+  recorded_at: Tue, 13 Aug 2013 02:49:53 GMT
 recorded_with: VCR 2.5.0

@@ -27,27 +27,27 @@ http_interactions:
       Content-Type:
       - text/html; charset=utf-8
       Date:
-      - Mon, 12 Aug 2013 21:25:58 GMT
+      - Tue, 13 Aug 2013 02:49:55 GMT
       Pinterest-Breed:
       - CORGI
       Pinterest-Generated-By:
-      - ngapp-af3b57f2
+      - ngapp033
       Pinterest-Version:
-      - a66bf1c
+      - 9a3f43c
       Server:
       - nginx
       Set-Cookie:
-      - _pinterest_sess="eJxz9jDxLClOTcsP8skvDsyriCrQNisrKDPLsjSxtY8vycxNtfUN8TX2y/I18M1KNvR3tLVVK04tLs5MsfXMDa2IDEmu8M0Kyo0KiayKzAo0iqwKNPHNcjSJyg009neJLPerCiz3d3c19Ey3tQUAtRokFQ==";
-        Domain=.pinterest.com; expires=Thu, 07-Aug-2014 21:25:58 GMT; Max-Age=31103999;
+      - _pinterest_sess="eJwFwbEKwjAQANC/cZXYFOpwCPZCueEuBFIkLl3aShMzSCJKv77v/dW5J+quK+J3uFfT1feKZTf80XCb6pYXYM+NRL5wNK04gFNZStlmoEg/i049H5IFkwreacGxtUPQ1s+Zo6SwS7LIDb0ADjjuIkE=";
+        Domain=.pinterest.com; expires=Fri, 08-Aug-2014 02:49:55 GMT; Max-Age=31103999;
         Path=/
-      - csrftoken=eZuSGClyZdJ2GlsnA0CKCUBMfSJAH7Lt; Domain=.pinterest.com; expires=Mon,
-        11-Aug-2014 21:25:58 GMT; Max-Age=31449600; Path=/
+      - csrftoken=lJkDao3I31UbIsdd7HXFqqerK90wqdKU; Domain=.pinterest.com; expires=Tue,
+        12-Aug-2014 02:49:55 GMT; Max-Age=31449600; Path=/
       Vary:
       - Cookie, Accept-Encoding
       Via:
       - 1.1 varnish
       X-Varnish:
-      - '261308398'
+      - '299993059'
       Content-Length:
       - '10861'
       Connection:
@@ -63,7 +63,7 @@ http_interactions:
         false, \"ew\": false, \"sw\": false, \"rpl\": false, \"ff_s\": false, \"wfe\":
         false},\n            expns: {}\n        };\n        var P_TEST_MODE = null;\n
         \       \n    </script>\n\n    \n    \n    \n    \n    \n\n    <link rel=\"stylesheet\"
-        href=\"http://passets-ak.pinterest.com/webapp/app/desktop/bundle.5f3fe3aa.css\">\n
+        href=\"http://passets-ec.pinterest.com/webapp/app/desktop/bundle.b37a463f.css\">\n
         \   <script src=\"http://passets-ak.pinterest.com/webapp/app/desktop/bundle.af9d5fa0.js\"></script>\n
         \   \n\n    \n\n    \n    <link rel=\"apple-touch-icon\" href=\"http://passets-ec.pinterest.com/webapp/app/desktop/images/logo_trans_144x144.4d67817d.png\">\n
         \   <link rel=\"icon\" href=\"http://passets-ak.pinterest.com/webapp/app/desktop/images/favicon.c37ee67b.png\">\n\n
@@ -197,7 +197,7 @@ http_interactions:
         \           <div class=\"commenterWrapper\">\n                \n                    <a
         class=\"commentDescriptionCreator\" href=\"/johnstamosgem/\">John Stamosgem</a>\n\n
         \                   \n                        <span class='commentDescriptionTimeAgo'>&bull;
-        7 days ago </span>\n                    \n                \n            </div>\n
+        8 days ago </span>\n                    \n                \n            </div>\n
         \           \n                \n                    <p class=\"commentDescriptionContent\">JohnStamosgemPin
         description</p>\n                \n            \n            \n            \n
         \       </div>\n    </div>\n\n                </div>\n            \n\n            \n
@@ -210,18 +210,17 @@ http_interactions:
         hasText User\" id=\"User-34\">\n\n\n\n\n\n\n\n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n
         \   \n        \n        \n        \n        \n        \n\n        \n    \n
         \   \n    \n    \n\n\n        \n        \n            <a href=\"/johnstamosgem/\">\n
-        \       \n            \n            \n            \n            \n            \n
-        \           \n\n            \n                \n            \n\n            <div
-        class=\"thumbImageWrapper\">\n                <img src=\"http://media-cache-ec0.pinimg.com/avatars/johnstamosgem_1375988759_75.jpg\"
-        alt=\"Profile image of John Stamosgem\" />\n            </div>\n            \n
-        \               <h3 class=\"title\">Pinned by</h3>\n            \n            \n
-        \               <h4 class=\"fullname\">John Stamosgem</h4>\n            \n
-        \           \n            \n        \n            </a>\n        \n    \n\n</div>\n\n
-        \               \n                <div class=\"closeupBottomView boardCredit
-        Board Module\" id=\"Board-35\">\n\n\n\n\n\n    \n\n\n\n    \n        \n        \n
-        \       \n        \n\n        \n    \n        \n        <button type=\"button\"
-        class=\"btn rounded default Button hasText Module BoardFollowButton notNavigatable
-        ui-FollowButton\" id=\"BoardFollowButton-36\">\n\n\n\n\n\n\n\n\n\n\n\n\n\n
+        \       \n\n        \n        \n        \n        \n        \n        \n\n
+        \       \n            \n        \n\n        <div class=\"thumbImageWrapper\">\n
+        \           <img src=\"http://media-cache-ec0.pinimg.com/avatars/johnstamosgem_1375988759_75.jpg\"
+        alt=\"Profile image of John Stamosgem\" />\n        </div>\n        \n            <h3
+        class=\"title\">Pinned by</h3>\n        \n        \n            <h4 class=\"fullname\">John
+        Stamosgem</h4>\n        \n        \n        \n\n        \n            </a>\n
+        \       \n    \n\n</div>\n\n                \n                <div class=\"closeupBottomView
+        boardCredit Board Module\" id=\"Board-35\">\n\n\n\n\n\n    \n\n\n\n    \n
+        \       \n        \n        \n        \n\n        \n    \n        \n        <button
+        type=\"button\" class=\"btn rounded default Button hasText Module BoardFollowButton
+        notNavigatable ui-FollowButton\" id=\"BoardFollowButton-36\">\n\n\n\n\n\n\n\n\n\n\n\n\n\n
         \   \n    \n\n\n\n\n\n<span class=\"buttonText\">Follow</span>\n        \n</button>\n
         \   \n\n\n        <a href=\"/johnstamosgem/johnstamosgemboard/\" class=\"boardLink\">\n
         \           <img src=\"http://media-cache-ak0.pinimg.com/upload/412149872087590750_board_thumbnail_2013-08-04-22-38-00_83201_60.jpg\"
@@ -235,17 +234,16 @@ http_interactions:
         boardRepTitle User Module thumb\" id=\"User-39\">\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
         \   \n        \n        \n        \n        \n        \n\n        \n    \n
         \   \n    \n    \n\n\n        \n        \n            <a href=\"/johnstamosgem/johnstamosgemboard/\">\n
-        \       \n            \n            \n            \n            \n            \n
-        \           \n\n            \n                \n            \n\n            <div
-        class=\"thumbImageWrapper\">\n                <img src=\"http://media-cache-ec0.pinimg.com/avatars/johnstamosgem_1375988759_75.jpg\"
-        alt=\"Profile image of John Stamosgem\" />\n            </div>\n            \n
-        \               <h3 class=\"title\">JohnStamosgemBoard</h3>\n            \n
-        \           \n                <h4 class=\"fullname\">John Stamosgem</h4>\n
-        \           \n            \n            \n        \n            </a>\n        \n
-        \   \n\n</div>\n    </div>\n\n    \n    <div class=\"pinGridWrapper\">\n        <div
-        class=\"loading Grid Module\" id=\"Grid-40\"></div>\n    </div>\n\n    \n
-        \   \n        <button type=\"button\" class=\"btn rounded default Button hasText
-        Module BoardFollowButton notNavigatable followBoardButton ui-FollowButton\"
+        \       \n\n        \n        \n        \n        \n        \n        \n\n
+        \       \n            \n        \n\n        <div class=\"thumbImageWrapper\">\n
+        \           <img src=\"http://media-cache-ec0.pinimg.com/avatars/johnstamosgem_1375988759_75.jpg\"
+        alt=\"Profile image of John Stamosgem\" />\n        </div>\n        \n            <h3
+        class=\"title\">JohnStamosgemBoard</h3>\n        \n        \n            <h4
+        class=\"fullname\">John Stamosgem</h4>\n        \n        \n        \n\n        \n
+        \           </a>\n        \n    \n\n</div>\n    </div>\n\n    \n    <div class=\"pinGridWrapper\">\n
+        \       <div class=\"loading Grid Module\" id=\"Grid-40\"></div>\n    </div>\n\n
+        \   \n    \n        <button type=\"button\" class=\"btn rounded default Button
+        hasText Module BoardFollowButton notNavigatable followBoardButton ui-FollowButton\"
         id=\"BoardFollowButton-41\">\n\n\n\n\n\n\n\n\n\n\n\n\n\n    \n    \n\n\n\n\n\n<span
         class=\"buttonText\">Follow Board</span>\n        \n</button>\n    \n\n</div>\n</div>\n\n<div
         id=\"domainContainer\">\n    \n        <div class=\"Domain Module\" id=\"Domain-38\">\n\n\n\n
@@ -286,7 +284,7 @@ http_interactions:
         unless you <a href=\"http://enable-javascript.com/\" rel=\"nofollow\">turn
         on JavaScript.</a></div>\n\n\n\n\n    <style>\n        .NagBase {\n            display:
         none;\n        }\n    </style>\n</noscript></div></div>    \n\n    \n    <script>\n
-        \       P.FB_KEY = 274266067164;\n        P.CONTEXT = {\"app_version\": \"a66bf1c\"};\n
+        \       P.FB_KEY = 274266067164;\n        P.CONTEXT = {\"app_version\": \"9a3f43c\"};\n
         \       P.STRINGS = {\"formURLNotValid\": \"Not a valid url.\", \"resendConfirmationEmailNoOp\":
         \"Your account has already been confirmed.\", \"formFieldRequired\": \"Required\",
         \"oneNewPin\": \"1 new pin\", \"errorMessage\": \"Sorry! Something went wrong
@@ -567,7 +565,7 @@ http_interactions:
         \"?{scope}\", \"state\": \"?{state}\", \"redirect_uri\": \"?{redirect_uri}\",
         \"response_type\": \"?{response_type}\", \"consumer_id\": \"?{consumer_id}\"}}];\n
         \       P.PAGE_ROUTE_PATTERN = \"^\\/pin\\/:id\\/$\";\n        P.PAGE_LOAD_REQUEST_IDENTIFIER
-        = \"531363948700\";\n\n        P.start({\"gaAccountNumber\": \"UA-12967896-7\",
+        = \"893625418745\";\n\n        P.start({\"gaAccountNumber\": \"UA-12967896-7\",
         \"scrubbedUser\": {}, \"tree\": {\"resource\": null, \"name\": \"App\", \"children\":
         [{\"resource\": null, \"name\": \"Header\", \"id\": \"header\", \"children\":
         [{\"resource\": null, \"name\": \"DropdownButton\", \"id\": \"categoriesDropdownButton\",
@@ -815,5 +813,5 @@ http_interactions:
         \"detailed\"}}, \"name\": \"Closeup\", \"options\": {}}}, \"uid\": \"App-42\"},
         \"canDebug\": false, \"requireJsPaths\": {}, \"isLoggedIn\": false});\n    </script>\n</body>\n</html>"
     http_version: 
-  recorded_at: Mon, 12 Aug 2013 21:25:58 GMT
+  recorded_at: Tue, 13 Aug 2013 02:49:55 GMT
 recorded_with: VCR 2.5.0

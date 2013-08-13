@@ -27,29 +27,29 @@ http_interactions:
       Content-Type:
       - text/html; charset=utf-8
       Date:
-      - Mon, 12 Aug 2013 22:25:01 GMT
+      - Tue, 13 Aug 2013 02:49:24 GMT
       Pinterest-Breed:
       - CORGI
       Pinterest-Generated-By:
-      - ngapp-1bc1a304
+      - ngapp-3919183e
       Pinterest-Version:
       - 9a3f43c
       Server:
       - nginx
       Set-Cookie:
-      - _pinterest_sess="eJwrMyrxLnezCMhPNCsIdPctNEwqyc2PqKzMTXS0tY8vycxNtfUN8TX2y/I1AOJy30BbW7Xi1OLizBRbz6xAg8isdANfo8CKSKNQ46iQwCq/XL+MyJCg7CiXlCy/rPSqqKx0Y1+joFzPdFtbALzRJFw=";
-        Domain=.pinterest.com; expires=Thu, 07-Aug-2014 22:25:01 GMT; Max-Age=31103999;
+      - _pinterest_sess="eJyLdE8qMDb3jEgrMcjyytR3yw8rNU9zL7RMTM62tY8vycxNtfUN8TX2y/I18s1yNfJztLVVK04tLs5MsfXMDTSKNPKt8g13y4w08qz0zQqs8DWKyojMdTX1yw019M3yNPXNSq+McnE09ky3tQUAZgIiyg==";
+        Domain=.pinterest.com; expires=Fri, 08-Aug-2014 02:49:24 GMT; Max-Age=31103999;
         Path=/
-      - csrftoken=I77ZFnd0PHRVy9dJXMHaIhdqNfxdAWTS; Domain=.pinterest.com; expires=Mon,
-        11-Aug-2014 22:25:01 GMT; Max-Age=31449600; Path=/
+      - csrftoken=fFZIWQPO02QORrptxIfBFCaOioeVBCjM; Domain=.pinterest.com; expires=Tue,
+        12-Aug-2014 02:49:24 GMT; Max-Age=31449600; Path=/
       Vary:
       - Cookie, Accept-Encoding
       Via:
       - 1.1 varnish
       X-Varnish:
-      - '580335496'
+      - '1003424025'
       Content-Length:
-      - '8816'
+      - '8818'
       Connection:
       - keep-alive
     body:
@@ -491,7 +491,7 @@ http_interactions:
         \"?{scope}\", \"state\": \"?{state}\", \"redirect_uri\": \"?{redirect_uri}\",
         \"response_type\": \"?{response_type}\", \"consumer_id\": \"?{consumer_id}\"}}];\n
         \       P.PAGE_ROUTE_PATTERN = \"^\\/:username\\/$\";\n        P.PAGE_LOAD_REQUEST_IDENTIFIER
-        = \"227580394088\";\n\n        P.start({\"gaAccountNumber\": \"UA-12967896-7\",
+        = \"667445827913\";\n\n        P.start({\"gaAccountNumber\": \"UA-12967896-7\",
         \"scrubbedUser\": {}, \"tree\": {\"resource\": null, \"name\": \"App\", \"children\":
         [{\"resource\": null, \"name\": \"Header\", \"id\": \"header\", \"children\":
         [{\"resource\": null, \"name\": \"DropdownButton\", \"id\": \"categoriesDropdownButton\",
@@ -642,5 +642,5 @@ http_interactions:
         \"uid\": \"App-30\"}, \"canDebug\": false, \"requireJsPaths\": {}, \"isLoggedIn\":
         false});\n    </script>\n</body>\n</html>"
     http_version: 
-  recorded_at: Mon, 12 Aug 2013 22:25:02 GMT
+  recorded_at: Tue, 13 Aug 2013 02:49:24 GMT
 recorded_with: VCR 2.5.0
