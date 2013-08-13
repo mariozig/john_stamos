@@ -41,7 +41,7 @@ describe JohnStamos::Pinner, :vcr do
       expect(pinner).to respond_to(:follower_count)
     end
 
-    it 'returns a follower count of 0 because nobody really likes his shitty pins of ghetto animal pictures' do
+    it 'returns a follower count of 0' do
       expect(pinner.follower_count).to eq(0) # :( I have no friends.
     end
   end
