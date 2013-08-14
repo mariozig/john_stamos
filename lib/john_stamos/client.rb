@@ -15,7 +15,7 @@ class JohnStamos::Client
   end
 
   def pin(pinterest_pin_id)
-    JohnStamos::Pin.new(self, { pinterest_pin_id: pinterest_pin_id } )
+    JohnStamos::Pin.new(self, pinterest_pin_id)
   end
 
   def pinner(username)
