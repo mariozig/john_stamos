@@ -1,6 +1,6 @@
 # JohnStamos 
 
-The greasiest Pinterest client. It exposes an interface you can use to query Pinterest for data about individual Pins, Pinners and Pin searches.  Have mercy.
+The greasiest Pinterest client. JohnStamos exposes an interface you can use to query Pinterest for data about individual Pins, Pinners and Pin searches.  Have mercy.
 
 [![Build Status](https://travis-ci.org/mariozig/john_stamos.png?branch=master)](https://travis-ci.org/mariozig/john_stamos)
 
