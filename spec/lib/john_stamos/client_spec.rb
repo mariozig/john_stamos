@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe JohnStamos::Client, :vcr do
-  let(:client) { JohnStamos::Client.new }
+  subject(:client) { JohnStamos::Client.new }
   let(:pinterest_url) { 'https://pinterest.com' }
 
   describe '#search_pins' do

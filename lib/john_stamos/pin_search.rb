@@ -4,7 +4,7 @@ class JohnStamos::PinSearch
   def initialize(client, search_text=nil, options={})
     default_options = { limit: 50 }
     options = default_options.merge(options)
-    @limit = options[:limit]
+    @limit = options.fetch(:limit)
 
     @client = client
     @search_text = search_text
@@ -69,7 +69,7 @@ class JohnStamos::PinSearch
   end
 
   def limit_reached?
-    @pin_ids.length == @limit
+    @pin_ids.length == @limit.to_i
   end
 
   def pins

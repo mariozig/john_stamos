@@ -7,8 +7,8 @@ class JohnStamos::Client
     @proxy = options[:proxy]
   end
 
-  def search_pins(search_text, limit=50)
-    search_scraper = JohnStamos::PinSearch.new(self, search_text, limit: limit)
+  def search_pins(search_text, options={})
+    search_scraper = JohnStamos::PinSearch.new(self, search_text, {:limit => { :limit => 10 }})
     search_scraper.execute!
 
     search_scraper.pins
