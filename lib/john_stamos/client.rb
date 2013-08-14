@@ -8,7 +8,7 @@ class JohnStamos::Client
   end
 
   def search_pins(search_text, options={})
-    search_scraper = JohnStamos::PinSearch.new(self, search_text, {:limit => { :limit => 10 }})
+    search_scraper = JohnStamos::PinSearch.new(self, search_text, options)
     search_scraper.execute!
 
     search_scraper.pins
