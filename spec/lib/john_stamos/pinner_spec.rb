@@ -27,12 +27,22 @@ describe JohnStamos::Pinner, :vcr do
   end
 
   describe '#pin_count' do
-    it 'responds to #url' do
+    it 'responds to #pin_count' do
       expect(pinner).to respond_to(:pin_count)
     end
 
     it 'returns the correct number of pins' do
       expect(pinner.pin_count).to eq(1)
+    end
+  end
+
+  describe '#about' do
+    it 'responds to #about' do
+      expect(pinner).to respond_to(:about)
+    end
+
+    it 'returns the correct about text' do
+      expect(pinner.about).to eq('This is the johnstamos about content.')
     end
   end
 
@@ -97,8 +107,7 @@ describe JohnStamos::Pinner, :vcr do
     end
 
     it 'returns the correct website url' do
-      pinner_with_url = JohnStamos::Pinner.new(client, 'danielhunley')
-      expect(pinner_with_url.website_url).to eq('http://www.livingbear.com')
+      expect(pinner.website_url).to eq('http://johnstamos.com/')
     end
   end
 
@@ -108,8 +117,7 @@ describe JohnStamos::Pinner, :vcr do
     end
 
     it 'returns the correct location' do
-      pinner_with_location = JohnStamos::Pinner.new(client, 'danielhunley')
-      expect(pinner_with_location.location).to eq('Nashville, TN')
+      expect(pinner.location).to eq('California')
     end
   end
 end

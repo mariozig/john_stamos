@@ -16,6 +16,10 @@ class JohnStamos::Pinner
     embedded_pinner_data("pin_count")
   end
 
+  def about
+    embedded_pinner_data("about")
+  end
+
   def follower_count
     embedded_pinner_data("follower_count")
   end
@@ -57,14 +61,14 @@ class JohnStamos::Pinner
 
     def embedded_pinner_json
       embedded_script = page.css('script').select do |script|
-        script['src'].nil? && script.content.include?('P.start(')
+        script['src'].nil? && script.content.include?('Pc.startArgs')
       end
 
       embedded_script_content = embedded_script.first.content
       # This regex used in the range below looks for Pinterest's call to `P.start`
       # and snatches it's parameter... which happens to be a JSON representation of
       # the page.
-      raw_json = embedded_script_content[/P.start\((.*)\);$/, 1]
+      raw_json = embedded_script_content[/Pc.startArgs = (.*);/, 1]
       embedded_script_json = JSON.parse(raw_json)
 
       embedded_script_json

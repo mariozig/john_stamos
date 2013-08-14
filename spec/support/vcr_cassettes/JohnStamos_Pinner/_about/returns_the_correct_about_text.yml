@@ -27,29 +27,29 @@ http_interactions:
       Content-Type:
       - text/html; charset=utf-8
       Date:
-      - Wed, 14 Aug 2013 17:52:05 GMT
+      - Wed, 14 Aug 2013 17:52:02 GMT
       Pinterest-Breed:
       - CORGI
       Pinterest-Generated-By:
-      - ngapp057
+      - ngapp-bf0dc195
       Pinterest-Version:
       - 419b911
       Server:
       - nginx
       Set-Cookie:
-      - _pinterest_sess="eJwNxbEKgzAQANC/cS0qGY8uIWLhTgwRGpcOrcpdczhEUf++fcvzhvvHfpll9dUt2G2Y0267r3/iCvfXxjoBBqxJhgPlfVEPUOQpZ/5AK/EkwZLsyFEdY/A8ajRd4/R/ieISKZpYudQuAD+3ZiQm";
-        Domain=.pinterest.com; expires=Sat, 09-Aug-2014 17:52:05 GMT; Max-Age=31103999;
+      - _pinterest_sess="eJzLDnb1SzJ18fN3jXTUrijyrcgpCy0MSk6uKEu3tY8vycxNtfUN8TX2ywot981KrvRNt7VVK04tLs5MsfXMcsv2c3E19XcPrPCrcjWMrAo08Qv3yvTLdS33zfUs960KyowMcTXwC4/K9gTqAwDKQSSZ";
+        Domain=.pinterest.com; expires=Sat, 09-Aug-2014 17:52:02 GMT; Max-Age=31103999;
         Path=/
-      - csrftoken=l9hgTtZnVs4QBUxrRIFcvIb1ebaFkifh; Domain=.pinterest.com; expires=Wed,
-        13-Aug-2014 17:52:05 GMT; Max-Age=31449600; Path=/
+      - csrftoken=6wFKMUdhYsgGl5q9jT33GkZT0DqKY5iZ; Domain=.pinterest.com; expires=Wed,
+        13-Aug-2014 17:52:02 GMT; Max-Age=31449600; Path=/
       Vary:
       - Cookie, Accept-Encoding
       Via:
       - 1.1 varnish
       X-Varnish:
-      - '1539485529'
+      - '315658728'
       Content-Length:
-      - '9628'
+      - '9626'
       Connection:
       - keep-alive
     body:
@@ -523,7 +523,7 @@ http_interactions:
         \"OAuthDialog\", \"content_only\": true, \"https\": true, \"options\": {\"scope\":
         \"?{scope}\", \"state\": \"?{state}\", \"redirect_uri\": \"?{redirect_uri}\",
         \"response_type\": \"?{response_type}\", \"consumer_id\": \"?{consumer_id}\"}}]);\n
-        \       P.setPageRoutePattern(\"^\\/:username\\/$\");\n        P.setPageLoadRequestIdentifier(\"843312522141\");\n\n
+        \       P.setPageRoutePattern(\"^\\/:username\\/$\");\n        P.setPageLoadRequestIdentifier(\"776111418070\");\n\n
         \       Pc.startArgs = {\"gaAccountNumber\": \"UA-12967896-7\", \"scrubbedUser\":
         {}, \"tree\": {\"resource\": null, \"name\": \"App\", \"children\": [{\"resource\":
         null, \"name\": \"Header\", \"id\": \"header\", \"children\": [{\"resource\":
@@ -677,5 +677,5 @@ http_interactions:
         \"canDebug\": false, \"requireJsPaths\": {}, \"isLoggedIn\": false};\n        P.available.declare();\n
         \   </script>\n</body>\n</html>"
     http_version: 
-  recorded_at: Wed, 14 Aug 2013 17:52:05 GMT
+  recorded_at: Wed, 14 Aug 2013 17:52:02 GMT
 recorded_with: VCR 2.5.0
