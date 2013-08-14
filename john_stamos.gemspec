@@ -8,9 +8,10 @@ Gem::Specification.new do |gem|
   gem.version       = JohnStamos::VERSION
   gem.authors       = ["mariozig"]
   gem.email         = ["mariozig@gmail.com"]
-  gem.description   = %q{An interface to Pinterest}
-  gem.summary       = %q{An interface to Pinterest}
+  gem.description   = %q{A Pinterest client}
+  gem.summary       = %q{An interface into Pinterest that exposes Pinners, Pins and searching. }
   gem.homepage      = "http://github.com/mariozig/john_stamos/"
+  gem.license       = "MIT"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
