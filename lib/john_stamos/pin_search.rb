@@ -36,14 +36,14 @@ class JohnStamos::PinSearch
     page = @client.page_content(first_retrieval_url)
 
     embedded_script = page.css('script').select do |script|
-      script['src'].nil? && script.content.include?('P.start(')
+      script['src'].nil? && script.content.include?('Pc.startArgs')
     end
 
     embedded_script_content = embedded_script.first.content
-    # This regex used in the range below looks for Pinterest's call to `P.start`
-    # and snatches it's parameter... which happens to be a JSON representation of
+    # This regex used in the range snatches the parameter Pinterest uses to
+    # start their app... This parameter happens to be a JSON representation of
     # the page.
-    raw_json = embedded_script_content[/P.start\((.*)\);$/, 1]
+    raw_json = embedded_script_content[/Pc.startArgs = (.*);/, 1]
     embedded_script_json = JSON.parse(raw_json)
 
     pin_ids_from_embedded_script_json = pin_ids_from_first_retrieval(embedded_script_json)

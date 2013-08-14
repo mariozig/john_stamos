@@ -52,8 +52,6 @@ class JohnStamos::Pinner
     embedded_pinner_data("location")
   end
 
-
-
   private
     def page
       @page ||= @client.page_content(url)
@@ -65,8 +63,8 @@ class JohnStamos::Pinner
       end
 
       embedded_script_content = embedded_script.first.content
-      # This regex used in the range below looks for Pinterest's call to `P.start`
-      # and snatches it's parameter... which happens to be a JSON representation of
+      # This regex used in the range snatches the parameter Pinterest uses to
+      # start their app... This parameter happens to be a JSON representation of
       # the page.
       raw_json = embedded_script_content[/Pc.startArgs = (.*);/, 1]
       embedded_script_json = JSON.parse(raw_json)
