@@ -47,7 +47,7 @@ class JohnStamos::Pin
 
   private
     def page
-      @page ||= page = @client.page_content(url)
+      @page ||= @client.page_content(url)
     end
 
     def embedded_pin_json
