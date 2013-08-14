@@ -6,7 +6,7 @@ require 'launchy'
 
 require 'john_stamos/version'
 require 'john_stamos/client'
-require 'john_stamos/search_scraper'
+require 'john_stamos/pin_search'
 require 'john_stamos/pin'
 require 'john_stamos/pinner'
 

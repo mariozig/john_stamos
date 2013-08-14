@@ -1,8 +1,8 @@
 require 'spec_helper'
 require 'base64'
 
-describe JohnStamos::SearchScraper, :vcr do
-  subject(:scraper) { JohnStamos::SearchScraper.new(client) }
+describe JohnStamos::PinSearch, :vcr do
+  subject(:scraper) { JohnStamos::PinSearch.new(client) }
 
   let(:client) { JohnStamos::Client.new }
   let(:search_text) { "coffee roasting" }
@@ -237,7 +237,7 @@ describe JohnStamos::SearchScraper, :vcr do
       let(:big_search_term) { "funny" }
 
       context 'with no limit specified' do
-        subject(:big_scraper) { JohnStamos::SearchScraper.new(client, big_search_term) }
+        subject(:big_scraper) { JohnStamos::PinSearch.new(client, big_search_term) }
 
         it 'limits to 50, the default' do
           big_scraper.execute!
@@ -251,7 +251,7 @@ describe JohnStamos::SearchScraper, :vcr do
       end
 
       context 'with a limit lower than the default' do
-        subject(:big_scraper_with_small_limit) { JohnStamos::SearchScraper.new(client, big_search_term, { limit: 10 }) }
+        subject(:big_scraper_with_small_limit) { JohnStamos::PinSearch.new(client, big_search_term, { limit: 10 }) }
 
         it 'limits to 10' do
           expect(big_scraper_with_small_limit.limit).to eq(10)
@@ -269,7 +269,7 @@ describe JohnStamos::SearchScraper, :vcr do
       end
 
       context 'with a limit higher than the default' do
-        subject(:big_scraper_with_limit) { JohnStamos::SearchScraper.new(client, big_search_term, { limit: 147 }) }
+        subject(:big_scraper_with_limit) { JohnStamos::PinSearch.new(client, big_search_term, { limit: 147 }) }
 
         it 'limits to 147' do
           expect(big_scraper_with_limit.limit).to eq(147)

@@ -1,4 +1,4 @@
-class JohnStamos::SearchScraper
+class JohnStamos::PinSearch
   attr_accessor :next_bookmark, :search_text, :pin_ids, :limit
 
   def initialize(client, search_text=nil, options={})

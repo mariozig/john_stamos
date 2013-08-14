@@ -1,7 +1,3 @@
-require 'john_stamos/search_scraper'
-require 'john_stamos/pin'
-require 'john_stamos/pinner'
-
 class JohnStamos::Client
   attr_accessor :proxy
 
@@ -12,7 +8,7 @@ class JohnStamos::Client
   end
 
   def search_pins(search_text)
-    search_scraper = JohnStamos::SearchScraper.new(self, search_text)
+    search_scraper = JohnStamos::PinSearch.new(self, search_text)
     search_scraper.execute!
 
     search_scraper.pins
