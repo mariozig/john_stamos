@@ -1,5 +1,4 @@
-require 'open-uri'
-require 'nokogiri'
+require 'mechanize'
 require 'json'
 require 'rest_client'
 require 'launchy'

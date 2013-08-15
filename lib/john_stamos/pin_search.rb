@@ -35,7 +35,7 @@ class JohnStamos::PinSearch
   def first_retrieval!
     page = @client.page_content(first_retrieval_url)
 
-    embedded_script = page.css('script').select do |script|
+    embedded_script = page.search('script').select do |script|
       script['src'].nil? && script.content.include?('Pc.startArgs')
     end
 

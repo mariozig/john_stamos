@@ -23,12 +23,15 @@ class JohnStamos::Client
   end
 
   def page_content(url)
-    if @proxy
-      proxy_uri = URI.parse(@proxy)
-      Nokogiri::HTML(open(url, proxy: proxy_uri))
-    else
-      Nokogiri::HTML(open(url))
+    begin
+      page = mechanize_agent.get(url)
+    rescue Mechanize::ResponseReadError => e
+      $stderr.puts "#{e.class}: #{e.message}"
+      $stderr.puts "An error occured; attempting to force_parse"
+      page = e.force_parse
     end
+
+    page
   end
 
   def json_content(url, params)
@@ -37,4 +40,18 @@ class JohnStamos::Client
 
     JSON.parse(response)
   end
+
+  private
+    def mechanize_agent
+      agent = Mechanize.new
+      agent.user_agent_alias = 'Mac Safari'
+
+      if @proxy
+        proxy_uri = URI.parse(@proxy)
+        agent.set_proxy(proxy_uri.hostname, proxy_uri.port)
+      end
+
+      agent
+    end
+
 end

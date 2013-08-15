@@ -25,9 +25,8 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency "vcr"
   gem.add_development_dependency "guard-rspec"
 
-  gem.add_dependency "nokogiri"
+  gem.add_dependency "mechanize"
   gem.add_dependency "rest-client"
   gem.add_dependency "json"
   gem.add_dependency "launchy"
-
 end

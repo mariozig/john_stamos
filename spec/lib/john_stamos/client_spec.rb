@@ -61,36 +61,46 @@ describe JohnStamos::Client, :vcr do
     end
   end
 
+  describe '#mechanize_agent' do
+    let(:agent) { client.send(:mechanize_agent) }
+
+    context 'when using a proxy' do
+      before(:each) do
+        client.proxy = 'http://proxy.com:4747'
+      end
+
+      it 'sets the correct hostname' do
+        expect(agent.proxy_addr).to eq('proxy.com')
+      end
+
+      it 'sets the correct port' do
+        expect(agent.proxy_port).to eq(4747)
+      end
+    end
+
+    context 'when not using a proxy' do
+      before(:each) do
+        client.proxy = nil
+      end
+
+      it 'does not set a hostname' do
+        expect(agent.proxy_addr).to be_nil
+      end
+
+      it 'does not set a port' do
+        expect(agent.proxy_port).to be_nil
+      end
+    end
+  end
+
   describe '#page_content' do
     it 'responds to #page_content' do
       expect(client).to respond_to(:page_content)
     end
 
-    context 'when not using a proxy' do
-      before(:each) { allow(client).to receive(:proxy).and_return(nil) }
-
-      let(:page_content) { client.page_content(pinterest_url) }
-
-      it 'returns a Nokogiri::HTML::Document' do
-        expect(client.page_content(pinterest_url)).to be_a(Nokogiri::HTML::Document)
-      end
-
-      it 'does not set open-uri proxy properties' do
-        expect(client).to receive(:open).with(pinterest_url).and_call_original
-        page_content
-      end
+    it 'returns a Mechanize::Page' do
+      expect(client.page_content(pinterest_url)).to be_a(Mechanize::Page)
     end
-
-    context 'when using a proxy' do
-      let(:proxy) { 'http://proxy.com:31337' }
-      let(:proxy_client) { JohnStamos::Client.new({ proxy: proxy }) }
-
-      it 'sets open-uri proxy properties' do
-        expect(proxy_client).to receive(:open).with(pinterest_url, { proxy: URI.parse(proxy) })
-        proxy_client.page_content(pinterest_url)
-      end
-    end
-
   end
 
   describe '#json_content' do
