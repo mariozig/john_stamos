@@ -1,6 +1,7 @@
-require 'mechanize'
+require 'faraday'
+require 'typhoeus/adapters/faraday'
+require 'nokogiri'
 require 'json'
-require 'rest_client'
 require 'launchy'
 
 require 'john_stamos/version'
@@ -12,6 +13,8 @@ require 'john_stamos/pinner'
 module JohnStamos
   class MissingSearchText < Exception; end
   class MissingNextBookmark < Exception; end
+
+  Faraday.default_adapter = :typhoeus
 
   private
     def self.uncle_jesse

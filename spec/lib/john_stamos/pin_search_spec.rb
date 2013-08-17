@@ -89,7 +89,7 @@ describe JohnStamos::PinSearch, :vcr do
 
     it 'returns the correct URL with the search text URL encoded' do
       scraper.search_text = search_text
-      expect(scraper.first_retrieval_url).to eq('http://pinterest.com/search/pins/?q=coffee%20roasting')
+      expect(scraper.first_retrieval_url).to eq('/search/pins/?q=coffee%20roasting')
     end
   end
 
@@ -133,7 +133,7 @@ describe JohnStamos::PinSearch, :vcr do
 
   describe '#subsequent_retrieval_url' do
     it 'returns the correct "resource" url' do
-      expect(scraper.subsequent_retrieval_url).to eq('http://pinterest.com/resource/SearchResource/get/')
+      expect(scraper.subsequent_retrieval_url).to eq('/resource/SearchResource/get/')
     end
   end
 
@@ -174,7 +174,7 @@ describe JohnStamos::PinSearch, :vcr do
         # The expected count can change based on Pinterest. Sometimes they give 99, sometimes 100.
         # When you update the VCR cassettes it may cause this test to fail... please update it.
         scraper.subsequent_retrieval!
-        expect(scraper.pin_ids.length).to eq(100)
+        expect(scraper.pin_ids.length).to eq(99)
       end
     end
   end

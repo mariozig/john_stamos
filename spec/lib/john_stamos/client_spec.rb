@@ -54,94 +54,66 @@ describe JohnStamos::Client, :vcr do
       expect(client).to respond_to(:json_content)
     end
 
-    it 'returns a Hash' do
-      RestClient.stub(:get).and_return('{"json":"json"}')
+    # it 'returns a Hash' do
+    #   RestClient.stub(:get).and_return('{"json":"json"}')
 
-      expect(client.json_content('url', 'params')).to be_a(Hash)
-    end
+    #   expect(client.json_content('url', 'params')).to be_a(Hash)
+    # end
   end
 
-  describe '#mechanize_agent' do
-    let(:agent) { client.send(:mechanize_agent) }
+  # describe '#mechanize_agent' do
+  #   let(:agent) { client.send(:mechanize_agent) }
 
-    context 'when using a proxy' do
-      before(:each) do
-        client.proxy = 'http://proxy.com:4747'
-      end
+  #   context 'when using a proxy' do
+  #     before(:each) do
+  #       client.proxy = 'http://proxy.com:4747'
+  #     end
 
-      it 'sets the correct hostname' do
-        expect(agent.proxy_addr).to eq('proxy.com')
-      end
+  #     it 'sets the correct hostname' do
+  #       expect(agent.proxy_addr).to eq('proxy.com')
+  #     end
 
-      it 'sets the correct port' do
-        expect(agent.proxy_port).to eq(4747)
-      end
-    end
+  #     it 'sets the correct port' do
+  #       expect(agent.proxy_port).to eq(4747)
+  #     end
+  #   end
 
-    context 'when not using a proxy' do
-      before(:each) do
-        client.proxy = nil
-      end
+  #   context 'when not using a proxy' do
+  #     before(:each) do
+  #       client.proxy = nil
+  #     end
 
-      it 'does not set a hostname' do
-        expect(agent.proxy_addr).to be_nil
-      end
+  #     it 'does not set a hostname' do
+  #       expect(agent.proxy_addr).to be_nil
+  #     end
 
-      it 'does not set a port' do
-        expect(agent.proxy_port).to be_nil
-      end
-    end
-  end
+  #     it 'does not set a port' do
+  #       expect(agent.proxy_port).to be_nil
+  #     end
+  #   end
+  # end
 
   describe '#page_content' do
     it 'responds to #page_content' do
       expect(client).to respond_to(:page_content)
     end
 
-    it 'returns a Mechanize::Page' do
-      expect(client.page_content(pinterest_url)).to be_a(Mechanize::Page)
+    it 'returns a Nokogiri::HTML::Document object' do
+      expect(client.page_content(pinterest_url)).to be_a(Nokogiri::HTML::Document)
     end
   end
 
   describe '#json_content' do
-    let(:fake_json) { '{"json":"json"}' }
+    let(:fake_json) { '{ "key":"value" }' }
 
     it 'responds to #json_content' do
       expect(client).to respond_to(:json_content)
     end
 
-    context 'when not using a proxy' do
-      before(:each) do
-        allow(RestClient).to receive(:get).and_return(fake_json)
-      end
-
-      let(:json_content) { client.json_content('url', 'params') }
-
-      it 'returns a Hash representation of the JSON' do
-        expect(json_content).to be_a(Hash)
-      end
-
-      it 'does not set RestClient proxy properties' do
-        json_content
-        expect(RestClient.proxy).to be_nil
-      end
+    it 'returns a Hash representation of the JSON' do
+      client.stub(:make_request).and_return(fake_json)
+      expect(client.json_content(nil, nil)).to be_a(Hash)
     end
-
-    context 'when using a proxy' do
-      let(:proxy) { 'http://proxy.com:31337' }
-      let(:proxy_client) { JohnStamos::Client.new({ proxy: proxy }) }
-
-      before(:each) do
-        allow(proxy_client).to receive(:proxy).and_return(proxy)
-        allow(RestClient).to receive(:get).and_return(fake_json)
-      end
-
-      it 'sets RestClient proxy properties' do
-        proxy_client.json_content('url', 'params')
-        expect(RestClient.proxy).to eq(proxy_client.proxy)
-      end
-    end
-
 
   end
 end

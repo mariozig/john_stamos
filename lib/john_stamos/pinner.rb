@@ -54,7 +54,7 @@ class JohnStamos::Pinner
 
   private
     def page
-      @page ||= @client.page_content(url)
+      @page ||= @client.page_content("/#{@username}/")
     end
 
     def embedded_pinner_json

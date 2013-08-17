@@ -1,3 +1,5 @@
+require 'logger'
+
 class JohnStamos::Client
   attr_accessor :proxy
 
@@ -23,35 +25,34 @@ class JohnStamos::Client
   end
 
   def page_content(url)
-    begin
-      page = mechanize_agent.get(url)
-    rescue Mechanize::ResponseReadError => e
-      $stderr.puts "#{e.class}: #{e.message}"
-      $stderr.puts "An error occured; attempting to force_parse"
-      page = e.force_parse
-    end
+    response = make_request(url)
 
-    page
+    Nokogiri::HTML(response)
   end
 
   def json_content(url, params)
-    RestClient.proxy = @proxy
-    response = RestClient.get(url, params: params, accept: :json, "X-Requested-With" => "XMLHttpRequest")
+    response = make_request(url, params, true)
 
     JSON.parse(response)
   end
 
   private
-    def mechanize_agent
-      agent = Mechanize.new
-      agent.user_agent_alias = 'Mac Safari'
+    def make_request(url, params={}, accept_json=false)
+      user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"
 
-      if @proxy
-        proxy_uri = URI.parse(@proxy)
-        agent.set_proxy(proxy_uri.hostname, proxy_uri.port)
+      # It's OK to pass a nil proxy. Faraday simply doesn't apply proxy properties
+      pinterest_connection = Faraday.new(url: 'http://pinterest.com', proxy: @proxy)
+
+      response = pinterest_connection.get do |req|
+        req.url url, params
+        req.headers['User-Agent'] = user_agent
+        if accept_json
+          req.headers["Accept"] = "application/json"
+          req.headers["X-Requested-With"] = "XMLHttpRequest"
+        end
       end
 
-      agent
+      response.body
     end
 
 end

@@ -25,11 +25,11 @@ class JohnStamos::PinSearch
 
   def first_retrieval_url
     raise JohnStamos::MissingSearchText if @search_text.nil?
-    "http://pinterest.com/search/pins/?q=#{URI::encode(@search_text)}"
+    "/search/pins/?q=#{URI::encode(@search_text)}"
   end
 
   def subsequent_retrieval_url
-    'http://pinterest.com/resource/SearchResource/get/'
+    '/resource/SearchResource/get/'
   end
 
   def first_retrieval!
