@@ -22,27 +22,27 @@ http_interactions:
       Content-Type:
       - text/html; charset=utf-8
       Date:
-      - Wed, 21 Aug 2013 22:23:17 GMT
+      - Wed, 21 Aug 2013 22:23:57 GMT
       Pinterest-Breed:
       - CORGI
       Pinterest-Generated-By:
-      - ngapp-4df811d4
+      - ngapp-b5b32083
       Pinterest-Version:
       - f3eb571
       Server:
       - nginx
       Set-Cookie:
-      - _pinterest_sess="eJzzCw4OTtR3KzCxSM2wKKwsCfYsKsx2zY0qLXO1tY8vycxNtfUN8TX2q3Kt9K1KNvUrt7VVK04tLs5MsfXMSjbxzcrI8XdJyfENScn0rQo09g0JyozMdTWJDA/LBrIzfMPdciLDQ009021tAcxCJI8=";
-        Domain=.pinterest.com; expires=Sat, 16-Aug-2014 22:23:17 GMT; Max-Age=31103999;
+      - _pinterest_sess="eJwLrMgIDTBK9nD2T9b3cEsMDAkuCzMuLi/x1LawtY8vycxNtfUN8TX2q3Kt9K1Kr/Irt7VVK04tLs5MsfXM8iz3c/et8qtKBtKuhr4hQZl+Lp6mvuFeGZFVria+Vb6mkbl+2f4uGTme6ba2AJgCI+4=";
+        Domain=.pinterest.com; expires=Sat, 16-Aug-2014 22:23:57 GMT; Max-Age=31103999;
         Path=/
-      - csrftoken=ML9m6ZpvHYFG3ScZjzE8KUNh45ebcbcl; Domain=.pinterest.com; expires=Wed,
-        20-Aug-2014 22:23:17 GMT; Max-Age=31449600; Path=/
+      - csrftoken=oWZFhbo7ZNXLkM9U00X0Y3PWmCtpSAyd; Domain=.pinterest.com; expires=Wed,
+        20-Aug-2014 22:23:57 GMT; Max-Age=31449600; Path=/
       Vary:
       - Cookie, Accept-Encoding
       Via:
       - 1.1 varnish
       X-Varnish:
-      - '110641325'
+      - '1973758855'
       Transfer-Encoding:
       - chunked
       Connection:
@@ -2942,8 +2942,8 @@ http_interactions:
         Y3RfdXJpfSIsICJyZXNwb25zZV90eXBlIjogIj97cmVzcG9uc2VfdHlwZX0i
         LCAiY29uc3VtZXJfaWQiOiAiP3tjb25zdW1lcl9pZH0ifX1dKTsKICAgICAg
         ICBQLnNldFBhZ2VSb3V0ZVBhdHRlcm4oIl5cL3NlYXJjaFwvOnNjb3BlXC8k
-        Iik7CiAgICAgICAgUC5zZXRQYWdlTG9hZFJlcXVlc3RJZGVudGlmaWVyKCI3
-        OTUzNTI0NDY0MTciKTsKCiAgICAgICAgUGMuc3RhcnRBcmdzID0geyJnYUFj
+        Iik7CiAgICAgICAgUC5zZXRQYWdlTG9hZFJlcXVlc3RJZGVudGlmaWVyKCIy
+        NDc4NDY0MDQ5NDUiKTsKCiAgICAgICAgUGMuc3RhcnRBcmdzID0geyJnYUFj
         Y291bnROdW1iZXIiOiAiVUEtMTI5Njc4OTYtNyIsICJzY3J1YmJlZFVzZXIi
         OiB7ImF1dG9sb2dpbiI6IG51bGx9LCAidHJlZSI6IHsicmVzb3VyY2UiOiBu
         dWxsLCAibmFtZSI6ICJBcHAiLCAiY2hpbGRyZW4iOiBbeyJyZXNvdXJjZSI6
@@ -5166,5 +5166,5 @@ http_interactions:
         TG9nZ2VkSW4iOiBmYWxzZX07CiAgICAgICAgUC5hdmFpbGFibGUuZGVjbGFy
         ZSgpOwogICAgPC9zY3JpcHQ+CjwvYm9keT4KPC9odG1sPg==
     http_version: 
-  recorded_at: Wed, 21 Aug 2013 22:23:18 GMT
+  recorded_at: Wed, 21 Aug 2013 22:23:59 GMT
 recorded_with: VCR 2.5.0

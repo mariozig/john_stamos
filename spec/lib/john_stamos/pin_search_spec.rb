@@ -102,15 +102,15 @@ describe JohnStamos::PinSearch, :vcr do
         expect { scraper.first_retrieval! }.to change{ scraper.next_bookmark }.from(nil)
       end
 
-      it 'sets next_bookmark with a hash for the next 50 results' do
+      it 'sets next_bookmark with a hash for the next batch of results' do
         scraper.first_retrieval!
         decrypted_hash = Base64.strict_decode64(scraper.next_bookmark)
         next_page_results_start_position = decrypted_hash.split('|')[0]
-        next_page_results_start_position.should eq("oo50")
+        next_page_results_start_position.should eq("oo25")
       end
 
       it 'should set pin_ids' do
-        expect { scraper.first_retrieval! }.to change{ scraper.pin_ids.length }.from(0).to(50)
+        expect { scraper.first_retrieval! }.to change{ scraper.pin_ids.length }.from(0).to(25)
       end
     end
 
@@ -163,18 +163,18 @@ describe JohnStamos::PinSearch, :vcr do
         expect { scraper.subsequent_retrieval! }.to change{ scraper.next_bookmark }
       end
 
-      it 'sets next_bookmark with a hash for the next 50 results' do
+      it 'sets next_bookmark with a hash for the next batch of results' do
         scraper.subsequent_retrieval!
         decrypted_hash = Base64.strict_decode64(scraper.next_bookmark)
         next_page_results_start_position = decrypted_hash.split('|')[0]
-        expect(next_page_results_start_position).to eq("oo100")
+        expect(next_page_results_start_position).to eq("oo50")
       end
 
       it 'should append the new pin_ids' do
-        # The expected count can change based on Pinterest. Sometimes they give 99, sometimes 100.
+        # The expected count can change based on Pinterest. Sometimes they give 1 less than expected.
         # When you update the VCR cassettes it may cause this test to fail... please update it.
         scraper.subsequent_retrieval!
-        expect(scraper.pin_ids.length).to eq(99)
+        expect(scraper.pin_ids.length).to eq(50)
       end
     end
   end
