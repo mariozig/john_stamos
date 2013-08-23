@@ -3,6 +3,7 @@
 The greasiest Pinterest client. JohnStamos exposes an interface you can use to query Pinterest for data about individual Pins, Pinners and Pin searches.  Have mercy.
 
 [![Build Status](https://travis-ci.org/mariozig/john_stamos.png?branch=master)](https://travis-ci.org/mariozig/john_stamos)
+[![Code Climate](https://codeclimate.com/github/mariozig/john_stamos.png)](https://codeclimate.com/github/mariozig/john_stamos)
 
 ## Installation
 
