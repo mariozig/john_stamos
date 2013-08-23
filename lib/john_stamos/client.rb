@@ -31,28 +31,42 @@ class JohnStamos::Client
   end
 
   def json_content(url, params)
-    response = make_request(url, params, true)
+    response = make_json_request(url, params)
 
     JSON.parse(response)
   end
 
   private
     def make_request(url, params={}, accept_json=false)
-      user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"
-
-      # It's OK to pass a nil proxy. Faraday simply doesn't apply proxy properties
-      pinterest_connection = Faraday.new(url: 'http://pinterest.com', proxy: @proxy)
+      request_headers = build_request_headers(accept_json)
 
       response = pinterest_connection.get do |req|
         req.url url, params
-        req.headers['User-Agent'] = user_agent
-        if accept_json
-          req.headers["Accept"] = "application/json"
-          req.headers["X-Requested-With"] = "XMLHttpRequest"
-        end
+        req.headers = request_headers
       end
 
       response.body
+    end
+
+    def make_json_request(url, params={})
+      make_request(url, params, true)
+    end
+
+    def build_request_headers(accept_json=false)
+      headers = {}
+
+      if accept_json
+        headers['Accept'] = 'application/json'
+        headers['X-Requested-With'] = 'XMLHttpRequest'
+      end
+      headers['User-Agent'] = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36'
+
+      headers
+    end
+
+    def pinterest_connection
+      pinterest_url = 'http://pinterest.com'
+      @pinterest_connection ||= @proxy.nil? ? Faraday.new(url: pinterest_url) : Faraday.new(url: pinterest_url, proxy: @proxy)
     end
 
 end

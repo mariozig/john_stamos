@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe JohnStamos::Client, :vcr do
   subject(:client) { JohnStamos::Client.new }
-  let(:pinterest_url) { 'https://pinterest.com' }
+  let(:pinterest_url) { 'http://pinterest.com' }
 
   describe '#search_pins' do
     it 'responds to #search_pins' do
@@ -49,50 +49,6 @@ describe JohnStamos::Client, :vcr do
     end
   end
 
-  describe '#json_content' do
-    it 'responds to #json_content' do
-      expect(client).to respond_to(:json_content)
-    end
-
-    # it 'returns a Hash' do
-    #   RestClient.stub(:get).and_return('{"json":"json"}')
-
-    #   expect(client.json_content('url', 'params')).to be_a(Hash)
-    # end
-  end
-
-  # describe '#mechanize_agent' do
-  #   let(:agent) { client.send(:mechanize_agent) }
-
-  #   context 'when using a proxy' do
-  #     before(:each) do
-  #       client.proxy = 'http://proxy.com:4747'
-  #     end
-
-  #     it 'sets the correct hostname' do
-  #       expect(agent.proxy_addr).to eq('proxy.com')
-  #     end
-
-  #     it 'sets the correct port' do
-  #       expect(agent.proxy_port).to eq(4747)
-  #     end
-  #   end
-
-  #   context 'when not using a proxy' do
-  #     before(:each) do
-  #       client.proxy = nil
-  #     end
-
-  #     it 'does not set a hostname' do
-  #       expect(agent.proxy_addr).to be_nil
-  #     end
-
-  #     it 'does not set a port' do
-  #       expect(agent.proxy_port).to be_nil
-  #     end
-  #   end
-  # end
-
   describe '#page_content' do
     it 'responds to #page_content' do
       expect(client).to respond_to(:page_content)
@@ -114,6 +70,67 @@ describe JohnStamos::Client, :vcr do
       client.stub(:make_request).and_return(fake_json)
       expect(client.json_content(nil, nil)).to be_a(Hash)
     end
+  end
 
+  describe '#make_request' do
+    it 'returns a string representation of the response body' do
+      response = client.send(:make_request, pinterest_url, {})
+      expect(response).to be_a(String)
+    end
+  end
+
+  describe '#make_json_request' do
+    it 'calls #make_request with the correct params' do
+      client.stub(:make_request).and_return(nil)
+      expect(client).to receive(:make_request).with('a', 'b', true)
+
+      client.send(:make_json_request, 'a', 'b')
+    end
+  end
+
+  describe '#pinterest_connection' do
+    context 'when using a proxy' do
+      it 'creates a new Faraday proxied instance' do
+        client.proxy = 'http://fakeproxy.com:1234'
+        expect(Faraday).to receive(:new).with({ url: pinterest_url, proxy: client.proxy })
+        client.send(:pinterest_connection)
+      end
+    end
+
+    context 'when not using a proxy' do
+      it 'creates a new Faraday instance' do
+        client.proxy = nil
+        expect(Faraday).to receive(:new).with({ url: pinterest_url })
+        client.send(:pinterest_connection)
+      end
+    end
+  end
+
+  describe '#build_request_headers' do
+    it 'has a valid User-Agent' do
+      headers = client.send(:build_request_headers)
+      expect(headers['User-Agent']).to eq('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36')
+    end
+
+    context 'non-JSON requests' do
+      it 'do not contain JSON request related headers' do
+        headers = client.send(:build_request_headers)
+        expect(headers).not_to include('Accept', 'X-Requested-With')
+      end
+    end
+
+    context 'JSON requests' do
+      let(:json_headers) do
+        headers = {}
+        headers['Accept'] = 'application/json'
+        headers['X-Requested-With'] = 'XMLHttpRequest'
+        headers
+      end
+
+      it 'contain JSON request related headers' do
+        headers = client.send(:build_request_headers, true)
+        expect(headers).to include(json_headers)
+      end
+    end
   end
 end
