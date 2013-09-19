@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe JohnStamos::Pinner, :vcr do
   let(:client) { JohnStamos::Client.new }
-  let(:pinterest_user) { 'johnstamosgem' } # Test user account from here: http://pinterest.com/johnstamosgem/
+  let(:pinterest_user) { 'johnstamosgem' } # Test user account from here: http://www.pinterest.com/johnstamosgem/
 
   subject(:pinner) { JohnStamos::Pinner.new(client, pinterest_user) }
 
@@ -22,7 +22,7 @@ describe JohnStamos::Pinner, :vcr do
     end
 
     it 'returns the correct url for the pinner' do
-      expect(pinner.url).to eq("http://pinterest.com/#{pinterest_user}/")
+      expect(pinner.url).to eq("http://www.pinterest.com/#{pinterest_user}/")
     end
   end
 

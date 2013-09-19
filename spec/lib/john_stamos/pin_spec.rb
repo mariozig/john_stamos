@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe JohnStamos::Pin do
   subject(:pin) do
-    # Test pin from here: http://pinterest.com/pin/412149803369441273/
+    # Test pin from here: http://www.pinterest.com/pin/412149803369441273/
     JohnStamos::Pin.new(client, pinterest_pin_id)
   end
 
@@ -50,7 +50,7 @@ describe JohnStamos::Pin do
   end
 
   it 'has the correct url' do
-    expect(pin.url).to eq("http://pinterest.com/pin/#{pinterest_pin_id}/")
+    expect(pin.url).to eq("http://www.pinterest.com/pin/#{pinterest_pin_id}/")
   end
 
   it 'responds to #video?' do

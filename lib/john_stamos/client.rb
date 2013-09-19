@@ -65,7 +65,7 @@ class JohnStamos::Client
     end
 
     def pinterest_connection
-      pinterest_url = 'http://pinterest.com'
+      pinterest_url = 'http://www.pinterest.com'
       @pinterest_connection ||= @proxy.nil? ? Faraday.new(url: pinterest_url) : Faraday.new(url: pinterest_url, proxy: @proxy)
     end
 
