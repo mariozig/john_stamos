@@ -3,6 +3,7 @@ require 'john_stamos/pin_search'
 require 'john_stamos/pin'
 require 'john_stamos/pinner'
 require 'john_stamos/client'
+require 'john_stamos/extraction_helper'
 require 'vcr'
 
 VCR.configure do |c|
