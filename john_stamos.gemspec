@@ -18,16 +18,16 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
-  gem.add_development_dependency "bundler", "~> 1.3"
-  gem.add_development_dependency "rake"
-  gem.add_development_dependency "rspec", "~> 2.6"
-  gem.add_development_dependency "webmock", "~> 1.8"
-  gem.add_development_dependency "vcr"
-  gem.add_development_dependency "guard-rspec"
+  gem.add_development_dependency 'bundler', '~> 1.3'
+  gem.add_development_dependency 'rake', '~> 10.1'
+  gem.add_development_dependency 'rspec', '~> 2.14'
+  gem.add_development_dependency 'webmock', '~> 1.13'
+  gem.add_development_dependency 'vcr', '~> 2.5'
+  gem.add_development_dependency 'guard-rspec', '~> 3.0'
 
-  gem.add_dependency "nokogiri"
-  gem.add_dependency "faraday"
-  gem.add_dependency "typhoeus"
-  gem.add_dependency "json"
-  gem.add_dependency "launchy"
+  gem.add_dependency 'nokogiri', '~> 1.6'
+  gem.add_dependency 'faraday', '~> 0.8'
+  gem.add_dependency 'typhoeus', '~> 0.6'
+  gem.add_dependency 'json', '~> 1.8'
+  gem.add_dependency 'launchy', '~> 2.3'
 end
