@@ -24,23 +24,23 @@ http_interactions:
       Content-Type:
       - text/html; charset=utf-8
       Date:
-      - Thu, 19 Sep 2013 22:45:25 GMT
+      - Fri, 20 Sep 2013 18:28:27 GMT
       Location:
       - https://www.pinterest.com/
       Pinterest-Breed:
       - CORGI
       Pinterest-Generated-By:
-      - ngapp-34642b57
+      - ngapp-e565e99f
       Pinterest-Version:
       - '8814715'
       Server:
       - nginx
       Set-Cookie:
-      - _pinterest_sess="eJyzyHdycXExcgp1r8oPKAk0SMlyNa3KczP3Nsi3tY8vycxNtfUN8TX2D4ms8nVJrvQLtLVVK04tLs5MsfXMSq70d3EtjzRyrfILj8qMrAos9zUKNfELCTX0DcnI9gtxNPTNDTSKNAo19Uy3tQUAYnIivA==";
-        Domain=.pinterest.com; expires=Sun, 14-Sep-2014 22:45:25 GMT; Max-Age=31103999;
+      - _pinterest_sess="eJxzNsoqzopyN/DzK/BODsyy8KsMNCguCw8uCC+3tY8vycxNtfUN8TX2D0ku9wViv3JbW7Xi1OLizBRbz6ygHD8X38rI8LAsP/fQcn+XoNzILK9Mv6xsk6hcXwO/kJRMv6qMXD+XqGzPdFtbAMXBJOs=";
+        Domain=.pinterest.com; expires=Mon, 15-Sep-2014 18:28:27 GMT; Max-Age=31103999;
         Path=/
-      - csrftoken=cpPLtX8XTiNgVLjzUhCQIdJ1Ol36T1zW; Domain=.pinterest.com; expires=Thu,
-        18-Sep-2014 22:45:25 GMT; Max-Age=31449600; Path=/
+      - csrftoken=izK5NYUAmJGBe7WN68UpfGZS9d3Psjb9; Domain=.pinterest.com; expires=Fri,
+        19-Sep-2014 18:28:27 GMT; Max-Age=31449600; Path=/
       Vary:
       - Cookie
       Via:
@@ -48,7 +48,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Varnish:
-      - '1580732593'
+      - '1727562698'
       Content-Length:
       - '0'
       Connection:
@@ -57,5 +57,5 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Thu, 19 Sep 2013 22:45:25 GMT
+  recorded_at: Fri, 20 Sep 2013 18:28:27 GMT
 recorded_with: VCR 2.5.0

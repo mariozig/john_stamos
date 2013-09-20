@@ -22,21 +22,21 @@ http_interactions:
       Content-Type:
       - text/html; charset=utf-8
       Date:
-      - Thu, 19 Sep 2013 22:45:31 GMT
+      - Fri, 20 Sep 2013 18:27:26 GMT
       Pinterest-Breed:
       - CORGI
       Pinterest-Generated-By:
-      - ngapp-22d2f859
+      - ngapp-f5a61d06
       Pinterest-Version:
       - '8814715'
       Server:
       - nginx
       Set-Cookie:
-      - _pinterest_sess="eJzT9yv30S7z9aqoKjKMMigqzUvKds72LDM2CXW0tY8vycxNtfUN8TX2D4ms8nVJrvINtLVVK04tLs5MsfXMcsvydYmsjKxyy4gKCSz3CwnK8ssKyvRzCcr2c/HK8HV3NfUL9zXycw808Uy3tQUApVUjjQ==";
-        Domain=.pinterest.com; expires=Sun, 14-Sep-2014 22:45:31 GMT; Max-Age=31103999;
+      - _pinterest_sess="eJwNy7EKgzAQANC/6Wy1BR2OLtZyhYtED45k6dBaSeCGEEH06/Xtr43/PMetw7SkRmVMZN7ljlKLhcdnCToBMVU9f1diV5gZ4JKnnMMPUO3Ni49Oae0ZC9/aimQI5oV3p8/dx04d42ZKuuL5DrdUI7I=";
+        Domain=.pinterest.com; expires=Mon, 15-Sep-2014 18:27:26 GMT; Max-Age=31103999;
         Path=/
-      - csrftoken=0xUNrwncjBWtclIrHeIhQKW2GUzKoRz6; Domain=.pinterest.com; expires=Thu,
-        18-Sep-2014 22:45:31 GMT; Max-Age=31449600; Path=/
+      - csrftoken=zyuZ6bATYy3ZzRCTKRCg156YKVkn6Hcn; Domain=.pinterest.com; expires=Fri,
+        19-Sep-2014 18:27:26 GMT; Max-Age=31449600; Path=/
       Vary:
       - Cookie, Accept-Encoding
       Via:
@@ -46,7 +46,7 @@ http_interactions:
       X-Ua-Compatible:
       - IE=edge
       X-Varnish:
-      - '750933576'
+      - '1727418221'
       Transfer-Encoding:
       - chunked
       Connection:
@@ -69,9 +69,9 @@ http_interactions:
         dWU7CiAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIHZhciBQYyA9
         IHsKICAgICAgICAgICAgZTogeyJucmYiOiBmYWxzZSwgImV3IjogZmFsc2Us
         ICJ3ZmUiOiBmYWxzZSwgInJwbCI6IGZhbHNlLCAiZmZfcyI6IGZhbHNlLCAi
-        ZndsIjogZmFsc2UsICJwcyI6IG51bGwsICJzdyI6IGZhbHNlLCAiZndiIjog
-        ZmFsc2UsICJmd2MiOiBmYWxzZSwgInNsbSI6IG51bGwsICJzbiI6IGZhbHNl
-        LCAiZnd3IjogdHJ1ZSwgImVwZmZ0ZW5zcCI6IGZhbHNlfSwKICAgICAgICAg
+        ZndsIjogdHJ1ZSwgInBzIjogbnVsbCwgInN3IjogZmFsc2UsICJmd2IiOiBm
+        YWxzZSwgImZ3YyI6IGZhbHNlLCAic2xtIjogbnVsbCwgInNuIjogZmFsc2Us
+        ICJmd3ciOiBmYWxzZSwgImVwZmZ0ZW5zcCI6IGZhbHNlfSwKICAgICAgICAg
         ICAgZXhwbnM6IHt9CiAgICAgICAgfTsKICAgICAgICBQYy5URVNUX01PREUg
         PSBudWxsOwogICAgICAgIAogICAgICAgICAgICAgICAgICAgIHZhciBnb29n
         PXtyZXF1aXJlOmZ1bmN0aW9uKGEpe30scHJvdmlkZTpmdW5jdGlvbihhKXt9
@@ -765,7 +765,7 @@ http_interactions:
         fSwgInVybCI6ICJeXC9jbG9zZV93aW5kb3dcLyQiLCAib3B0aW9ucyI6IHt9
         LCAibW9kdWxlIjogIkNsb3NlIn1dKTsKICAgICAgICBQLnNldFBhZ2VSb3V0
         ZVBhdHRlcm4oIl5cL3NlYXJjaFwvOnNjb3BlXC8kIik7CiAgICAgICAgUC5z
-        ZXRQYWdlTG9hZFJlcXVlc3RJZGVudGlmaWVyKCI1MTM5MjgxMzM3MTAiKTsK
+        ZXRQYWdlTG9hZFJlcXVlc3RJZGVudGlmaWVyKCI5MzAxMzg0NjgyOTMiKTsK
         ICAgICAgICBQLnN0YXJ0LnN0YXJ0KHsiZ2FBY2NvdW50TnVtYmVyIjogIlVB
         LTEyOTY3ODk2LTciLCAic2NydWJiZWRVc2VyIjogeyJhdXRvbG9naW4iOiBu
         dWxsfSwgInRyZWUiOiB7InJlc291cmNlIjogbnVsbCwgIm5hbWUiOiAiQXBw
@@ -907,5 +907,5 @@ http_interactions:
         IjogZmFsc2UsICJpbml0aWFsQ29udGV4dExvZyI6IG51bGx9KTsKICAgIDwv
         c2NyaXB0Pgo8L2JvZHk+CjwvaHRtbD4=
     http_version: 
-  recorded_at: Thu, 19 Sep 2013 22:45:31 GMT
+  recorded_at: Fri, 20 Sep 2013 18:27:26 GMT
 recorded_with: VCR 2.5.0

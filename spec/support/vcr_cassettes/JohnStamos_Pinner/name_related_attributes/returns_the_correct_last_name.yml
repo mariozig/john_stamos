@@ -22,21 +22,21 @@ http_interactions:
       Content-Type:
       - text/html; charset=utf-8
       Date:
-      - Thu, 19 Sep 2013 22:46:09 GMT
+      - Fri, 20 Sep 2013 18:28:23 GMT
       Pinterest-Breed:
       - CORGI
       Pinterest-Generated-By:
-      - ngapp-eef06a84
+      - ngapp-103b3a7a
       Pinterest-Version:
       - '8814715'
       Server:
       - nginx
       Set-Cookie:
-      - _pinterest_sess="eJwFwbEKwjAQANC/cXGyB4LD0eWKdLge0YOQLB3aUNM0KKSgzdf73grJls8itwy20zuYsFN8irue39iOe8wBWRlEXWWaGjGIpxJKiTP2qwGhdDC570D88/TYxPo4VAav6cLaHVznLPRK/YL4B3mBI64=";
-        Domain=.pinterest.com; expires=Sun, 14-Sep-2014 22:46:09 GMT; Max-Age=31103999;
+      - _pinterest_sess="eJzzLjSqzHYvdXFN8S5wMixP9DD3KrFINwz10jawtY8vycxNtfUN8TX2D0ku9wXhcltbteLU4uLMFFvPLFdTPxdPQ9+sSEM/I8/yqJBAY78Qv0y/qrAMoFhVlEtQtm9WqKFfVqCpZ7qtLQBgwiLq";
+        Domain=.pinterest.com; expires=Mon, 15-Sep-2014 18:28:23 GMT; Max-Age=31103999;
         Path=/
-      - csrftoken=HcRmK7FUpMWK9S9yzKPMBu8uE87xVQf6; Domain=.pinterest.com; expires=Thu,
-        18-Sep-2014 22:46:09 GMT; Max-Age=31449600; Path=/
+      - csrftoken=7cZO08GhTOK8x8hOPAOJD6KIZFAQZDYg; Domain=.pinterest.com; expires=Fri,
+        19-Sep-2014 18:28:23 GMT; Max-Age=31449600; Path=/
       Vary:
       - Cookie, Accept-Encoding
       Via:
@@ -46,7 +46,7 @@ http_interactions:
       X-Ua-Compatible:
       - IE=edge
       X-Varnish:
-      - '388128615'
+      - '1727555030'
       Transfer-Encoding:
       - chunked
       Connection:
@@ -62,8 +62,8 @@ http_interactions:
         \       \n    \n    <script>\n                            window.isMainPinterestSite
         = true;\n                \n                var Pc = {\n            e: {\"nrf\":
         false, \"ew\": false, \"wfe\": false, \"rpl\": false, \"ff_s\": false, \"fwl\":
-        false, \"ps\": null, \"sw\": false, \"fwb\": false, \"fwc\": false, \"slm\":
-        null, \"sn\": false, \"fww\": true, \"epfftensp\": false},\n            expns:
+        true, \"ps\": null, \"sw\": false, \"fwb\": false, \"fwc\": false, \"slm\":
+        null, \"sn\": false, \"fww\": false, \"epfftensp\": false},\n            expns:
         {}\n        };\n        Pc.TEST_MODE = null;\n        \n                    var
         goog={require:function(a){},provide:function(a){}};var P=window.P={};P.e=window.Pc.e;P.expns=window.Pc.expns;P.DEBUG=window.Pc.DEBUG;P.interfaces={};P.FB_KEY=-1;P.CONTEXT={};P.STRINGS={};P.PAGE_INFO=null;P.ROUTES=[];P.PAGE_ROUTE_PATTERN=\"\";P.PAGE_LOAD_REQUEST_IDENTIFIER=\"\";P.setFacebookKey=function(a){P.FB_KEY=a};P.setContext=function(a){P.CONTEXT=a};P.setStrings=function(a){P.STRINGS=a};P.setPageInfo=function(a){P.PAGE_INFO=a};P.setRoutes=function(a){P.ROUTES=a};P.setPageRoutePattern=function(a){P.PAGE_ROUTE_PATTERN=a};\nP.setPageLoadRequestIdentifier=function(a){P.PAGE_LOAD_REQUEST_IDENTIFIER=a};P.CONST={};P.Overlap={isOverlappingViewport:function(a,b){void
         0===b&&(b=0);var c=window.innerWidth||document.documentElement.clientWidth,d=window.innerHeight||document.documentElement.clientHeight;if(!a.getBoundingClientRect)return!0;var
@@ -500,7 +500,7 @@ http_interactions:
         \"me\"}}, \"options\": {\"username\": \"me\"}, \"module\": \"VerifyWebsite\"},
         {\"sandbox\": true, \"named\": {}, \"resource\": {}, \"url\": \"^\\/close_window\\/$\",
         \"options\": {}, \"module\": \"Close\"}]);\n        P.setPageRoutePattern(\"^\\/:username\\/$\");\n
-        \       P.setPageLoadRequestIdentifier(\"215084221561\");\n        P.start.start({\"gaAccountNumber\":
+        \       P.setPageLoadRequestIdentifier(\"247850134195\");\n        P.start.start({\"gaAccountNumber\":
         \"UA-12967896-7\", \"scrubbedUser\": {\"autologin\": null}, \"tree\": {\"resource\":
         null, \"name\": \"App\", \"children\": [{\"resource\": null, \"name\": \"Header\",
         \"id\": \"header\", \"children\": [{\"resource\": null, \"name\": \"DropdownButton\",
@@ -660,5 +660,5 @@ http_interactions:
         \"canDebug\": false, \"requireJsPaths\": {}, \"isLoggedIn\": false, \"initialContextLog\":
         null});\n    </script>\n</body>\n</html>"
     http_version: 
-  recorded_at: Thu, 19 Sep 2013 22:46:09 GMT
+  recorded_at: Fri, 20 Sep 2013 18:28:24 GMT
 recorded_with: VCR 2.5.0

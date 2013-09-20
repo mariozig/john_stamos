@@ -34,18 +34,7 @@ class JohnStamos::PinSearch
 
   def first_retrieval!
     page = @client.page_content(first_retrieval_url)
-
-    embedded_script = page.search('script').select do |script|
-      script['src'].nil? && script.content.include?('P.start.start')
-    end
-
-    embedded_script_content = embedded_script.last.content
-    # This regex used in the range snatches the parameter Pinterest uses to
-    # start their app... This parameter happens to be a JSON representation of
-    # the page.
-    raw_json = embedded_script_content[/P.start.start\((.*)\);/m, 1]
-    embedded_script_json = JSON.parse(raw_json)
-
+    embedded_script_json = JohnStamos::ExtractionHelper.embedded_page_json(page)
     pin_ids_from_embedded_script_json = pin_ids_from_first_retrieval(embedded_script_json)
 
     pin_ids_up_to_limit(pin_ids_from_embedded_script_json)

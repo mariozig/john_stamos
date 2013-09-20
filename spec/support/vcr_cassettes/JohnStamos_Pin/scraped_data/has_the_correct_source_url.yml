@@ -22,21 +22,21 @@ http_interactions:
       Content-Type:
       - text/html; charset=utf-8
       Date:
-      - Thu, 19 Sep 2013 22:45:19 GMT
+      - Fri, 20 Sep 2013 18:28:31 GMT
       Pinterest-Breed:
       - CORGI
       Pinterest-Generated-By:
-      - ngapp-7392b0cc
+      - ngapp-dbea23b4
       Pinterest-Version:
       - '8814715'
       Server:
       - nginx
       Set-Cookie:
-      - _pinterest_sess="eJzLd44wLyoKKw8zLwwp08/JcTItTA811Q8z1U63tY8vycxNtfUN8TX2D4ms8nVJrvAPtLVVK04tLs5MsfXMDcryDfc08A/xy/TL9a30dQk09nOPNPF18cqMrEo28nePyvUN8Sz3DXHK9ky3tQUAgFkjPA==";
-        Domain=.pinterest.com; expires=Sun, 14-Sep-2014 22:45:19 GMT; Max-Age=31103999;
+      - _pinterest_sess="eJwzCIvyCojyrsgND/B2czV1zAqvcInUtix08yy3tY8vycxNtfUN8TX2D0ku9w1JrvANtLVVK04tLs5MsfXMisr2DQ808HXxy4ys8qz0cwk08nMPyvTLDTXyDQk09A0BiaVX+YWHmnim29oCAGoBIwI=";
+        Domain=.pinterest.com; expires=Mon, 15-Sep-2014 18:28:31 GMT; Max-Age=31103999;
         Path=/
-      - csrftoken=ldjLeHErk3HSqIQYbqJkb4LQW0ZZ4hR0; Domain=.pinterest.com; expires=Thu,
-        18-Sep-2014 22:45:19 GMT; Max-Age=31449600; Path=/
+      - csrftoken=DCOQdg0PzCVMiafo8yYO0GrfwPYTUFJA; Domain=.pinterest.com; expires=Fri,
+        19-Sep-2014 18:28:31 GMT; Max-Age=31449600; Path=/
       Vary:
       - Cookie, Accept-Encoding
       Via:
@@ -46,7 +46,7 @@ http_interactions:
       X-Ua-Compatible:
       - IE=edge
       X-Varnish:
-      - '1580718693'
+      - '1727573722'
       Transfer-Encoding:
       - chunked
       Connection:
@@ -560,7 +560,7 @@ http_interactions:
         \"me\"}}, \"options\": {\"username\": \"me\"}, \"module\": \"VerifyWebsite\"},
         {\"sandbox\": true, \"named\": {}, \"resource\": {}, \"url\": \"^\\/close_window\\/$\",
         \"options\": {}, \"module\": \"Close\"}]);\n        P.setPageRoutePattern(\"^\\/pin\\/:id\\/$\");\n
-        \       P.setPageLoadRequestIdentifier(\"290844615847\");\n        P.start.start({\"gaAccountNumber\":
+        \       P.setPageLoadRequestIdentifier(\"965819278588\");\n        P.start.start({\"gaAccountNumber\":
         \"UA-12967896-7\", \"scrubbedUser\": {\"autologin\": null}, \"tree\": {\"resource\":
         null, \"name\": \"App\", \"children\": [{\"resource\": null, \"name\": \"Header\",
         \"id\": \"header\", \"children\": [{\"resource\": null, \"name\": \"DropdownButton\",
@@ -807,5 +807,5 @@ http_interactions:
         \"canDebug\": false, \"requireJsPaths\": {}, \"isLoggedIn\": false, \"initialContextLog\":
         null});\n    </script>\n</body>\n</html>"
     http_version: 
-  recorded_at: Thu, 19 Sep 2013 22:45:19 GMT
+  recorded_at: Fri, 20 Sep 2013 18:28:31 GMT
 recorded_with: VCR 2.5.0

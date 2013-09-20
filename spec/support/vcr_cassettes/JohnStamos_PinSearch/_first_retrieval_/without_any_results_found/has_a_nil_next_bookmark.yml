@@ -22,21 +22,21 @@ http_interactions:
       Content-Type:
       - text/html; charset=utf-8
       Date:
-      - Thu, 19 Sep 2013 22:45:31 GMT
+      - Fri, 20 Sep 2013 18:27:25 GMT
       Pinterest-Breed:
       - CORGI
       Pinterest-Generated-By:
-      - ngapp-6d6d982c
+      - ngapp-b6533e00
       Pinterest-Version:
       - '8814715'
       Server:
       - nginx
       Set-Cookie:
-      - _pinterest_sess="eJwFwUEKwjAQBdDbuHFjUwtuBkGCNMjvkDJBshJsShpL3ESp5PS+5zrb5P1Xy7U//Wzg7fJ8x37j5TbR+fFJeSYIWhZfoacKS7QrcykpkMm+gzItdHjhbppBxgQ1Jpb1CHGK9bD67CokHkwk+gNsKSLa";
-        Domain=.pinterest.com; expires=Sun, 14-Sep-2014 22:45:31 GMT; Max-Age=31103999;
+      - _pinterest_sess="eJwNyLEKwjAQANC/cTXGWFwOl6K0kAstJ+G6ONiSJl6nKxT79frGd0Xe3Xap+Fu7I0vSVWn+nGocDNxea14m8OTPgd6bJzbYARx0Us0jNGUWX0bxjz7znsxAnQ2xzRz7EuJd0D4dWxT+X5MAfoBCI2k=";
+        Domain=.pinterest.com; expires=Mon, 15-Sep-2014 18:27:25 GMT; Max-Age=31103999;
         Path=/
-      - csrftoken=cHEZPosDIw5g75Ibf7xkaYV2Npszo5F3; Domain=.pinterest.com; expires=Thu,
-        18-Sep-2014 22:45:31 GMT; Max-Age=31449600; Path=/
+      - csrftoken=c5TNtpWTFeg8ZvHQD6WJyrhf8HP0beh3; Domain=.pinterest.com; expires=Fri,
+        19-Sep-2014 18:27:25 GMT; Max-Age=31449600; Path=/
       Vary:
       - Cookie, Accept-Encoding
       Via:
@@ -46,7 +46,7 @@ http_interactions:
       X-Ua-Compatible:
       - IE=edge
       X-Varnish:
-      - '1580744099'
+      - '1727416293'
       Transfer-Encoding:
       - chunked
       Connection:
@@ -765,7 +765,7 @@ http_interactions:
         fSwgInVybCI6ICJeXC9jbG9zZV93aW5kb3dcLyQiLCAib3B0aW9ucyI6IHt9
         LCAibW9kdWxlIjogIkNsb3NlIn1dKTsKICAgICAgICBQLnNldFBhZ2VSb3V0
         ZVBhdHRlcm4oIl5cL3NlYXJjaFwvOnNjb3BlXC8kIik7CiAgICAgICAgUC5z
-        ZXRQYWdlTG9hZFJlcXVlc3RJZGVudGlmaWVyKCIyODgzMDg2MDE5MzIiKTsK
+        ZXRQYWdlTG9hZFJlcXVlc3RJZGVudGlmaWVyKCIxNzk3MjQ3NDc1OTUiKTsK
         ICAgICAgICBQLnN0YXJ0LnN0YXJ0KHsiZ2FBY2NvdW50TnVtYmVyIjogIlVB
         LTEyOTY3ODk2LTciLCAic2NydWJiZWRVc2VyIjogeyJhdXRvbG9naW4iOiBu
         dWxsfSwgInRyZWUiOiB7InJlc291cmNlIjogbnVsbCwgIm5hbWUiOiAiQXBw
@@ -907,5 +907,5 @@ http_interactions:
         IjogZmFsc2UsICJpbml0aWFsQ29udGV4dExvZyI6IG51bGx9KTsKICAgIDwv
         c2NyaXB0Pgo8L2JvZHk+CjwvaHRtbD4=
     http_version: 
-  recorded_at: Thu, 19 Sep 2013 22:45:31 GMT
+  recorded_at: Fri, 20 Sep 2013 18:27:26 GMT
 recorded_with: VCR 2.5.0
