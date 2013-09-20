@@ -123,8 +123,7 @@ class JohnStamos::PinSearch
 
       url_params = {
                     source_url: "/search/pins/?q=#{URI::encode(search_text)}",
-                   # Pass in the current time in miliseconds (like pinterest does) to prevent caching
-                    "_" => (Time.now.to_f * 1000.0).to_i,
+                    "_" => 1379703819343,
                     data: data_json.to_json
                    }
       url_params

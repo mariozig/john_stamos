@@ -55,7 +55,6 @@ describe JohnStamos::PinSearch, :vcr do
     expect(scraper).to respond_to(:limit_reached?)
   end
 
-
   describe 'when initialized' do
     it 'has no search query' do
       expect(scraper.search_text).to be_nil
