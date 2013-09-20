@@ -133,4 +133,5 @@ describe JohnStamos::Client, :vcr do
       end
     end
   end
+
 end

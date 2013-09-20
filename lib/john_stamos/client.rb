@@ -1,5 +1,3 @@
-require 'logger'
-
 class JohnStamos::Client
   attr_accessor :proxy
 
@@ -35,6 +33,8 @@ class JohnStamos::Client
 
     JSON.parse(response)
   end
+
+
 
   private
     def make_request(url, params={}, accept_json=false)
