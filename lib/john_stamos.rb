@@ -1,5 +1,4 @@
 require 'faraday'
-require 'typhoeus/adapters/faraday'
 require 'nokogiri'
 require 'json'
 require 'launchy'
