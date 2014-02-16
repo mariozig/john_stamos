@@ -25,7 +25,7 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'vcr', '~> 2.5'
   gem.add_development_dependency 'guard-rspec', '~> 3.0'
 
-  gem.add_dependency 'nokogiri', '~> 1.6'
+  gem.add_dependency 'nokogiri', '< 1.6'
   gem.add_dependency 'faraday', '~> 0.8'
   gem.add_dependency 'typhoeus', '~> 0.6'
   gem.add_dependency 'json', '~> 1.8'
