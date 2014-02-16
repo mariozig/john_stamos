@@ -15,7 +15,7 @@ module JohnStamos
   class MissingSearchText < Exception; end
   class MissingNextBookmark < Exception; end
 
-  Faraday.default_adapter = :typhoeus
+  Faraday.default_adapter = :net_http
 
   private
     def self.uncle_jesse
